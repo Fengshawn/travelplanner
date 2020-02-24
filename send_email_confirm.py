@@ -13,4 +13,3 @@ def send_email(recivers):
     mail.sendmail("623654589@qq.com", [recivers], message.as_string())
 
 
-send_email('rzhang64@sheffield.ac.uk')

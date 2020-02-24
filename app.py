@@ -1,3 +1,5 @@
+
+
 from flask import Flask
 from flask import Flask, render_template, url_for, redirect, request
 from flask_sqlalchemy import SQLAlchemy
@@ -5,7 +7,8 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, PasswordField
 from wtforms.validators import DataRequired, Length, Email
 from flask_mail import Mail, Message
-
+import send_email_confirm
+import send_pdf
 app = Flask(__name__)
 
 
@@ -43,6 +46,7 @@ def registe():
         user = User(username=username, email=email, password=password)
         db.session.add(user)
         db.session.commit()
+        send_email_confirm.send_email(email)
         return redirect(url_for("login"))
     return render_template("registe.html")
 
