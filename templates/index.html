@@ -1,4 +1,49 @@
-{% extends "head.html" %}
-{% block needFile %}
-    <p>我是首页</p>
-{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Planner</title>
+    <script src="/static/jquery/jquery-3.2.1.min.js"></script>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/static/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/static/css/style.css">
+
+
+</head>
+<body>
+<div class="container">
+    <div class="form row">
+        <div class="form-horizontal col-md-offset-3">
+            <h1>TRAVEL PLANNER</h1>
+            <form>
+                <div class="col-md-9">
+                    <div class="form-group">
+                        <input class="form-control required" type="text" placeholder="destination" id="destination"
+                               name="destination" autofocus="autofocus" maxlength="100"/>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control required" type="text" placeholder="country" id="country"
+                               name="country" maxlength="30"/>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control required" type="text" placeholder="interests" id="interests"
+                               name="interests" maxlength="30"/>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control required" type="text" placeholder="startday" id="startday"
+                               name="startday" maxlength="30"/>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control required" type="text" placeholder="endday" id="endday"
+                               name="endday" maxlength="30"/>
+                    </div>
+                    <div class="form-group col-md-offset-9">
+                        <button type="submit" class="btn btn-success pull-right" name="search">Search</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
