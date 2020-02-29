@@ -15,32 +15,32 @@
 </head>
 <body>
 <div class="container">
-    <form>
+    <form action="/testpage" method="post">
         <div class="form">
             <h2 class="col-md-offset-2">Travel Itinerary Planner</h2>
             <h3 class="col-md-offset-2"> Destination</h3>
-            <input class="col-md-offset-2" placeholder="Input your destination" type="text">
+            <input class="col-md-offset-2" placeholder="Input your destination" type="text" name="destination">
             <h3 class="col-md-offset-2">Airline</h3>
-            <input class="col-md-offset-2" type="text" placeholder="start place" id="datetimepicker" style="width:28%"/>
-            <i class="fas fa-plane"></i> <input type="text" placeholder="end place" style="width:28%"><!DOCTYPE html>
+            <input class="col-md-offset-2" type="text" name="startplace" placeholder="startplace" id="datetimepicker" style="width:28%"/>
+            <i class="fas fa-plane"></i> <input type="text" name="endplace" placeholder="endplace" style="width:28%">
             <label>Travellers</label>
-            <select>
-                <option value="volvo">1</option>
-                <option value="saab">2</option>
-                <option value="opel">3</option>
-                <option value="audi">4</option>
-                <option value="audi">5</option>
+            <select name="travellers">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
             </select>
             <h3 class="col-md-offset-2">Date</h3>
             <div class='input-group date col-md-offset-2' id='datetimepicker1' style="width:50%">
-                <input type='text' class="form-control" placeholder="start"/>
+                <input type='text' class="form-control" placeholder="start" name="startday"/>
                 <span class="input-group-addon">
                     <span class="glyphicon glyphicon-calendar"></span>
                 </span>
             </div>
             <br>
             <div class='input-group date col-md-offset-2' id='datetimepicker2' style="width:50%">
-                <input type='text' class="form-control" placeholder="end"/>
+                <input type='text' class="form-control" placeholder="end" name="endday"/>
                 <span class="input-group-addon">
                     <span class="glyphicon glyphicon-calendar"></span>
                 </span>
@@ -48,48 +48,36 @@
             <h3 class="col-md-offset-2">Activity Preference</h3>
             <div>
                 <label class="checkbox-inline col-md-offset-2 ">
-                    <input type="checkbox" id="inlineCheckbox1" value="option1"> Indoor
+                    <input type="checkbox"  value="Indoor" name="interest"> Indoor
                 </label>
                 <br>
                 <label class="checkbox-inline col-md-offset-2 ">
-                    <input type="checkbox" id="inlineCheckbox2" value="option2"> Outdoor
+                    <input type="checkbox"  value="Outdoor" name="interest"> Outdoor
                 </label>
                 <br>
                 <label class="checkbox-inline col-md-offset-2">
-                    <input type="checkbox" id="inlineCheckbox3" value="option3"> WildLife
+                    <input type="checkbox"  value="WildLife" name="interest"> WildLife
                 </label>
                 <br>
                 <label class="checkbox-inline col-md-offset-2">
-                    <input type="checkbox" id="inlineCheckbox3" value="option3"> History
+                    <input type="checkbox" value="History" name="interest" > History
                 </label>
-
-
             </div>
             <br>
-            <input class="col-md-offset-5 btn btn-success"" type="submit" value="Search for Plan">
-            <br>
-            <br>
-            <br>
+            <input class="col-md-offset-5 btn btn-success" type="submit" value="Search for Plan">
+            <br><br><br>
         </div>
-
-
+    </form>
 </div>
-
-
-<form>
-
-
 </body>
 
 <script>
     $(function () {
         $('#datetimepicker1').datetimepicker({
             format: 'YYYY-MM-DD  hh:mm',
-
         });
         $('#datetimepicker2').datetimepicker({
             format: 'YYYY-MM-DD hh:mm',
-
         });
     });
 </script>
