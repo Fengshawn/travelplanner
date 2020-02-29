@@ -1,5 +1,7 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 body {
-    background: url("/static/images/s6.jpg");
+	font-family:sans-serif;
+    background: url("/static/images/s5.jpg");
     animation-name: myfirst;
     animation-duration: 12s;
     /*变换时间*/
@@ -10,44 +12,30 @@ body {
     animation-play-state: running;
     /*动画开始运行*/
 }
-
-@keyframes myfirst {
-    0% {
-        background: url("/static/images/s1.jpg");
-    }
-    20% {
-        background: url("/static/images/s2.jpg");
-    }
-    40% {
-        background: url("/static/images/s3.jpg");
-    }
-    60% {
-        background: url("/static/images/s4.jpg");
-    }
-    100% {
-        background: url("/static/images/s5.jpg");
-    }
+h2{
+	float:left;
+	color:black;
+	font-size:40px;
+	
+}
+.form #checkbox-inline label{
+	
+	color:white;
+	font-size:20px;
+	text-shadow: 5px 5px 5px #87CEEB;
 }
 
+
 .form {
-    background: rgba(255, 255, 255, 0.2);
-    width: 400px;
+    background: rgba(255, 255, 255, 1);
+    width: 650px;
     margin: 120px auto;
 }
 
 /*阴影*/
-.fa {
-    display: inline-block;
-    top: 27px;
-    left: 6px;
-    position: relative;
-    color: #ccc;
-}
 
-input[type="text"], input[type="password"] {
-    padding-left: 26px;
-}
-
-.checkbox {
-    padding-left: 21px;
-}
+input[type=submit]{
+ 			width: 130px;
+ 			height: 60px;
+ 			
+ 		}

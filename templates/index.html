@@ -7,43 +7,90 @@
     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
     <script src="/static/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/static/css/style.css">
-
-
+    <script src="https://cdn.bootcss.com/moment.js/2.18.1/moment-with-locales.min.js"></script>
+    <link href="https://cdn.bootcss.com/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css"
+          rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fc95cba7ed.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
 </head>
 <body>
 <div class="container">
-    <div class="form row">
-        <div class="form-horizontal col-md-offset-3">
-            <h1>TRAVEL PLANNER</h1>
-            <form>
-                <div class="col-md-9">
-                    <div class="form-group">
-                        <input class="form-control required" type="text" placeholder="destination" id="destination"
-                               name="destination" autofocus="autofocus" maxlength="100"/>
-                    </div>
-                    <div class="form-group">
-                        <input class="form-control required" type="text" placeholder="country" id="country"
-                               name="country" maxlength="30"/>
-                    </div>
-                    <div class="form-group">
-                        <input class="form-control required" type="text" placeholder="interests" id="interests"
-                               name="interests" maxlength="30"/>
-                    </div>
-                    <div class="form-group">
-                        <input class="form-control required" type="text" placeholder="startday" id="startday"
-                               name="startday" maxlength="30"/>
-                    </div>
-                    <div class="form-group">
-                        <input class="form-control required" type="text" placeholder="endday" id="endday"
-                               name="endday" maxlength="30"/>
-                    </div>
-                    <div class="form-group col-md-offset-9">
-                        <button type="submit" class="btn btn-success pull-right" name="search">Search</button>
-                    </div>
-                </div>
-            </form>
+    <form>
+        <div class="form">
+            <h2 class="col-md-offset-2">Travel Itinerary Planner</h2>
+            <h3 class="col-md-offset-2"> Destination</h3>
+            <input class="col-md-offset-2" placeholder="Input your destination" type="text">
+            <h3 class="col-md-offset-2">Airline</h3>
+            <input class="col-md-offset-2" type="text" placeholder="start place" id="datetimepicker" style="width:28%"/>
+            <i class="fas fa-plane"></i> <input type="text" placeholder="end place" style="width:28%"><!DOCTYPE html>
+            <label>Travellers</label>
+            <select>
+                <option value="volvo">1</option>
+                <option value="saab">2</option>
+                <option value="opel">3</option>
+                <option value="audi">4</option>
+                <option value="audi">5</option>
+            </select>
+            <h3 class="col-md-offset-2">Date</h3>
+            <div class='input-group date col-md-offset-2' id='datetimepicker1' style="width:50%">
+                <input type='text' class="form-control" placeholder="start"/>
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+            <br>
+            <div class='input-group date col-md-offset-2' id='datetimepicker2' style="width:50%">
+                <input type='text' class="form-control" placeholder="end"/>
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+            <h3 class="col-md-offset-2">Activity Preference</h3>
+            <div>
+                <label class="checkbox-inline col-md-offset-2 ">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> Indoor
+                </label>
+                <br>
+                <label class="checkbox-inline col-md-offset-2 ">
+                    <input type="checkbox" id="inlineCheckbox2" value="option2"> Outdoor
+                </label>
+                <br>
+                <label class="checkbox-inline col-md-offset-2">
+                    <input type="checkbox" id="inlineCheckbox3" value="option3"> WildLife
+                </label>
+                <br>
+                <label class="checkbox-inline col-md-offset-2">
+                    <input type="checkbox" id="inlineCheckbox3" value="option3"> History
+                </label>
+
+
+            </div>
+            <br>
+            <input class="col-md-offset-5 btn btn-success"" type="submit" value="Search for Plan">
+            <br>
+            <br>
+            <br>
         </div>
-    </div>
+
+
 </div>
+
+
+<form>
+
+
 </body>
+
+<script>
+    $(function () {
+        $('#datetimepicker1').datetimepicker({
+            format: 'YYYY-MM-DD  hh:mm',
+
+        });
+        $('#datetimepicker2').datetimepicker({
+            format: 'YYYY-MM-DD hh:mm',
+
+        });
+    });
+</script>
 </html>
