@@ -1,9 +1,7 @@
-from flask import Flask, render_template, request,Session
-import sys
+from flask import Flask, render_template, request
 import pdfkit
-config = pdfkit.configuration(wkhtmltopdf='D:\\wkhtmltopdf\\bin\\wkhtmltopdf.exe')
+#config = pdfkit.configuration(wkhtmltopdf='D:\\wkhtmltopdf\\bin\\wkhtmltopdf.exe')
 app = Flask(__name__)
-sys.path.append("../../..")
 
 
 @app.route('/')
@@ -20,14 +18,7 @@ def line():
     endday = request.form.get('endday')
     interest = request.form.getlist('interest')
     travellers = request.form.get('travellers')
-    Session['destination']=destination
-    Session['Airline_start']=Airline_start
-    Session['Airline_end']=Airline_end
-    Session['startday']=startday
-    Session['endday']=endday
-    Session['interest']=interest
-    Session['travellers']=travellers
-    return render_template("line.html", destination= Session['destination'],
+    return render_template("line.html", destination= destination,
                            startplace=Airline_start, endplace=Airline_end, travellers=travellers,
                            startday=startday, endday=endday,
                            interest=interest)
