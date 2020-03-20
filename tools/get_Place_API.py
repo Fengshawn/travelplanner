@@ -20,7 +20,8 @@ all_place = gmaps.places_nearby(location=' 53.3841600, -1.4754100', radius=40000
 print(all_place)
 tempMark = list()
 for place in all_place['results']:
-    tempMark.append(place['rating'])
+    if(('rating') in place):
+        tempMark.append(place['rating'])
 for i in tempMark:
     if i==0:
         tempMark.remove(i)
