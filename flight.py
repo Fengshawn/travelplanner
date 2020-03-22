@@ -1,8 +1,18 @@
-"""
-@author:ZRM
-@file:flight.py
-@time:2020/03/22
-"""
+from amadeus import Client, ResponseError
 
-if __name__ == "__main__":
-    pass
+amadeus = Client(
+    client_id='YhUHykQeccgseWSSARlxtfIAzhdGgTM2',
+    client_secret='IWBwclckwNgBKNWr'
+)
+
+def get_flight(start_place_code,end_place_code,start_data,traveller):
+    try:
+        response = amadeus.shopping.flight_offers_search.get(
+            originLocationCode=start_place_code,
+            destinationLocationCode=end_place_code,
+            departureDate=start_data,
+            adults=traveller)
+        return response
+    except ResponseError as error:
+        print(error)
+

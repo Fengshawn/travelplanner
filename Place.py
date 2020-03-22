@@ -8,10 +8,8 @@ import json
 import time
 import urllib
 from urllib.request import urlopen
-
 import pprint
 import googlemaps
-
 import numpy as np
 
 API_KEY = 'AIzaSyDVs1QGncUOixJm3-ODbkg_OZ4THdknzwI'
@@ -44,5 +42,16 @@ for place in all_place['results']:
     # print(place_scope)
     print("照片相关信息", place_photo[0]['html_attributions'])
     print("-------------------------------------------------")
-    if __name__ == "__main__":
-        pass
+
+
+def get_place(location_details, radius_details, open_now_details, type_details):
+    all_place = gmaps.places_nearby(location=location_details, radius=radius_details, open_now=open_now_details,
+                                    type=type_details)
+    #This is a list
+    tempMark = list()
+    for place in all_place['results']:
+        if (('rating') in place):
+            tempMark.append(place['rating'])
+    for i in tempMark:
+        if i == 0:
+            tempMark.remove(i)
