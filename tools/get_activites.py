@@ -1,6 +1,6 @@
 """
 @author:ZRM
-@file:get_Place_API.py
+@file:get_activites.py
 @time:2020/03/19
 maps_key = 'AIzaSyDVs1QGncUOixJm3-ODbkg_OZ4THdknzwI'
 """
