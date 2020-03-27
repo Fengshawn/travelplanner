@@ -1,14 +1,12 @@
 from flask import Flask, render_template, request
 import pdfkit
 from flight import get_flight
-
+from Models import flight
 # config = pdfkit.configuration(wkhtmltopdf='D:\\wkhtmltopdf\\bin\\wkhtmltopdf.exe')
 app = Flask(__name__)
 
 place_dict = {'beijing': 'PEK', '北京': 'PEK', 'Beijing': 'PEK', 'BEIJING': 'PEK', 'London': 'LHR', "伦敦": 'LHR',
               'london': 'LHR'}
-
-
 @app.route('/')
 def index():
     return render_template("index.html")
@@ -22,18 +20,6 @@ temp_package = 'test'
 temp_stop_times = 'test'
 temp_details = 'test'
 temp_cabin = 'test'
-
-
-class flight():
-    def __init__(self, name, time, price, stop_times, package, details, cabin):
-        self.name = name
-        self.time = time
-        self.price = price
-        self.stop_times = stop_times
-        self.package = package
-        self.details = details
-        self.cabin = cabin
-
 
 @app.route('/result', methods=["POST", "GET"])
 def result():

@@ -1,5 +1,4 @@
 from amadeus import Client, ResponseError
-import jsonify
 
 amadeus = Client(
     client_id='YhUHykQeccgseWSSARlxtfIAzhdGgTM2',
@@ -12,20 +11,20 @@ try:
         destinationLocationCode='BKK',
         departureDate='2020-07-01',
         adults=1)
-    print(response.data)
-    # for i in range(len(response.data[0]['itineraries'][0]['segments'])):
-    #     print("飞机信息：", response.data[0]['validatingAirlineCodes'][0],
-    #           response.data[0]['itineraries'][0]['segments'][i]['aircraft']['code'])
-    #     if ('terminal' in response.data[0]['itineraries'][0]['segments'][i]['departure']):
-    #         print("在这里转机或者出发Terminal：", response.data[0]['itineraries'][0]['segments'][i]['departure']['terminal'])
-    #     print("在时间出发", response.data[0]['itineraries'][0]['segments'][i]['departure']['at'])
-    #
-    #     print("到达第", i + 1, "站")
-    #     #print("飞机信息：", response.data[0]['validatingAirlineCodes'][0])
-    #     print(response.data[0]['itineraries'][0]['segments'][i]['arrival']['iataCode'])
-    #     if ('terminal' in response.data[0]['itineraries'][0]['segments'][i]['departure']):
-    #         print("在这里转机或者出发Terminal", response.data[0]['itineraries'][0]['segments'][i]['departure']['terminal'])
-    #     print("到达时间：", response.data[0]['itineraries'][0]['segments'][i]['arrival']['at'])
+
+    for i in range(len(response.data[0]['itineraries'][0]['segments'])):
+        print("飞机信息：", response.data[0]['validatingAirlineCodes'][0],
+              response.data[0]['itineraries'][0]['segments'][i]['aircraft']['code'])
+        if ('terminal' in response.data[0]['itineraries'][0]['segments'][i]['departure']):
+            print("在这里转机或者出发Terminal：", response.data[0]['itineraries'][0]['segments'][i]['departure']['terminal'])
+        print("在时间出发", response.data[0]['itineraries'][0]['segments'][i]['departure']['at'])
+
+        print("到达第", i + 1, "站")
+        #print("飞机信息：", response.data[0]['validatingAirlineCodes'][0])
+        print(response.data[0]['itineraries'][0]['segments'][i]['arrival']['iataCode'])
+        if ('terminal' in response.data[0]['itineraries'][0]['segments'][i]['departure']):
+            print("在这里转机或者出发Terminal", response.data[0]['itineraries'][0]['segments'][i]['departure']['terminal'])
+        print("到达时间：", response.data[0]['itineraries'][0]['segments'][i]['arrival']['at'])
 
     # for i in range(len(response.data)):
     #     # 一共有N站需要停靠
@@ -51,12 +50,6 @@ try:
     #         print("行李额度", 46, "KG")
     #     print("---------------------------------------")
     #
-
-
-
-
-
-
 
 except ResponseError as error:
     print(error)
