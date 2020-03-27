@@ -99,6 +99,7 @@ def result():
 
         flight1 = flight(temp_name, temp_time, temp_price, temp_stop_times, temp_package, temp_details, temp_cabin)
         all_flight.append(flight1)
+
     return render_template("result.html", name=all_flight[0].name, time=all_flight[0].time
                            , price=all_flight[0].price, package=all_flight[0].package,
                            cabin=all_flight[0].cabin, details=all_flight[0].details)
