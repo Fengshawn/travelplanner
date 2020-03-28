@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 import pdfkit
-from flight import get_flight
+from Flight import get_flight
 from Models import flight
 # config = pdfkit.configuration(wkhtmltopdf='D:\\wkhtmltopdf\\bin\\wkhtmltopdf.exe')
 app = Flask(__name__)

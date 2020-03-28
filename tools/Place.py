@@ -14,7 +14,7 @@ import numpy as np
 
 API_KEY = 'AIzaSyDVs1QGncUOixJm3-ODbkg_OZ4THdknzwI'
 gmaps = googlemaps.Client(key=API_KEY)
-all_place = gmaps.places_nearby(location=' 53.3841600, -1.4754100', radius=40000, open_now=False, type='cafe')
+all_place = gmaps.places_nearby(location='53.3841600, -1.4754100', radius=40000, open_now=False, type='hotel')
 print(all_place)
 tempMark = list()
 for place in all_place['results']:

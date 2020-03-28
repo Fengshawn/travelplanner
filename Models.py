@@ -14,3 +14,20 @@ class flight():
         self.package = package
         self.details = details
         self.cabin = cabin
+
+
+class hotel():
+    def __init__(self, name, price, facility, rating, communication):
+        self.name = name
+        self.price = price
+        self.facility = facility
+        self.rating = rating
+        self.communication = communication
+
+
+class attraction():
+    def __init__(self, name, price, type, rating):
+        self.name = name
+        self.price = price
+        self.type = type
+        self.rating = rating

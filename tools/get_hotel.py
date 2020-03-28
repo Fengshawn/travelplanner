@@ -10,11 +10,12 @@ try:
     hotelid = response.data[1]['hotel']['hotelId']
     print(hotelid)
     # 2nd endpoint - Select one hotel and query it for offers
-    resp = amadeus.shopping.hotel_offers_by_hotel.get(hotelId = 'BGMILBGB')
+    resp = amadeus.shopping.hotel_offers_by_hotel.get(hotelId = hotelid)
     print(resp.data)
 
    # Confirm the availability of a specific offer 
-    resp2 = amadeus.shopping.hotel_offer('XXX').get()
+   #  resp2 = amadeus.shopping.hotel_offer('XXX').get()
+   #  print(resp2)
 
 except ResponseError as error:
     print(error) 
