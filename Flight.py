@@ -101,6 +101,6 @@ def retrive_flight_data(start_place_code, end_place_code, start_data, traveller)
         all_flight_list.append(temp_flight)
     return all_flight_list
 
-
-flight_list = retrive_flight_data(start_place_code, end_place_code, start_data, traveller)
-print(flight_list[1].details)
+#
+# flight_list = retrive_flight_data(start_place_code, end_place_code, start_data, traveller)
+# print(flight_list[1].details)
