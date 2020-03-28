@@ -2,6 +2,7 @@ from flask import Flask, render_template, request
 import pdfkit
 from Flight import get_flight
 from Models import flight
+import json
 # config = pdfkit.configuration(wkhtmltopdf='D:\\wkhtmltopdf\\bin\\wkhtmltopdf.exe')
 app = Flask(__name__)
 
@@ -89,7 +90,12 @@ def result():
     return render_template("result.html", name=all_flight[0].name, time=all_flight[0].time
                            , price=all_flight[0].price, package=all_flight[0].package,
                            cabin=all_flight[0].cabin, details=all_flight[0].details)
-
+# testInfo={}
+# @app.route('/result', methods=['GET', 'POST'])  # 路由
+# def test_post():
+#     testInfo['name'] = 'xiaoliao'
+#     testInfo['age'] = '28'
+#     return json.dumps(testInfo)
 
 if __name__ == '__main__':
     app.run()
