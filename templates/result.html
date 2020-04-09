@@ -1,86 +1,99 @@
+<!--   @author:Areej -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="UTF-8"/>
+    <title>Travel Planner</title>
+    <script src="/static/jquery/jquery-3.2.1.min.js"></script>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/static/css/resStyle.css"/>
+
+    <script
+            src="https://kit.fontawesome.com/fc95cba7ed.js"
+            crossorigin="anonymous"
+    ></script>
+
 </head>
-<button id="renderPdf">PDF Document</button>
 <body>
+<div class="container top">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="panel panel-default">
+                <i class="fas fa-plane" style="font-size:36px;float:right"></i>
+                <h2 style="float:left;margin-top:0px !important">Plane Information</h2>
+                <div style="margin-top:5%;margin-left:1px">
+                    <div style="display:flex">
+                        <h6 style="color:grey; font-weight:bolder">Plane Flight Name</h6>&nbsp
+                        <h6 style="font-weight:bolder;color:white;background-color:#000261">{{ name }}</h6>
+                    </div>
+                    <div style="display:flex">
+                        <h6 style="color:grey; font-weight:bolder">Price</h6>&nbsp
+                        <h6 style="font-weight:bolder;margin-top:0px !important">{{ price }} GBP</h6>
+                    </div>
 
-<h2>Plane Information</h2>
-<br>
-Plane Flight Name:{{ name }}
-<br>
-Plane Flight Time:{{ time }}
-<br>
-Plane Flight Price:{{ price }}
-<br>
-Plane Flight Package:{{ package }}
-<br>
-Plane Flight Cabin:{{ cabin }}
-<br>
-Plane Flight details:{{ details }}
-<br>
-<script type="text/javascript" src="/static/js/html2canvas.js"></script>
-<script type="text/javascript" src="/static/js/jsPdf.debug.js"></script>
-<script type="text/javascript">
-    var downPdf = document.getElementById("renderPdf");
+                    <div style="display:flex">
+                        <h6 style="color:grey; font-weight:bolder">Plane Flight Cabin</h6>&nbsp
+                        <h6 style="font-weight:bolder">{{ cabin }}</h6>
+                    </div>
 
-    downPdf.onclick = function () {
-        html2canvas(document.body, {
-            onrendered: function (canvas) {
+                    <h6>Plane Flight details:{{ details }}</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="panel panel-default">
+                <i class="fa fa-hotel" style="font-size:36px;float:right"></i>
+                <h2 style="float:left;margin-top:0px !important">Hotel Information</h2>
+                <div style="margin-top:10%;margin-left:1px">
+                    <h6>Hotel Name:{{ hotel_data["name"] }}</h6>
+                    <h6>Hotel Address:{{ hotel_data["address"] }}</h6>
+                    <h6>Hotel Per Night Price:{{ hotel_data["rate"] }}</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% for day,item in days_activities %}
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="panel panel-default">
+                    <div class="">
+                        <h5>day {{ day }}</h5>
+                    </div>
+                    <h6>Category: {{ item[0][0] }}</h6>
+                    <h6>Name: {{ item[0][1] }} </h6>
+                    <h6>Rating: {{ item[0][2] }} </h6>
+                    <h6>Address: {{ item[0][3] }} </h6>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="panel panel-default">
+                    <div class="">
+                        <h5>day {{ day }}</h5>
+                    </div>
+                    <h6>Category: {{ item[1][0] }}</h6>
+                    <h6>Name: {{ item[1][1] }} </h6>
+                    <h6>Rating: {{ item[1][2] }} </h6>
+                    <h6>Address: {{ item[1][3] }} </h6>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="panel panel-default">
+                    <div class="">
+                        <h5>day {{ day }}</h5>
+                    </div>
+                    <h6>Category: {{ item[2][0] }}</h6>
+                    <h6>Name: {{ item[2][1] }} </h6>
+                    <h6>Rating: {{ item[2][2] }} </h6>
+                    <h6>Address: {{ item[2][3] }} </h6>
+                </div>
+            </div>
 
-                var contentWidth = canvas.width;
-                var contentHeight = canvas.height;
-
-                //一页pdf显示html页面生成的canvas高度;
-                var pageHeight = contentWidth / 595.28 * 841.89;
-                //未生成pdf的html页面高度
-                var leftHeight = contentHeight;
-                //pdf页面偏移
-                var position = 0;
-                //a4纸的尺寸[595.28,841.89]，html页面生成的canvas在pdf中图片的宽高
-                var imgWidth = 555.28;
-                var imgHeight = 555.28 / contentWidth * contentHeight;
-
-                var pageData = canvas.toDataURL('image/jpeg', 1.0);
-
-                var pdf = new jsPDF('', 'pt', 'a4');
-                //有两个高度需要区分，一个是html页面的实际高度，和生成pdf的页面高度(841.89)
-                //当内容未超过pdf一页显示的范围，无需分页
-                if (leftHeight < pageHeight) {
-                    pdf.addImage(pageData, 'JPEG', 20, 0, imgWidth, imgHeight);
-                } else {
-                    while (leftHeight > 0) {
-                        pdf.addImage(pageData, 'JPEG', 20, position, imgWidth, imgHeight)
-                        leftHeight -= pageHeight;
-                        position -= 841.89;
-                        //避免添加空白页
-                        if (leftHeight > 0) {
-                            pdf.addPage();
-                        }
-                    }
-                }
-                pdf.save('content.pdf');
-            },
-            background: '#FFFFFF'
-        })
-    }
-
-</script>
-<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
-<script>
-    $.ajax({
-        url: "result",
-        type: "GET",
-        dataType: "json",
-        success: function (data) {
-            $("#name").val(data.name);
-            console.log(data)
-        }
-    })
-</script>
+        </div>
+    {% endfor %}
+</div>
 </body>
 
-</form>
+
 </html>
