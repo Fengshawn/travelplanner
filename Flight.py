@@ -107,5 +107,5 @@ def retrive_flight_data(start_place_code, end_place_code, start_data, traveller)
 
 
 flight_list = retrive_flight_data(start_place_code, end_place_code, start_data, traveller)
-for i in flight_list:
-    print(i.cabin)
+# for i in flight_list:
+#     print(i.cabin)

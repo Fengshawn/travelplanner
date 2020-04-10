@@ -21,20 +21,21 @@ def get_place(start_place, days, selected_categories, activity_threshold):
     :return:
     """
     data = []
-    #auto select number of days
+    # auto select number of days
     selected_categories.append("restaurant")
     category_ref_dict = {
         "art gallery": "art_gallery",
         "tourist attraction": "tourist_attraction",
         "amusement park": "amusement_park",
         "restaurant": "restaurant",
-        "aquarium": "aquarium"
+        "aquarium": "aquarium",
+        "shopping mall": "shopping_mall"
 
     }
     params_cat = [category_ref_dict[category] for category in selected_categories]
     selected_cat_palces = {cat: [] for cat in params_cat}
 
-    key = "25cff282b29f43b9ac3aad454f1945a6"  
+    key = "25cff282b29f43b9ac3aad454f1945a6"
     geocoder = OpenCageGeocode(key)  # Gecoding Service to get coordinates of city
     result = geocoder.geocode(start_place, no_annotations='1')  # Gecoding Service API key
     longitude = result[0]['geometry']['lng']  # Parsing Latitude
@@ -43,8 +44,11 @@ def get_place(start_place, days, selected_categories, activity_threshold):
 
     for cat in params_cat:
         response = gmaps.places_nearby(location=[latitude, longitude], radius=10000, type=cat)
+
         first_try = True
+        print(response)
         next_page_token = response['next_page_token']
+
         while True:
             if first_try:
                 [selected_cat_palces[cat].append(place) for place in response['results']
@@ -53,6 +57,7 @@ def get_place(start_place, days, selected_categories, activity_threshold):
             if len(selected_cat_palces[cat]) <= days * 2:
                 response = gmaps.places_nearby(location=[latitude, longitude], radius=10000, type=cat,
                                                next_page_token=next_page_token)
+                print("response",response)
                 next_page_token = response['next_page_token']
                 [selected_cat_palces[cat].append(place) for place in response['results']
                  if len(selected_cat_palces[cat]) <= days * 2]
@@ -61,9 +66,9 @@ def get_place(start_place, days, selected_categories, activity_threshold):
     for day in range(days):  # iteration over the days
         row = []
         cats = [key for key in selected_cat_palces.keys() if key != "restaurant"]
-        cat_indices = [random.randint(0, len(cats)-1) for _ in range(activity_threshold)]
+        cat_indices = [random.randint(0, len(cats) - 1) for _ in range(activity_threshold)]
         for indx in cat_indices:
-            random_data_index = random.randint(0, len(selected_cat_palces[cats[indx]])-1)  # Select random category
+            random_data_index = random.randint(0, len(selected_cat_palces[cats[indx]]) - 1)  # Select random category
             item = selected_cat_palces[cats[indx]][random_data_index]
             selected_cat_palces[cats[indx]].pop(random_data_index)
             category = cats[indx]
@@ -79,7 +84,7 @@ def get_place(start_place, days, selected_categories, activity_threshold):
         address = cat_restaurant['vicinity']
         row.append((category, name, rating, address))
         selected_cat_palces["restaurant"].pop(random_data_index)
-        data.append((day+1, row))
+        data.append((day + 1, row))
 
     return data
 

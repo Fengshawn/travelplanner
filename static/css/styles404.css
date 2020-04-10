@@ -4,7 +4,7 @@
 }
 
 body{
-	background:url('img/bg.png') no-repeat center center #1d1d1d;
+	background:url('/static/images/bg.png') no-repeat center center #1d1d1d;
 	color:#eee;
 	font-family:Corbel,Arial,Helvetica,sans-serif;
 	font-size:13px;
@@ -13,7 +13,7 @@ body{
 #rocket{
 	width:275px;
 	height:375px;
-	background:url('img/rocket.png') no-repeat;
+	background:url('/static/images/rocket.png') no-repeat;
 	margin:140px auto 50px;
 	position:relative;
 }
@@ -27,7 +27,7 @@ body{
 	left:50px;
 	width:80px;
 	height:80px;
-	background:url('img/steam.png') no-repeat;
+	background:url('/static/images/steam.png') no-repeat;
 	opacity:0.8;
 }
 

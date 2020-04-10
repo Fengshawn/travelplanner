@@ -17,11 +17,10 @@ class flight():
 
 
 class hotel():
-    def __init__(self, name, price, facility, rating, communication):
+    def __init__(self, name, price, position, communication):
         self.name = name
         self.price = price
-        self.facility = facility
-        self.rating = rating
+        self.position = position
         self.communication = communication
 
 
