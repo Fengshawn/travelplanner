@@ -17,7 +17,7 @@ def setUp():
     chromeOptions.add_experimental_option("prefs", prefs)
     # 启动带有自定义设置的Chrome浏览器
     driver = webdriver.Chrome(executable_path="e:\\chromedriver", \
-                                   options=chromeOptions)
+                              options=chromeOptions)
 
 
 setUp()
