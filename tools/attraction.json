@@ -1,372 +1,393 @@
-[
-  {
-    'type': 'location',
-    'subType': 'POINT_OF_INTEREST',
-    'id': '1C3E0AC81C',
-    'self': {
-      'href': 'https://test.api.amadeus.com/v1/reference-data/locations/pois/1C3E0AC81C',
-      'methods': [
-        'GET'
+{
+  'html_attributions': [],
+  'results': [
+    {
+      'geometry': {
+        'location': {
+          'lat': 51.53646029999999,
+          'lng': -0.1125522
+        },
+        'viewport': {
+          'northeast': {
+            'lat': 51.53778198029149,
+            'lng': -0.111228469708498
+          },
+          'southwest': {
+            'lat': 51.53508401970849,
+            'lng': -0.113926430291502
+          }
+        }
+      },
+      'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png',
+      'id': '17a71b30447a71562f45f42bcadcdfedf6176c55',
+      'name': 'Barnard Adventure Playground',
+      'photos': [
+        {
+          'height': 3104,
+          'html_attributions': [
+            '<a href="https://maps.google.com/maps/contrib/114861202307738427541">FY Lau</a>'
+          ],
+          'photo_reference': 'CmRaAAAAKI0qN8AyH339fNxhXvEy_pt_zEisr-teoj2UtyGdMgEM3aaSThkPVLlsO1G2ZRT974wjpAN8AI6SU6ape6C_7zPKKhL5kEYvhArvooH4HCYjfepoUFfPInLp3riCf6ATEhBMBwfUYSt2q0ca92eafR8kGhTmM151WlMargzIobBYmrdfv_9Pnw',
+          'width': 4192
+        }
+      ],
+      'place_id': 'ChIJDfKh-GkbdkgRqs2ecF8SYIE',
+      'plus_code': {
+        'compound_code': 'GVPP+HX London, United Kingdom',
+        'global_code': '9C3XGVPP+HX'
+      },
+      'rating': 4.2,
+      'reference': 'ChIJDfKh-GkbdkgRqs2ecF8SYIE',
+      'scope': 'GOOGLE',
+      'types': [
+        'amusement_park',
+        'point_of_interest',
+        'establishment'
+      ],
+      'user_ratings_total': 90,
+      'vicinity': 'Junction with, Charlotte Terrace, Copenhagen Street, London'
+    },
+    {
+      'geometry': {
+        'location': {
+          'lat': 51.5131276,
+          'lng': -0.1405909
+        },
+        'viewport': {
+          'northeast': {
+            'lat': 51.5144923302915,
+            'lng': -0.139198119708498
+          },
+          'southwest': {
+            'lat': 51.5117943697085,
+            'lng': -0.141896080291502
+          }
+        }
+      },
+      'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png',
+      'id': 'f72c93ef75289e6731fb9b617babbd0ac19fbc1b',
+      'name': 'Peppa pig world',
+      'place_id': 'ChIJq1RRb5EFdkgRqcFmTxpS6ZI',
+      'plus_code': {
+        'compound_code': 'GV75+7Q London, United Kingdom',
+        'global_code': '9C3XGV75+7Q'
+      },
+      'rating': 5,
+      'reference': 'ChIJq1RRb5EFdkgRqcFmTxpS6ZI',
+      'scope': 'GOOGLE',
+      'types': [
+        'amusement_park',
+        'point_of_interest',
+        'establishment'
+      ],
+      'user_ratings_total': 1,
+      'vicinity': 'Regent Street, London'
+    },
+    {
+      'geometry': {
+        'location': {
+          'lat': 51.5082055,
+          'lng': -0.1589031
+        },
+        'viewport': {
+          'northeast': {
+            'lat': 51.51011108029149,
+            'lng': -0.1553577000000001
+          },
+          'southwest': {
+            'lat': 51.5074131197085,
+            'lng': -0.1600848999999999
+          }
+        }
+      },
+      'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png',
+      'id': '3efdda4bdce6bc4ed18fda8b59545bf2b24233d5',
+      'name': 'Hyde Park Winter Wonderland',
+      'photos': [
+        {
+          'height': 743,
+          'html_attributions': [
+            '<a href="https://maps.google.com/maps/contrib/105263706949177379445">Hyde Park Winter Wonderland</a>'
+          ],
+          'photo_reference': 'CmRaAAAA6UDmsE7iBitYJpgg5iv8w_3A60TI2HnAuveWgHpo4F3_PuHCOY5spfGfoyHW1Y4xEoA00pynSbWIVgBwKcubJVccmpPBPMWV97rIr_phGElmw7mifgKiWOuA0iG-XR7IEhBeuvpNdEzcvuqbEGBwB3QwGhQR0hQAxdYv01w2M11Pd0GHEzpKrQ',
+          'width': 1476
+        }
+      ],
+      'place_id': 'ChIJwQ4bGDYFdkgRS7o7F9kU7Zw',
+      'plus_code': {
+        'compound_code': 'GR5R+7C London, United Kingdom',
+        'global_code': '9C3XGR5R+7C'
+      },
+      'rating': 4.4,
+      'reference': 'ChIJwQ4bGDYFdkgRS7o7F9kU7Zw',
+      'scope': 'GOOGLE',
+      'types': [
+        'tourist_attraction',
+        'amusement_park',
+        'point_of_interest',
+        'establishment'
+      ],
+      'user_ratings_total': 1841,
+      'vicinity': 'Winter Wonderland, Hyde Park Street, London'
+    },
+    {
+      'geometry': {
+        'location': {
+          'lat': 51.5041053,
+          'lng': -0.1593346
+        },
+        'viewport': {
+          'northeast': {
+            'lat': 51.5054542802915,
+            'lng': -0.157985619708498
+          },
+          'southwest': {
+            'lat': 51.5027563197085,
+            'lng': -0.160683580291502
+          }
+        }
+      },
+      'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png',
+      'id': '67e0f4b1daaf6b6ee53a387b5fdfe526f1556969',
+      'name': 'Serpentine Waterfall',
+      'opening_hours': {
+        'open_now': True
+      },
+      'photos': [
+        {
+          'height': 3024,
+          'html_attributions': [
+            '<a href="https://maps.google.com/maps/contrib/105760814709120754284">Eduardo Moreno</a>'
+          ],
+          'photo_reference': 'CmRaAAAAli5YLDJDFdvvdctSDffhNFZ70AoXzAfIiuf3IgKedaFVnbho74epXepNAZyfuiUqG99NSbRL2mbDUSP9aRiCwtXJUj5xJ4QUlZa991kFErqIFio0Hxg035MX2fz7CCkDEhAcpPjQFH6Ddrctpu56_H7yGhSiwu0GawMUzz2i9hMsNHkEvsb0Vw',
+          'width': 4032
+        }
+      ],
+      'place_id': 'ChIJWfNP4zkFdkgR9RT5rddLwGg',
+      'plus_code': {
+        'compound_code': 'GR3R+J7 London, United Kingdom',
+        'global_code': '9C3XGR3R+J7'
+      },
+      'rating': 4.7,
+      'reference': 'ChIJWfNP4zkFdkgR9RT5rddLwGg',
+      'scope': 'GOOGLE',
+      'types': [
+        'amusement_park',
+        'point_of_interest',
+        'establishment'
+      ],
+      'user_ratings_total': 31,
+      'vicinity': 'London'
+    },
+    {
+      'geometry': {
+        'location': {
+          'lat': 51.4999486,
+          'lng': -0.0849805
+        },
+        'viewport': {
+          'northeast': {
+            'lat': 51.5013215302915,
+            'lng': -0.08375561970849797
+          },
+          'southwest': {
+            'lat': 51.4986235697085,
+            'lng': -0.08645358029150203
+          }
+        }
+      },
+      'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png',
+      'id': 'e05dedfd06a2894e2c0e0ccba51ad4e7b00442df',
+      'name': 'Alex Burrow Events',
+      'place_id': 'ChIJIUGfd1sDdkgRm5C9j_5xWZQ',
+      'plus_code': {
+        'compound_code': 'FWX8+X2 London, United Kingdom',
+        'global_code': '9C3XFWX8+X2'
+      },
+      'reference': 'ChIJIUGfd1sDdkgRm5C9j_5xWZQ',
+      'scope': 'GOOGLE',
+      'types': [
+        'amusement_park',
+        'point_of_interest',
+        'establishment'
+      ],
+      'vicinity': '12 Weston Street, London'
+    },
+    {
+      'geometry': {
+        'location': {
+          'lat': 51.5050538,
+          'lng': -0.0802634
+        },
+        'viewport': {
+          'northeast': {
+            'lat': 51.5061258802915,
+            'lng': -0.07827761970849796
+          },
+          'southwest': {
+            'lat': 51.5034279197085,
+            'lng': -0.08097558029150202
+          }
+        }
+      },
+      'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png',
+      'id': 'd1fc97ef0e8efea8b04531f649e3393318ebb6f4',
+      'name': 'Water Fountains',
+      'opening_hours': {
+        'open_now': True
+      },
+      'photos': [
+        {
+          'height': 5164,
+          'html_attributions': [
+            '<a href="https://maps.google.com/maps/contrib/106411256285119189629">Kamil Stefanski</a>'
+          ],
+          'photo_reference': 'CmRaAAAAX5aTjdvYOMahXuW3klNyrg9lvwJyzEgeSPl4xqWG3ZJy3vgSA4xePZX4N3eXIjADKvBcVL1TMhlHiOxMB0XAXTu1GbxhM-EnmCFV64kKroDntOLiKRIInlz3rrvf6kTqEhDg3_IiBeFDX3ZtuaU4iz0hGhTB33FCfqO1R3FVDEth0aZBpGXjqA',
+          'width': 2905
+        }
+      ],
+      'place_id': 'ChIJY3dGUUUDdkgRn5c35hvi4RI',
+      'plus_code': {
+        'compound_code': 'GW49+2V London, United Kingdom',
+        'global_code': '9C3XGW49+2V'
+      },
+      'rating': 4.2,
+      'reference': 'ChIJY3dGUUUDdkgRn5c35hvi4RI',
+      'scope': 'GOOGLE',
+      'types': [
+        'amusement_park',
+        'point_of_interest',
+        'establishment'
+      ],
+      'user_ratings_total': 5,
+      'vicinity': '1-2 More London Riverside, London'
+    },
+    {
+      'geometry': {
+        'location': {
+          'lat': 51.5478302,
+          'lng': -0.1512823
+        },
+        'viewport': {
+          'northeast': {
+            'lat': 51.54915328029149,
+            'lng': -0.149931919708498
+          },
+          'southwest': {
+            'lat': 51.54645531970849,
+            'lng': -0.152629880291502
+          }
+        }
+      },
+      'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png',
+      'id': '271ddc0056cbc9f28e5fa36500c396d849aec70b',
+      'name': "Tommy Pterodactyl's International Jurassic Fun Park",
+      'photos': [
+        {
+          'height': 2128,
+          'html_attributions': [
+            '<a href="https://maps.google.com/maps/contrib/104722732368926999676">Deviprasad obey</a>'
+          ],
+          'photo_reference': 'CmRaAAAA2gNTS2-SczA3Xu8KYs73Zk7qfHnV1tCSZVZ7COWEa3jsHBF5NdJ_UPHJ1SDdkWjPvyxN05O1qwVo2OibGczh00nV6VfyW2e5XTZnVenLwfN82Xg6sKLHHj7c5ZeXTdV6EhA86VKtgEgFDvaR72p2j7WTGhT9YCKn_oH23q7LR0PK7VP_W8RTwA',
+          'width': 4608
+        }
+      ],
+      'place_id': 'ChIJnYb5h0gbdkgRxG7nFKt8zrA',
+      'plus_code': {
+        'compound_code': 'GRXX+4F London, United Kingdom',
+        'global_code': '9C3XGRXX+4F'
+      },
+      'rating': 3.4,
+      'reference': 'ChIJnYb5h0gbdkgRxG7nFKt8zrA',
+      'scope': 'GOOGLE',
+      'types': [
+        'amusement_park',
+        'point_of_interest',
+        'establishment'
+      ],
+      'user_ratings_total': 5,
+      'vicinity': 'LGF, 41 Rhyl Street, London'
+    },
+    {
+      'geometry': {
+        'location': {
+          'lat': 51.5963428,
+          'lng': -0.1315516
+        },
+        'viewport': {
+          'northeast': {
+            'lat': 51.59769178029149,
+            'lng': -0.130202619708498
+          },
+          'southwest': {
+            'lat': 51.59499381970849,
+            'lng': -0.132900580291502
+          }
+        }
+      },
+      'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png',
+      'id': 'c616106cf7ff5f55b5e1ff664b64de9eb3e24e53',
+      'name': 'Boating Lake Alexandra Palace',
+      'opening_hours': {
+        'open_now': True
+      },
+      'photos': [
+        {
+          'height': 2607,
+          'html_attributions': [
+            '<a href="https://maps.google.com/maps/contrib/107996399073453985103">jeff benjamin</a>'
+          ],
+          'photo_reference': 'CmRaAAAAAPbKlTD6_qdiznZXd9EnVo_oiL5GEmTXU59GkJeRUzSMaYJErzOv-n024eCOnKxDhXgnfjMhWHoDYOxnqF0CdFcZszmIXGF6DJ811O3oyf9S-Ti79BXd4RL0wYuH2GC8EhDOW17zdm6m1KMov2sJPyOcGhRDzuw_WAYyow-x3FBg_D1sWmMryA',
+          'width': 4032
+        }
+      ],
+      'place_id': 'ChIJV0tnSdcbdkgRIG8uWJM5XlE',
+      'plus_code': {
+        'compound_code': 'HVW9+G9 London, United Kingdom',
+        'global_code': '9C3XHVW9+G9'
+      },
+      'rating': 4.5,
+      'reference': 'ChIJV0tnSdcbdkgRIG8uWJM5XlE',
+      'scope': 'GOOGLE',
+      'types': [
+        'amusement_park',
+        'park',
+        'point_of_interest',
+        'establishment'
+      ],
+      'user_ratings_total': 85,
+      'vicinity': 'Alexandra Palace, Alexandra Palace Way, London'
+    },
+    {
+      'geometry': {
+        'location': {
+          'lat': 51.53030589999999,
+          'lng': -0.1495385
+        },
+        'viewport': {
+          'northeast': {
+            'lat': 51.5372468,
+            'lng': -0.1335311
+          },
+          'southwest': {
+            'lat': 51.523364,
+            'lng': -0.1655459
+          }
+        }
+      },
+      'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png',
+      'id': '4fc2498fdbf120931b281c10bb494745a21d4c59',
+      'name': 'River Park',
+      'place_id': 'ChIJnfnwg9sadkgRczhF7eW6JFc',
+      'reference': 'ChIJnfnwg9sadkgRczhF7eW6JFc',
+      'scope': 'GOOGLE',
+      'types': [
+        'premise',
+        'amusement_park',
+        'point_of_interest',
+        'establishment'
       ]
-    },
-    'geoCode': {
-      'latitude': 51.49932,
-      'longitude': -0.127374
-    },
-    'name': 'Westminster Abbey',
-    'category': 'SIGHTS',
-    'rank': 5,
-    'tags': [
-      'church',
-      'sightseeing',
-      'landmark',
-      'temple',
-      'tourguide',
-      'sights',
-      'historicplace',
-      'historic',
-      'restaurant',
-      'museum',
-      'attraction',
-      'activities',
-      'shopping',
-      'professionalservices',
-      'commercialplace',
-      'transport',
-      'bus',
-      'gift',
-      'sports',
-      'gym',
-      'education',
-      'train'
-    ]
-  },
-  {
-    'type': 'location',
-    'subType': 'POINT_OF_INTEREST',
-    'id': '858BEA5BC3',
-    'self': {
-      'href': 'https://test.api.amadeus.com/v1/reference-data/locations/pois/858BEA5BC3',
-      'methods': [
-        'GET'
-      ]
-    },
-    'geoCode': {
-      'latitude': 51.50893,
-      'longitude': -0.128302
-    },
-    'name': 'The National Gallery',
-    'category': 'RESTAURANT',
-    'rank': 10,
-    'tags': [
-      'restaurant',
-      'fastfood',
-      'artgallerie',
-      'museum',
-      'sightseeing',
-      'tourguide',
-      'breakfast',
-      'sights',
-      'activities',
-      'professionalservices',
-      'library',
-      'shopping',
-      'events',
-      'attraction',
-      'commercialplace',
-      'transport',
-      'train',
-      'trainstation',
-      'bar'
-    ]
-  },
-  {
-    'type': 'location',
-    'subType': 'POINT_OF_INTEREST',
-    'id': '900AAC8FED',
-    'self': {
-      'href': 'https://test.api.amadeus.com/v1/reference-data/locations/pois/900AAC8FED',
-      'methods': [
-        'GET'
-      ]
-    },
-    'geoCode': {
-      'latitude': 51.50078,
-      'longitude': -0.124601
-    },
-    'name': 'Big Ben',
-    'category': 'SIGHTS',
-    'rank': 10,
-    'tags': [
-      'landmark',
-      'sightseeing',
-      'sights',
-      'historicplace',
-      'restaurant',
-      'historic',
-      'tourguide',
-      'attraction',
-      'professionalservices',
-      'commercialplace',
-      'activities',
-      'building',
-      'events',
-      'latte'
-    ]
-  },
-  {
-    'type': 'location',
-    'subType': 'POINT_OF_INTEREST',
-    'id': '687EE8A599',
-    'self': {
-      'href': 'https://test.api.amadeus.com/v1/reference-data/locations/pois/687EE8A599',
-      'methods': [
-        'GET'
-      ]
-    },
-    'geoCode': {
-      'latitude': 51.51197,
-      'longitude': -0.121507
-    },
-    'name': 'London Transport Museum',
-    'category': 'SIGHTS',
-    'rank': 15,
-    'tags': [
-      'museum',
-      'tourguide',
-      'sightseeing',
-      'restaurant',
-      'sights',
-      'shopping',
-      'gift',
-      'attraction',
-      'bar',
-      'activities',
-      'transport',
-      'commercialplace'
-    ]
-  },
-  {
-    'type': 'location',
-    'subType': 'POINT_OF_INTEREST',
-    'id': 'F7C485F9B4',
-    'self': {
-      'href': 'https://test.api.amadeus.com/v1/reference-data/locations/pois/F7C485F9B4',
-      'methods': [
-        'GET'
-      ]
-    },
-    'geoCode': {
-      'latitude': 51.5135,
-      'longitude': -0.125673
-    },
-    'name': 'Hawksmoor Seven Dials',
-    'category': 'RESTAURANT',
-    'rank': 30,
-    'tags': [
-      'restaurant',
-      'steakhouse',
-      'grills',
-      'barbecue',
-      'breakfast',
-      'bar',
-      'nightlife',
-      'sightseeing',
-      'professionalservices',
-      'commercialplace',
-      'shopping',
-      'transport',
-      'events',
-      'activities'
-    ]
-  },
-  {
-    'type': 'location',
-    'subType': 'POINT_OF_INTEREST',
-    'id': '8F8CDBD277',
-    'self': {
-      'href': 'https://test.api.amadeus.com/v1/reference-data/locations/pois/8F8CDBD277',
-      'methods': [
-        'GET'
-      ]
-    },
-    'geoCode': {
-      'latitude': 51.51292,
-      'longitude': -0.122197
-    },
-    'name': 'Royal Opera House',
-    'category': 'SIGHTS',
-    'rank': 30,
-    'tags': [
-      'sightseeing',
-      'restaurant',
-      'events',
-      'activities',
-      'landmark',
-      'sights',
-      'historicplace',
-      'historic',
-      'theater',
-      'operahouse',
-      'musicvenue',
-      'commercialplace',
-      'attraction',
-      'tourguide',
-      'professionalservices',
-      'college',
-      'university'
-    ]
-  },
-  {
-    'type': 'location',
-    'subType': 'POINT_OF_INTEREST',
-    'id': 'CAEDDB0198',
-    'self': {
-      'href': 'https://test.api.amadeus.com/v1/reference-data/locations/pois/CAEDDB0198',
-      'methods': [
-        'GET'
-      ]
-    },
-    'geoCode': {
-      'latitude': 51.50806,
-      'longitude': -0.128039
-    },
-    'name': 'Trafalgar Square',
-    'category': 'SIGHTS',
-    'rank': 30,
-    'tags': [
-      'sightseeing',
-      'sights',
-      'landmark',
-      'restaurant',
-      'square',
-      'professionalservices',
-      'attraction',
-      'activities',
-      'transport',
-      'commercialplace',
-      'tourguide',
-      'outdoorplace',
-      'museum',
-      'bus'
-    ]
-  },
-  {
-    'type': 'location',
-    'subType': 'POINT_OF_INTEREST',
-    'id': 'BD9AC836F9',
-    'self': {
-      'href': 'https://test.api.amadeus.com/v1/reference-data/locations/pois/BD9AC836F9',
-      'methods': [
-        'GET'
-      ]
-    },
-    'geoCode': {
-      'latitude': 51.502552,
-      'longitude': -0.134958
-    },
-    'name': "St James's Park",
-    'category': 'SIGHTS',
-    'rank': 30,
-    'tags': [
-      'sightseeing',
-      'landmark',
-      'sights',
-      'historicplace',
-      'historic',
-      'park',
-      'tourguide',
-      'restaurant',
-      'activities',
-      'sports',
-      'attraction',
-      'transport',
-      'lake',
-      'square',
-      'commercialplace',
-      'nature',
-      'professionalservices',
-      'bus',
-      'metro',
-      'beauty&spas',
-      'garden'
-    ]
-  },
-  {
-    'type': 'location',
-    'subType': 'POINT_OF_INTEREST',
-    'id': 'AD00C66895',
-    'self': {
-      'href': 'https://test.api.amadeus.com/v1/reference-data/locations/pois/AD00C66895',
-      'methods': [
-        'GET'
-      ]
-    },
-    'geoCode': {
-      'latitude': 51.50226,
-      'longitude': -0.129341
-    },
-    'name': 'Churchill War Rooms',
-    'category': 'SIGHTS',
-    'rank': 30,
-    'tags': [
-      'museum',
-      'sightseeing',
-      'landmark',
-      'tourguide',
-      'sights',
-      'restaurant',
-      'historicplace',
-      'cheap',
-      'historic',
-      'attraction',
-      'commercialplace',
-      'activities',
-      'transport',
-      'shopping',
-      'latte'
-    ]
-  },
-  {
-    'type': 'location',
-    'subType': 'POINT_OF_INTEREST',
-    'id': 'C05B76EB81',
-    'self': {
-      'href': 'https://test.api.amadeus.com/v1/reference-data/locations/pois/C05B76EB81',
-      'methods': [
-        'GET'
-      ]
-    },
-    'geoCode': {
-      'latitude': 51.503387,
-      'longitude': -0.119625
-    },
-    'name': 'London Eye',
-    'category': 'SIGHTS',
-    'rank': 30,
-    'tags': [
-      'landmark',
-      'sights',
-      'historicplace',
-      'sightseeing',
-      'historic',
-      'tourguide',
-      'restaurant',
-      'activities',
-      'boat',
-      'shopping',
-      'attraction',
-      'professionalservices',
-      'nature',
-      'transport',
-      'bus',
-      'pier',
-      'port',
-      'latte',
-      'events',
-      'club',
-      'dance',
-      'bar'
-    ]
-  }
-]
+    }
+  ],
+  'status': 'OK'
+}

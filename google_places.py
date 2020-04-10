@@ -34,31 +34,38 @@ def get_place(start_place, days, selected_categories, activity_threshold):
     }
     params_cat = [category_ref_dict[category] for category in selected_categories]
     selected_cat_palces = {cat: [] for cat in params_cat}
-
     key = "25cff282b29f43b9ac3aad454f1945a6"
-    geocoder = OpenCageGeocode(key)  # Gecoding Service to get coordinates of city
-    result = geocoder.geocode(start_place, no_annotations='1')  # Gecoding Service API key
-    longitude = result[0]['geometry']['lng']  # Parsing Latitude
-    latitude = result[0]['geometry']['lat']  # Parsing Longitude
+    # Gecoding Service to get coordinates of city
+    geocoder = OpenCageGeocode(key)
+    # Gecoding Service API key
+    result = geocoder.geocode(start_place, no_annotations='1')
+    # Parsing Latitude
+    longitude = result[0]['geometry']['lng']
+    # Parsing Longitude
+    latitude = result[0]['geometry']['lat']
     gmaps = googlemaps.Client(key='AIzaSyDVs1QGncUOixJm3-ODbkg_OZ4THdknzwI')
-
     for cat in params_cat:
         response = gmaps.places_nearby(location=[latitude, longitude], radius=10000, type=cat)
-
-        first_try = True
         print(response)
-        next_page_token = response['next_page_token']
-
+        first_try = True
+        next_page_token = ''
+        if ('next_page_token' in response):
+            next_page_token = response['next_page_token']
         while True:
             if first_try:
                 [selected_cat_palces[cat].append(place) for place in response['results']
                  if len(selected_cat_palces[cat]) <= days * 2]
                 first_try = False
             if len(selected_cat_palces[cat]) <= days * 2:
-                response = gmaps.places_nearby(location=[latitude, longitude], radius=10000, type=cat,
-                                               next_page_token=next_page_token)
-                print("response",response)
-                next_page_token = response['next_page_token']
+                if (next_page_token != ''):
+                    response = gmaps.places_nearby(location=[latitude, longitude], radius=10000, type=cat,
+                                                   next_page_token=next_page_token)
+                else:
+                    response = gmaps.places_nearby(location=[latitude, longitude], radius=10000, type=cat
+                                                   )
+
+                if ('next_page_token' in response):
+                    next_page_token = response['next_page_token']
                 [selected_cat_palces[cat].append(place) for place in response['results']
                  if len(selected_cat_palces[cat]) <= days * 2]
             else:
@@ -90,7 +97,6 @@ def get_place(start_place, days, selected_categories, activity_threshold):
 
 
 if __name__ == '__main__':
-    resp = get_place('London', 1, ['art gallery', 'tourist attraction'], 2)
+    resp = get_place('London', 1, ['amusement park'], 2)
     print(resp)
-    # resp = get_place_by_id('ChIJEYfH57cEdkgRuNeOk-nbgeo')
     print("Done!")

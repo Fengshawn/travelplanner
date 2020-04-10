@@ -10,22 +10,36 @@ from locations import get_location
 app = Flask(__name__)
 
 
+@app.errorhandler(500)
+def internal_server_error(e):
+    return render_template("404.html")
+
+
+@app.errorhandler(400)
+def internal_server_error(e):
+    return render_template("404.html")
+
+
+@app.errorhandler(404)
+def internal_server_error(e):
+    return render_template("404.html")
+
 
 @app.route('/')
 def index():
     return render_template("index.html")
 
 
-
 @app.route('/result', methods=["POST", "GET"])
 def result():
+    # get information from frontend
     Airline_start = request.form.get('startplace')
     Airline_end = request.form.get('endplace')
     startday = request.form.get('startday')
     endday = request.form.get('endday')
     travellers = request.form.get('travellers')
 
-    # here transfer into code
+    # transfer into code
     Airline_start_code = str(get_location(Airline_start))
     Airline_end_code = str(get_location(Airline_end))
     startday = str(startday).strip()
@@ -42,11 +56,12 @@ def result():
     checked_cats.append('aquarium') if 'aquarium' in request.form else None
 
     # if user donot choose
-    if len(checked_cats)==1:
+    if len(checked_cats) == 1:
         checked_cats.append('art gallery')
         checked_cats.append('amusement park')
         checked_cats.append('tourist attraction')
         checked_cats.append('aquarium')
+
     # calculate the days users will travel
     days_diff = datetime.strptime(str(endday).strip(), '%Y-%m-%d') - datetime.strptime(str(startday).strip(),
                                                                                        '%Y-%m-%d')
