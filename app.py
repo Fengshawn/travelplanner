@@ -67,9 +67,9 @@ def result():
     # calculate the days users will travel
     days_diff = datetime.strptime(str(endday).strip(), '%Y-%m-%d') - datetime.strptime(str(startday).strip(),
                                                                                        '%Y-%m-%d')
-    print(days_diff)
+    days_diff = days_diff
     # get user want travel days
-    days = days_diff.days
+    days = days_diff.days+1
 
     all_flight = retrive_flight_data(Airline_start_code, Airline_end_code, startday, travellers)
     # get hotel data from here
@@ -79,10 +79,10 @@ def result():
     return render_template("result.html", name=all_flight[0].name, time=all_flight[0].time
                            , price=all_flight[0].price, package=all_flight[0].package,
                            cabin=all_flight[0].cabin, details=all_flight[0].details,
-                           # restaurant_list=restaurant_list,
+                           restaurant_list=restaurant_list,
                            hotel_data=hotel_data,
-                           # days_diff=days_diff,
-                           # days_activities=attraction_list
+                           days_diff=int(days),
+                           days_activities=attraction_list
                            )
 
 

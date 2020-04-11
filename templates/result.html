@@ -1,7 +1,7 @@
 <!--   @author:Areej -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8"/>
     <title>Travel Planner</title>
@@ -49,7 +49,7 @@
                 <div style="margin-top:10%;margin-left:1px">
                     <h6>Hotel Name:{{ hotel_data.name }}</h6>
                     <h6>Hotel Address:{{ hotel_data.position }}</h6>
-                    <h6>Hotel Per Night Price:{{ hotel_data.price }}</h6>
+                    <h6>Hotel Per Night Price(GBP):{{ hotel_data.price }}</h6>
                     <h6>Hotel Contact:{{ hotel_data.communication }}</h6>
                 </div>
             </div>
@@ -57,49 +57,41 @@
     </div>
 
 
-{#    {% for day in days_diff %}#}
-{#    <div class="row">#}
-{#        <div class="col-lg-4">#}
-{#            <div class="panel panel-default">#}
-{#                <div class="">#}
-{#                    <h5>day {{ day }}</h5>#}
-{#                </div>#}
-{#                {% for attraction in restaurant_list%}#}
-{#                    <h6>Category: {{ attraction }}</h6>#}
-{#                    <h6>Name: {{ item[0][1] }} </h6>#}
-{#                    <h6>Rating: {{ item[0][2] }} </h6>#}
-{#                    <h6>Address: {{ item[0][3] }} </h6>#}
-{#                    </div>#}
-{#                    </div>#}
-{#                    <div class="col-lg-4">#}
-{#                        <div class="panel panel-default">#}
-{#                            <div class="">#}
-{#                                <h5>day {{ day }}</h5>#}
-{#                            </div>#}
-{#                            <h6>Category: {{ item[1][0] }}</h6>#}
-{#                            <h6>Name: {{ item[1][1] }} </h6>#}
-{#                            <h6>Rating: {{ item[1][2] }} </h6>#}
-{#                            <h6>Address: {{ item[1][3] }} </h6>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                    <div class="col-lg-4">#}
-{#                        <div class="panel panel-default">#}
-{#                            <div class="">#}
-{#                                <h5>day {{ day }}</h5>#}
-{#                            </div>#}
-{#                            <h6>Category: {{ item[2][0] }}</h6>#}
-{#                            <h6>Name: {{ item[2][1] }} </h6>#}
-{#                            <h6>Rating: {{ item[2][2] }} </h6>#}
-{#                            <h6>Address: {{ item[2][3] }} </h6>#}
-{#                        </div>#}
-{#                    </div>#}
-{##}
-{#                    </div>#}
-{#                {% endfor %}#}
+    {% for day in range(1,days_diff) %}
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="panel panel-default">
+                    <div class="">
+                        <h5>day {{ day }}</h5>
+                    </div>
+                    <h6>type: {{ restaurant_list[day].type }} </h6>
+                    <h6>Name: {{ restaurant_list[day].name }} </h6>
+                    <h6>Rating: {{ restaurant_list[day].rating }} </h6>
+                    <h6>Address: {{ restaurant_list[day].address }} </h6>
+
+                </div>
+            </div>
+
+            {% for activities in  days_activities[(day-1)*2:(day)*2] %}
+
+                <div class="col-lg-4">
+                    <div class="panel panel-default">
+                        <div class="">
+                            <h5>day {{ day }}</h5>
+                        </div>
+                        <h6>type: {{ activities.type }} </h6>
+                        <h6>Name: {{ activities.name }} </h6>
+                        <h6>Rating: {{ activities.rating }} </h6>
+                        <h6>Address: {{ activities.address }} </h6>
+                    </div>
+                </div>
+            {% endfor %}
 
 
+        </div>
+    {% endfor %}
 </div>
-
+<button></button>
 </body>
 
 

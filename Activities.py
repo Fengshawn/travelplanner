@@ -72,8 +72,8 @@ def get_attraction(start_place, selected_categories):
             # prase information
             print(temp_response)
             attraction_number = len(temp_response['results'])
-            if (attraction_number >= 5):
-                for temp_attraction in temp_response['results'][0:5]:
+            if (attraction_number >= 15):
+                for temp_attraction in temp_response['results'][0:15]:
                     if ('geometry' in temp_attraction):
                         attraction_latitude = temp_attraction['geometry']['location']['lat']
                         attraction_longitude = temp_attraction['geometry']['location']['lng']
@@ -87,20 +87,20 @@ def get_attraction(start_place, selected_categories):
                                                   latitude=attraction_latitude, name=attraction_name,
                                                   rating=attraction_rating, type=attraction_type)
                     all_attraction.append(attraction_prase)
-            elif (attraction_number < 5):
-                for temp_restaurant in temp_response['result']:
-                    if ('geometry' in temp_restaurant):
-                        restaurant_latitude = temp_restaurant['geometry']['location']['lat']
-                        restaurant_longitude = temp_restaurant['geometry']['location']['lng']
-                    if ('rating' in temp_restaurant):
-                        restaurant_rating = temp_restaurant['rating']
-                    if ('name' in temp_restaurant):
-                        restaurant_name = temp_restaurant['name']
-                    if ('vicinity' in temp_restaurant):
-                        restaurant_address = temp_restaurant['vicinity']
-                    attraction_prase = restaurant(address=restaurant_address, longitude=restaurant_longitude,
-                                                  latitude=restaurant_latitude, name=restaurant_name,
-                                                  rating=restaurant_rating)
+            elif (attraction_number < 15):
+                for temp_attraction in temp_response['results']:
+                    if ('geometry' in temp_attraction):
+                        attraction_latitude = temp_attraction['geometry']['location']['lat']
+                        attraction_longitude = temp_attraction['geometry']['location']['lng']
+                    if ('rating' in temp_attraction):
+                        attraction_rating = temp_attraction['rating']
+                    if ('name' in temp_attraction):
+                        attraction_name = temp_attraction['name']
+                    if ('vicinity' in temp_attraction):
+                        attraction_address = temp_attraction['vicinity']
+                    attraction_prase = attraction(address=attraction_address, longitude=attraction_longitude,
+                                                  latitude=attraction_latitude, name=attraction_name,
+                                                  rating=attraction_rating, type=attraction_type)
                     all_attraction.append(attraction_prase)
             # check whether is contain next_page_token
             if ('next_page_token' in temp_response):
@@ -131,13 +131,14 @@ def get_restaurant(start_place, type='restaurant'):
     3.then store into related class
     4.use all_hotel to store restaurant information
     """
-    response = gmaps.places_nearby(location=[latitude, longitude], radius=10000, type=type)
+    response = gmaps.places_nearby(location=[latitude, longitude], radius=10000, type='restaurant')
     all_restaurant = []
     restaurant_address = 'null'
     restaurant_name = 'null'
     restaurant_rating = 'null'
     restaurant_latitude = 0
     restaurant_longitude = 0
+    restaurant_type = 'restaurant'
     for i in range(3):
         # use temp_response to store response
         temp_response = response
@@ -157,7 +158,7 @@ def get_restaurant(start_place, type='restaurant'):
                     restaurant_address = temp_restaurant['vicinity']
                 restaurant_prase = restaurant(address=restaurant_address, longitude=restaurant_longitude,
                                               latitude=restaurant_latitude, name=restaurant_name,
-                                              rating=restaurant_rating)
+                                              rating=restaurant_rating, type=restaurant_type)
                 all_restaurant.append(restaurant_prase)
         elif (restaurant_number < 3):
             for temp_restaurant in temp_response['result']:
@@ -172,7 +173,7 @@ def get_restaurant(start_place, type='restaurant'):
                     restaurant_address = temp_restaurant['vicinity']
                 restaurant_prase = restaurant(address=restaurant_address, longitude=restaurant_longitude,
                                               latitude=restaurant_latitude, name=restaurant_name,
-                                              rating=restaurant_rating)
+                                              rating=restaurant_rating, type=restaurant_type)
                 all_restaurant.append(restaurant_prase)
         # check whether is contain next_page_token
         if ('next_page_token' in temp_response):
@@ -200,26 +201,53 @@ def get_travel_line(start_place, days, selected_categories, activity_threshold):
     attraction_list = get_attraction(start_place, selected_categories)
     restaurant_choose = []
     attraction_choose = []
+    # get all attraction number
     attraction_list_all_number = len(attraction_list)
+    print("attraction_list_all_number", attraction_list_all_number)
+    # get all what people we need
     travel_all_number = activity_threshold * days
+    # random generate
     list_number = get_various_number(travel_all_number, attraction_list_all_number)
-    if (activity_threshold <= attraction_list_all_number):
+    list_number_restaurant = len(restaurant_list)
+
+    if (travel_all_number <= attraction_list_all_number):
         for i in list_number:
+            print(i)
             attraction_choose.append(attraction_list[i])
-    elif (activity_threshold > attraction_list_all_number):
-        attraction_choose.append(attraction_list)
-    for i in range(days):
-        restaurant_choose.append(restaurant_list[i])
+    elif (travel_all_number > attraction_list_all_number):
+        try:
+            print("no more related place")
+        except:
+            SystemError
+        # out of index will lead to revisite
+
+    if (days <= list_number_restaurant):
+        for i in range(days):
+            restaurant_choose.append(restaurant_list[i])
+    elif (days > list_number_restaurant):
+        restaurant_choose.append(restaurant_list)
+
     return restaurant_choose, attraction_choose
 
 
 def get_various_number(times, max_number):
-    list_number = random.sample(range(0, max_number), times)
+    # list_number = random.sample(range(0, max_number), times)
+    list_number = set()
+    # for i in range(times):
+    #     list_number.add(random.randint(0, max_number - 1))
+    if (max_number >= times):
+        while (True):
+            if (len(list_number) <= times):
+                list_number.add(random.randint(0, max_number - 1))
+            else:
+                break
+    elif (max_number < times):
+        for i in range(max_number):
+            list_number.add(i)
+    list_number = list(list_number)
     return list_number
 
 
 if __name__ == '__main__':
-    pass
-    # resp, resp2 = get_travel_line('London', 3, ['shopping mall', "art gallery"], 2)
-    # print(len(resp))
-    # print(len(resp2))
+    # ress = get_restaurant('London', "restaurant")
+    resp, resp2 = get_travel_line('London', 4, ["art gallery"], 2)
