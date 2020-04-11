@@ -17,16 +17,31 @@ class flight():
 
 
 class hotel():
-    def __init__(self, name, price, position, communication):
+    def __init__(self, name, price, position, communication, latitude, longitude, unit, rate):
         self.name = name
         self.price = price
         self.position = position
         self.communication = communication
+        self.latitude = latitude
+        self.longitude = longitude
+        self.unit = unit
+        self.rate = rate
 
 
 class attraction():
-    def __init__(self, name, price, type, rating):
+    def __init__(self, name,  type, rating, latitude, longitude,address):
         self.name = name
-        self.price = price
         self.type = type
         self.rating = rating
+        self.latitude = latitude
+        self.longitude = longitude
+        self.address = address
+
+
+class restaurant():
+    def __init__(self, name, rating, latitude, longitude, address):
+        self.name = name
+        self.rating = rating
+        self.latitude = latitude
+        self.longitude = longitude
+        self.address = address

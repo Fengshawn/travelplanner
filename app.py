@@ -3,9 +3,9 @@ from Flight import retrive_flight_data
 # from EmailSend import send_email
 from QQSend import send_email
 from hotel import get_hotel
-from google_places import get_place
 from datetime import date, datetime
 from locations import get_location
+from Activities import get_travel_line
 
 app = Flask(__name__)
 
@@ -56,11 +56,13 @@ def result():
     checked_cats.append('aquarium') if 'aquarium' in request.form else None
 
     # if user donot choose
-    if len(checked_cats) == 1:
+    if len(checked_cats) == 0:
         checked_cats.append('art gallery')
         checked_cats.append('amusement park')
         checked_cats.append('tourist attraction')
         checked_cats.append('aquarium')
+        checked_cats.append('shopping mall')
+    print(checked_cats)
 
     # calculate the days users will travel
     days_diff = datetime.strptime(str(endday).strip(), '%Y-%m-%d') - datetime.strptime(str(startday).strip(),
@@ -73,13 +75,15 @@ def result():
     # get hotel data from here
     hotel_data = get_hotel(Airline_end)
     # get days activities
-    days_activities = get_place(Airline_end, days, checked_cats, 2)
-    hotel_data = hotel_data
-    days_activities = days_activities
+    restaurant_list, attraction_list = get_travel_line(Airline_end, days, checked_cats, 2)
     return render_template("result.html", name=all_flight[0].name, time=all_flight[0].time
                            , price=all_flight[0].price, package=all_flight[0].package,
-                           cabin=all_flight[0].cabin, details=all_flight[0].details, hotel_data=hotel_data,
-                           days_activities=days_activities)
+                           cabin=all_flight[0].cabin, details=all_flight[0].details,
+                           # restaurant_list=restaurant_list,
+                           hotel_data=hotel_data,
+                           # days_diff=days_diff,
+                           # days_activities=attraction_list
+                           )
 
 
 if __name__ == '__main__':
