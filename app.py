@@ -6,6 +6,7 @@ from hotel import get_hotel
 from datetime import date, datetime
 from locations import get_location
 from Activities import get_travel_line
+from transportation import get_london_static
 
 app = Flask(__name__)
 
@@ -25,7 +26,17 @@ def internal_server_error(e):
     return render_template("404.html")
 
 
-@app.route('/')
+@app.route('/success', methods=["POST", "GET"])
+def success():
+    return render_template("success.html")
+
+
+@app.route('/email', methods=["POST", "GET"])
+def email():
+    return render_template("email.html")
+
+
+@app.route('/', methods=["POST", "GET"])
 def index():
     return render_template("index.html")
 
@@ -69,20 +80,23 @@ def result():
                                                                                        '%Y-%m-%d')
     days_diff = days_diff
     # get user want travel days
-    days = days_diff.days+1
+    days = days_diff.days + 1
 
     all_flight = retrive_flight_data(Airline_start_code, Airline_end_code, startday, travellers)
     # get hotel data from here
     hotel_data = get_hotel(Airline_end)
     # get days activities
     restaurant_list, attraction_list = get_travel_line(Airline_end, days, checked_cats, 2)
+    # get average transportation
+    average_transportation = get_london_static()
     return render_template("result.html", name=all_flight[0].name, time=all_flight[0].time
                            , price=all_flight[0].price, package=all_flight[0].package,
                            cabin=all_flight[0].cabin, details=all_flight[0].details,
                            restaurant_list=restaurant_list,
                            hotel_data=hotel_data,
                            days_diff=int(days),
-                           days_activities=attraction_list
+                           days_activities=attraction_list,
+                           average_transportation=average_transportation
                            )
 
 

@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Email input</title>
+    <meta name="description" content="Email input"/>
+
+</head>
+<body>
+
+<script type="text/javascript" src="/static/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="/static/js/autoMail.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#email').autoMail({
+            emails: ['qq.com', '163.com', '126.com', 'sina.com', 'sohu.com', 'yahoo.cn', 'gmail.com', 'hotmail.com', 'live.cn']
+        });
+    });
+</script>
+
+<style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .demo {
+        width: 300px;
+        margin: 40px auto;
+    }
+
+    /* mailBox */
+    #mailBox {
+        background: #fff;
+        border: 1px solid #ddd;
+        padding: 3px 5px 5px;
+        position: absolute;
+        z-index: 9999;
+        display: none;
+        -webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.35);
+    }
+
+    #mailBox p {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: 20px;
+        line-height: 20px;
+        clear: both;
+        font-size: 12px;
+        color: #ccc;
+        cursor: default;
+    }
+
+    #mailBox ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    #mailBox li {
+        font-size: 12px;
+        height: 22px;
+        line-height: 22px;
+        color: #939393;
+        font-family: 'Tahoma';
+        list-style: none;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    #mailBox .cmail {
+        color: #000;
+        background: #e8f4fc;
+    }
+</style>
+
+<div class="demo">
+    <form action="/success" method="post">
+        <input id="email" type="text" name="email"/>
+        <input type="submit" value="Send"/>
+    </form>
+</div>
+
+</body>
+</html>

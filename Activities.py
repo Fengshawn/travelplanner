@@ -250,4 +250,6 @@ def get_various_number(times, max_number):
 
 if __name__ == '__main__':
     # ress = get_restaurant('London', "restaurant")
-    resp, resp2 = get_travel_line('London', 4, ["art gallery"], 2)
+    resp, resp2 = get_travel_line('London', 1, ["art gallery"], 2)
+    print(resp[0].latitude)
+    print(resp[0].longitude)

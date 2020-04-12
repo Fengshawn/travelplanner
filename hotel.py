@@ -91,6 +91,7 @@ def get_hotel(place):
 
 if __name__ == '__main__':
     pass
-    # resp = get_hotel('London')
-    # print(len(resp))
-    # print("Done!")
+    resp = get_hotel('London')
+    print(resp.latitude)
+    print(resp.longitude)
+    print("Done!")

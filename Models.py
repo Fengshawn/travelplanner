@@ -46,3 +46,10 @@ class restaurant():
         self.longitude = longitude
         self.address = address
         self.type = type
+
+
+class transportation():
+    def __init__(self, type, time, money):
+        self.type = type
+        self.time = time
+        self.money = money
