@@ -22,7 +22,7 @@
                 input.attr('autocomplete', 'off');
                 //添加提示邮箱列表
                 if (input.val() != "") {
-                    var emailList = '<p>请选择邮箱类型</p><ul>';
+                    var emailList = '<p>select your email</p><ul>';
                     for (var i = 0; i < emails.length; i++) {
                         emailList += '<li>' + input.val() + '@' + emails[i] + '</li>';
                     }

@@ -28,6 +28,15 @@ def internal_server_error(e):
 
 @app.route('/success', methods=["POST", "GET"])
 def success():
+    email = request.form.get('email')
+    if (email == ""):
+        return render_template("email.html")
+    else:
+        try:
+            send_email(email)
+            return render_template("success.html")
+        except:
+            SystemError
     return render_template("success.html")
 
 
