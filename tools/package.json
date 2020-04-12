@@ -2,95 +2,256 @@
   {
     'bounds': {
       'northeast': {
-        'lat': 51.5105109,
-        'lng': -0.1211038
+        'lat': 48.902156,
+        'lng': 2.4697602
       },
       'southwest': {
-        'lat': 51.5073249,
-        'lng': -0.1323948
+        'lat': 48.8155755,
+        'lng': 2.224122
       }
     },
-    'copyrights': 'Map data ©2020 Google',
-    'legs': [
-      {
-        'distance': {
-          'text': '1.0 km',
-          'value': 992
-        },
-        'duration': {
-          'text': '13 mins',
-          'value': 772
-        },
-        'end_address': '2 Savoy Ct, London WC2R 0EZ, UK',
-        'end_location': {
-          'lat': 51.5105109,
-          'lng': -0.1211038
-        },
-        'start_address': "8 Pall Mall, St. James's, London SW1Y 5NG, UK",
-        'start_location': {
-          'lat': 51.5073249,
-          'lng': -0.1323948
-        },
-        'steps': [
-          {
-            'distance': {
-              'text': '0.3 km',
-              'value': 343
-            },
-            'duration': {
-              'text': '4 mins',
-              'value': 262
-            },
-            'end_location': {
-              'lat': 51.507596,
-              'lng': -0.128638
-            },
-            'html_instructions': 'Head <b>northeast</b> on <b>Pall Mall</b>/<wbr/><b>A4</b> toward <b>Royal Opera Arcade</b><div style="font-size:0.9em">Continue to follow A4</div>',
-            'polyline': {
-              'points': 'w_kyHlzXMa@YiA[oAKc@EUGYEQc@mBES]uAGSEOEUCGAGAKAKAOAK?I@M?E@E@E@EBC@C@CBADC@?dA[^MRI'
-            },
-            'start_location': {
-              'lat': 51.5073249,
-              'lng': -0.1323948
-            },
-            'travel_mode': 'WALKING'
-          },
-          {
-            'distance': {
-              'text': '0.6 km',
-              'value': 649
-            },
-            'duration': {
-              'text': '9 mins',
-              'value': 510
-            },
-            'end_location': {
-              'lat': 51.5105109,
-              'lng': -0.1211038
-            },
-            'html_instructions': 'Turn <b>left</b> onto <b>Trafalgar Square</b>/<wbr/><b>A4</b><div style="font-size:0.9em">Parts of this road may be closed at certain times or days</div><div style="font-size:0.9em">Go through 1 roundabout</div><div style="font-size:0.9em">Destination will be on the right</div>',
-            'maneuver': 'turn-left',
-            'polyline': {
-              'points': 'oakyH~bXBY?K?O@]AO?MCOE[E]Ik@PI@G@GBKBENOEKEEYUIOISWg@O]_@aAq@}AIQa@_AIQUe@Wq@[y@o@{AaAeCWq@i@}AGQOe@CKOc@Sq@IYUu@U{@'
-            },
-            'start_location': {
-              'lat': 51.507596,
-              'lng': -0.128638
-            },
-            'travel_mode': 'WALKING'
-          }
-        ],
-        'traffic_speed_entry': [],
-        'via_waypoint': []
-      }
-    ],
-    'overview_polyline': {
-      'points': 'w_kyHlzXoA_Fw@oD_A_EEq@D_@HQpAa@r@WBe@?kAYuBPI@GDSRUKQYUIOa@{@kBoEyAiDeDmIeAaDyAaF'
+    'components': {
+      'ISO_3166-1_alpha-2': 'FR',
+      'ISO_3166-1_alpha-3': 'FRA',
+      '_category': 'place',
+      '_type': 'city',
+      'city': 'Paris',
+      'continent': 'Europe',
+      'country': 'France',
+      'country_code': 'fr',
+      'county': 'Paris',
+      'political_union': 'European Union',
+      'state': 'Ile-de-France',
+      'state_district': 'Paris'
     },
-    'summary': 'A4',
-    'warnings': [
-      'Walking directions are in beta. Use caution – This route may be missing sidewalks or pedestrian paths.'
-    ],
-    'waypoint_order': []
+    'confidence': 6,
+    'formatted': 'Paris, France',
+    'geometry': {
+      'lat': 48.8566969,
+      'lng': 2.3514616
+    }
+  },
+  {
+    'bounds': {
+      'northeast': {
+        'lat': 33.7383866,
+        'lng': -95.4354115
+      },
+      'southwest': {
+        'lat': 33.6206345,
+        'lng': -95.6279396
+      }
+    },
+    'components': {
+      'ISO_3166-1_alpha-2': 'US',
+      'ISO_3166-1_alpha-3': 'USA',
+      '_category': 'place',
+      '_type': 'city',
+      'city': 'Paris',
+      'continent': 'North America',
+      'country': 'United States of America',
+      'country_code': 'us',
+      'county': 'Lamar County',
+      'postcode': '75460',
+      'state': 'Texas',
+      'state_code': 'TX'
+    },
+    'confidence': 5,
+    'formatted': 'Paris, TX, United States of America',
+    'geometry': {
+      'lat': 33.6617962,
+      'lng': -95.555513
+    }
+  },
+  {
+    'bounds': {
+      'northeast': {
+        'lat': 38.238271,
+        'lng': -84.232089
+      },
+      'southwest': {
+        'lat': 38.164922,
+        'lng': -84.307326
+      }
+    },
+    'components': {
+      'ISO_3166-1_alpha-2': 'US',
+      'ISO_3166-1_alpha-3': 'USA',
+      '_category': 'place',
+      '_type': 'city',
+      'city': 'Paris',
+      'continent': 'North America',
+      'country': 'United States of America',
+      'country_code': 'us',
+      'county': 'Bourbon County',
+      'state': 'Kentucky',
+      'state_code': 'KY'
+    },
+    'confidence': 7,
+    'formatted': 'Paris, KY, United States of America',
+    'geometry': {
+      'lat': 38.2097987,
+      'lng': -84.2529869
+    }
+  },
+  {
+    'bounds': {
+      'northeast': {
+        'lat': 36.329016,
+        'lng': -88.265067
+      },
+      'southwest': {
+        'lat': 36.266003,
+        'lng': -88.367113
+      }
+    },
+    'components': {
+      'ISO_3166-1_alpha-2': 'US',
+      'ISO_3166-1_alpha-3': 'USA',
+      '_category': 'place',
+      '_type': 'city',
+      'city': 'Paris',
+      'continent': 'North America',
+      'country': 'United States of America',
+      'country_code': 'us',
+      'county': 'Henry County',
+      'postcode': '38242',
+      'state': 'Tennessee',
+      'state_code': 'TN'
+    },
+    'confidence': 7,
+    'formatted': 'Paris, TN, United States of America',
+    'geometry': {
+      'lat': 36.3020023,
+      'lng': -88.3267107
+    }
+  },
+  {
+    'bounds': {
+      'northeast': {
+        'lat': 39.649981,
+        'lng': -87.649203
+      },
+      'southwest': {
+        'lat': 39.581493,
+        'lng': -87.721046
+      }
+    },
+    'components': {
+      'ISO_3166-1_alpha-2': 'US',
+      'ISO_3166-1_alpha-3': 'USA',
+      '_category': 'place',
+      '_type': 'city',
+      'city': 'Paris',
+      'continent': 'North America',
+      'country': 'United States of America',
+      'country_code': 'us',
+      'county': 'Edgar County',
+      'postcode': '61944',
+      'state': 'Illinois',
+      'state_code': 'IL'
+    },
+    'confidence': 7,
+    'formatted': 'Paris, IL, United States of America',
+    'geometry': {
+      'lat': 39.611146,
+      'lng': -87.6961374
+    }
+  },
+  {
+    'bounds': {
+      'northeast': {
+        'lat': 44.279954,
+        'lng': -70.480641
+      },
+      'southwest': {
+        'lat': 44.239954,
+        'lng': -70.520641
+      }
+    },
+    'components': {
+      'ISO_3166-1_alpha-2': 'US',
+      'ISO_3166-1_alpha-3': 'USA',
+      '_category': 'place',
+      '_type': 'village',
+      'continent': 'North America',
+      'country': 'United States of America',
+      'country_code': 'us',
+      'county': 'Oxford County',
+      'postcode': '04271',
+      'state': 'Maine',
+      'state_code': 'ME',
+      'village': 'Paris'
+    },
+    'confidence': 7,
+    'formatted': 'Paris, ME 04271, United States of America',
+    'geometry': {
+      'lat': 44.259954,
+      'lng': -70.500641
+    }
+  },
+  {
+    'bounds': {
+      'northeast': {
+        'lat': 35.3065882,
+        'lng': -93.6755169
+      },
+      'southwest': {
+        'lat': 35.2681485,
+        'lng': -93.761965
+      }
+    },
+    'components': {
+      'ISO_3166-1_alpha-2': 'US',
+      'ISO_3166-1_alpha-3': 'USA',
+      '_category': 'place',
+      '_type': 'city',
+      'city': 'Paris',
+      'continent': 'North America',
+      'country': 'United States of America',
+      'country_code': 'us',
+      'county': 'Logan County',
+      'postcode': '72855',
+      'state': 'Arkansas',
+      'state_code': 'AR'
+    },
+    'confidence': 7,
+    'formatted': 'Paris, AR, United States of America',
+    'geometry': {
+      'lat': 35.2920325,
+      'lng': -93.7299173
+    }
+  },
+  {
+    'bounds': {
+      'northeast': {
+        'lat': 39.489278,
+        'lng': -91.991679
+      },
+      'southwest': {
+        'lat': 39.469158,
+        'lng': -92.02148
+      }
+    },
+    'components': {
+      'ISO_3166-1_alpha-2': 'US',
+      'ISO_3166-1_alpha-3': 'USA',
+      '_category': 'place',
+      '_type': 'city',
+      'city': 'Paris',
+      'continent': 'North America',
+      'country': 'United States of America',
+      'country_code': 'us',
+      'county': 'Monroe County',
+      'postcode': '65275',
+      'state': 'Missouri',
+      'state_code': 'MO'
+    },
+    'confidence': 7,
+    'formatted': 'Paris, MO, United States of America',
+    'geometry': {
+      'lat': 39.4808721,
+      'lng': -92.0012811
+    }
   }
 ]

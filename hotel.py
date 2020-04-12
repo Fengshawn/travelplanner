@@ -26,6 +26,7 @@ def get_hotel(place):
     longitude = result[0]['geometry']['lng']  # Parsing Latitude
     latitude = result[0]['geometry']['lat']  # Parsing Longitude
     response = client.shopping.hotel_offers.get(latitude=latitude, longitude=longitude)
+    print(response.data)
     # get all hotel number in london
     hotel_number = len(response.data)
     # use a list to store hotel information
@@ -91,7 +92,7 @@ def get_hotel(place):
 
 if __name__ == '__main__':
     pass
-    resp = get_hotel('London')
+    resp = get_hotel('Paris')
     print(resp.latitude)
     print(resp.longitude)
     print("Done!")

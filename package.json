@@ -1,96 +1,224 @@
 [
   {
-    'bounds': {
-      'northeast': {
-        'lat': 51.5105109,
-        'lng': -0.1211038
+    'type': 'hotel-offers',
+    'hotel': {
+      'type': 'hotel',
+      'hotelId': 'WVPARVIO',
+      'chainCode': 'WV',
+      'dupeId': '700092014',
+      'name': 'HOTEL LOUVRE RIVOLI',
+      'rating': '3',
+      'cityCode': 'PAR',
+      'latitude': 48.85847,
+      'longitude': 2.34645,
+      'hotelDistance': {
+        'distance': 0.4,
+        'distanceUnit': 'KM'
       },
-      'southwest': {
-        'lat': 51.5073249,
-        'lng': -0.1323948
-      }
-    },
-    'copyrights': 'Map data ©2020 Google',
-    'legs': [
-      {
-        'distance': {
-          'text': '1.0 km',
-          'value': 992
-        },
-        'duration': {
-          'text': '13 mins',
-          'value': 772
-        },
-        'end_address': '2 Savoy Ct, London WC2R 0EZ, UK',
-        'end_location': {
-          'lat': 51.5105109,
-          'lng': -0.1211038
-        },
-        'start_address': "8 Pall Mall, St. James's, London SW1Y 5NG, UK",
-        'start_location': {
-          'lat': 51.5073249,
-          'lng': -0.1323948
-        },
-        'steps': [
-          {
-            'distance': {
-              'text': '0.3 km',
-              'value': 343
-            },
-            'duration': {
-              'text': '4 mins',
-              'value': 262
-            },
-            'end_location': {
-              'lat': 51.507596,
-              'lng': -0.128638
-            },
-            'html_instructions': 'Head <b>northeast</b> on <b>Pall Mall</b>/<wbr/><b>A4</b> toward <b>Royal Opera Arcade</b><div style="font-size:0.9em">Continue to follow A4</div>',
-            'polyline': {
-              'points': 'w_kyHlzXMa@YiA[oAKc@EUGYEQc@mBES]uAGSEOEUCGAGAKAKAOAK?I@M?E@E@E@EBC@C@CBADC@?dA[^MRI'
-            },
-            'start_location': {
-              'lat': 51.5073249,
-              'lng': -0.1323948
-            },
-            'travel_mode': 'WALKING'
-          },
-          {
-            'distance': {
-              'text': '0.6 km',
-              'value': 649
-            },
-            'duration': {
-              'text': '9 mins',
-              'value': 510
-            },
-            'end_location': {
-              'lat': 51.5105109,
-              'lng': -0.1211038
-            },
-            'html_instructions': 'Turn <b>left</b> onto <b>Trafalgar Square</b>/<wbr/><b>A4</b><div style="font-size:0.9em">Parts of this road may be closed at certain times or days</div><div style="font-size:0.9em">Go through 1 roundabout</div><div style="font-size:0.9em">Destination will be on the right</div>',
-            'maneuver': 'turn-left',
-            'polyline': {
-              'points': 'oakyH~bXBY?K?O@]AO?MCOE[E]Ik@PI@G@GBKBENOEKEEYUIOISWg@O]_@aAq@}AIQa@_AIQUe@Wq@[y@o@{AaAeCWq@i@}AGQOe@CKOc@Sq@IYUu@U{@'
-            },
-            'start_location': {
-              'lat': 51.507596,
-              'lng': -0.128638
-            },
-            'travel_mode': 'WALKING'
-          }
+      'address': {
+        'lines': [
+          '7, RUE JEAN-LANTIER'
         ],
-        'traffic_speed_entry': [],
-        'via_waypoint': []
+        'postalCode': '75001',
+        'cityName': 'PARIS',
+        'countryCode': 'FR'
+      },
+      'contact': {
+        'fax': '33-140-280356',
+        'phone': '33-142-334538'
+      },
+      'description': {
+        'lang': 'en',
+        'text': 'Enterely renovated from march 2007 to january 2008, Hotel Louvre Rivoli has now 20 Superior rooms (totally remade in 2007) and 10 Classic rooms (remade in 2006). The hotel with its perfect situation invites you to a trip to history (based in the heart of Paris), art and culture (5 miutes walking distance from the Louvre, Notre Dame, Sainte Chapelle, Pompidou center, Shopping center). A large vaulted natural stone cellar, offers you a journey all over the years. \r\r\r\rA friendly and helpful staff promises you a warm hospitality. To relax a spacious lounge with private bar is at your disposal, and a carry luggage. A fitness room will be ready for april 2008.\r\r\r\rAll the 30 rooms have air conditionning, direct telephone, cable TV and satellite with CNN & BBC, safe box, mini bar, internet access, WI-FI technology, bathroom full equipped with hairdryer, bath tub or large shower, toilets, free news papers.'
+      },
+      'amenities': [
+        'DISABLED_FACILITIES',
+        'ADAPT_RM_DOORS',
+        'INT_HOTSPOTS',
+        'NO_PORN_FILMS',
+        'HAIR_DRYER',
+        'MINIBAR',
+        'NONSMOKING_RMS',
+        'PHONE-DIR_DIAL',
+        'TELEVISION',
+        'WI-FI_IN_ROOM',
+        'FIRE_SAFETY'
+      ],
+      'media': [
+        {
+          'uri': 'http://uat.multimediarepository.testing.amadeus.com/cmr/retrieve/hotel/6B4EC6DEAFF04FC8B5D89025BCCB0E35',
+          'category': 'LOBBY'
+        }
+      ]
+    },
+    'available': True,
+    'offers': [
+      {
+        'id': '1092F3E70B1FBA94B4217E1F8AC858AA3FF2B8BC60638424BD42A7CE54F4F1B9',
+        'checkInDate': '2020-04-12',
+        'checkOutDate': '2020-04-13',
+        'rateCode': 'TVL',
+        'rateFamilyEstimated': {
+          'code': 'TVL',
+          'type': 'C'
+        },
+        'commission': {
+          'amount': '0',
+          'percentage': '0'
+        },
+        'room': {
+          'type': 'D1*',
+          'typeEstimated': {
+            'category': 'SUPERIOR_ROOM',
+            'beds': 1,
+            'bedType': 'SINGLE'
+          },
+          'description': {
+            'lang': 'EN',
+            'text': 'SPECIAL TRAVEL AGENT RATE\nSINGLE SUPERIOR LARGE BED FREE WIFI SAFETY BOX\nSPECIAL TRAVEL AGENT RATE 10 PCT OFF BAR'
+          }
+        },
+        'guests': {
+          'adults': 1
+        },
+        'price': {
+          'currency': 'EUR',
+          'base': '186.35',
+          'total': '188.00',
+          'variations': {
+            'average': {
+              'base': '186.35'
+            },
+            'changes': [
+              {
+                'startDate': '2020-04-12',
+                'endDate': '2020-04-13',
+                'base': '186.35'
+              }
+            ]
+          }
+        },
+        'policies': {
+          'guarantee': {
+            'acceptedPayments': {
+              'creditCards': [
+                'VI',
+                'AX',
+                'MC',
+                'JC',
+                'DC'
+              ],
+              'methods': [
+                'CREDIT_CARD'
+              ]
+            }
+          },
+          'paymentType': 'guarantee',
+          'cancellation': {
+            'deadline': '2020-04-10T16:00:00+02:00'
+          }
+        }
       }
     ],
-    'overview_polyline': {
-      'points': 'w_kyHlzXoA_Fw@oD_A_EEq@D_@HQpAa@r@WBe@?kAYuBPI@GDSRUKQYUIOa@{@kBoEyAiDeDmIeAaDyAaF'
+    'self': 'https://test.api.amadeus.com/v2/shopping/hotel-offers/by-hotel?hotelId=WVPARVIO'
+  },
+  {
+    'type': 'hotel-offers',
+    'hotel': {
+      'type': 'hotel',
+      'hotelId': 'XKPAR321',
+      'chainCode': 'XK',
+      'dupeId': '501107986',
+      'name': 'The Demo Hotel',
+      'rating': '3',
+      'cityCode': 'PAR',
+      'latitude': 48.85801,
+      'longitude': 2.34661,
+      'hotelDistance': {
+        'distance': 0.4,
+        'distanceUnit': 'KM'
+      },
+      'address': {
+        'lines': [
+          '18 avenue Victoria'
+        ],
+        'postalCode': '75001',
+        'cityName': 'Paris',
+        'countryCode': 'FR'
+      },
+      'contact': {
+        'phone': '+33 4 97042801',
+        'fax': '+33 4 92943104',
+        'email': 'resa@theparishotel.com'
+      },
+      'amenities': [
+        'MEETING_ROOMS',
+        'PARKING',
+        'INTERNET-HIGH_SPEED'
+      ]
     },
-    'summary': 'A4',
-    'warnings': [
-      'Walking directions are in beta. Use caution – This route may be missing sidewalks or pedestrian paths.'
+    'available': True,
+    'offers': [
+      {
+        'id': '7111C987780A1D1A523EA2FE77DDB4AAF2210B26F2079CD38832F2B6DA19CE73',
+        'checkInDate': '2020-04-12',
+        'checkOutDate': '2020-04-13',
+        'rateCode': 'ALL',
+        'commission': {
+          'percentage': '6.00'
+        },
+        'room': {
+          'type': 'C1D',
+          'typeEstimated': {
+            'category': 'STANDARD_ROOM',
+            'beds': 1,
+            'bedType': 'DOUBLE'
+          },
+          'description': {
+            'lang': 'EN',
+            'text': 'Double room'
+          }
+        },
+        'guests': {
+          'adults': 1
+        },
+        'price': {
+          'currency': 'EUR',
+          'total': '100.00',
+          'variations': {
+            'changes': [
+              {
+                'startDate': '2020-04-12',
+                'endDate': '2020-04-13',
+                'total': '100.00'
+              }
+            ]
+          }
+        },
+        'policies': {
+          'holdTime': {
+            'deadline': '2020-04-12T18:00:00'
+          },
+          'guarantee': {
+            'acceptedPayments': {
+              'creditCards': [
+                'AX',
+                'CA',
+                'DC',
+                'JC',
+                'VI'
+              ],
+              'methods': [
+                'TRAVEL_AGENT_ID',
+                'CORPORATE_ID',
+                'CREDIT_CARD'
+              ]
+            }
+          },
+          'paymentType': 'guarantee'
+        }
+      }
     ],
-    'waypoint_order': []
+    'self': 'https://test.api.amadeus.com/v2/shopping/hotel-offers/by-hotel?hotelId=XKPAR321'
   }
 ]
