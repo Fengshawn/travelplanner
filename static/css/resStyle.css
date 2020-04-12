@@ -1,0 +1,17 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+body {
+  font-family: sans-serif;
+  background: url("/static/images/s3.jpg");
+  animation-name: myfirst;
+  animation-duration: 12s;
+  /*变换时间*/
+  animation-delay: 3s;
+  /*动画开始时间*/
+  animation-iteration-count: infinite;
+  /*下一周期循环播放*/
+  animation-play-state: running;
+  /*动画开始运行*/
+}
+.top {
+  padding-top: 5%;
+}

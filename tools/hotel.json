@@ -1,0 +1,2034 @@
+[
+  {
+    'type': 'hotel-offers',
+    'hotel': {
+      'type': 'hotel',
+      'hotelId': 'XKLON321',
+      'chainCode': 'XK',
+      'dupeId': '501108165',
+      'name': 'Hotel London Allocation',
+      'cityCode': 'LON',
+      'latitude': 51.50218,
+      'longitude': -0.12714,
+      'hotelDistance': {
+        'distance': 0.6,
+        'distanceUnit': 'KM'
+      },
+      'address': {
+        'lines': [
+          '25 King Charles Street'
+        ],
+        'postalCode': 'SW1A 2',
+        'cityName': 'London',
+        'countryCode': 'GB'
+      },
+      'contact': {
+        'phone': '020 7222 5152',
+        'fax': '020 7222 5153',
+        'email': 'resa@hotellondonallocation.com'
+      },
+      'amenities': [
+        'PARKING'
+      ]
+    },
+    'available': True,
+    'offers': [
+      {
+        'id': '0EA69093ACF49F289A06547FA0DDF33130B58FFF9A469C685AB382494D25D243',
+        'checkInDate': '2020-04-10',
+        'checkOutDate': '2020-04-11',
+        'rateCode': 'RAC',
+        'category': 'RAC',
+        'description': {
+          'lang': 'EN',
+          'text': 'Express Rate Load'
+        },
+        'commission': {
+          'amount': '0',
+          'percentage': '0'
+        },
+        'room': {
+          'type': 'C1D',
+          'typeEstimated': {
+            'category': 'STANDARD_ROOM',
+            'beds': 1,
+            'bedType': 'DOUBLE'
+          },
+          'description': {
+            'lang': 'EN',
+            'text': 'Double Room'
+          }
+        },
+        'guests': {
+          'adults': 1
+        },
+        'price': {
+          'currency': 'GBP',
+          'total': '45.00',
+          'base': '45.00',
+          'variations': {
+            'changes': [
+              {
+                'startDate': '2020-04-10',
+                'endDate': '2020-04-11',
+                'base': '45.00'
+              }
+            ]
+          }
+        }
+      },
+      {
+        'id': 'F41074F3969A4784C4B4E1B8B26187DDF42F8E8AC8A0114C6A758CD9EEF8CBFC',
+        'checkInDate': '2020-04-10',
+        'checkOutDate': '2020-04-11',
+        'rateCode': 'REQ',
+        'category': 'RAC',
+        'description': {
+          'lang': 'EN',
+          'text': 'On Request Rate'
+        },
+        'commission': {
+          'amount': '0',
+          'percentage': '0'
+        },
+        'room': {
+          'type': 'C1S',
+          'typeEstimated': {
+            'category': 'STANDARD_ROOM',
+            'beds': 1,
+            'bedType': 'SINGLE'
+          },
+          'description': {
+            'lang': 'EN',
+            'text': 'Single Room'
+          }
+        },
+        'guests': {
+          'adults': 1
+        },
+        'price': {
+          'currency': 'GBP',
+          'total': '120.00',
+          'base': '120.00',
+          'variations': {
+            'changes': [
+              {
+                'startDate': '2020-04-10',
+                'endDate': '2020-04-11',
+                'base': '120.00'
+              }
+            ]
+          }
+        }
+      }
+    ],
+    'self': 'https://test.api.amadeus.com/v2/shopping/hotel-offers/by-hotel?hotelId=XKLON321'
+  },
+  {
+    'type': 'hotel-offers',
+    'hotel': {
+      'type': 'hotel',
+      'hotelId': 'MCLONCHM',
+      'chainCode': 'MC',
+      'dupeId': '700060041',
+      'name': 'London Marriott Hotel County Hall',
+      'rating': '4',
+      'cityCode': 'LON',
+      'latitude': 51.50106,
+      'longitude': -0.11927,
+      'hotelDistance': {
+        'distance': 0.9,
+        'distanceUnit': 'KM'
+      },
+      'address': {
+        'lines': [
+          'THE COUNTY HALL'
+        ],
+        'postalCode': 'SE17PB',
+        'cityName': 'LONDON',
+        'countryCode': 'GB'
+      },
+      'contact': {
+        'phone': '+44 207 928 5200',
+        'fax': '+44 20 7928 5300',
+        'email': 'mhrs.lonch.frontdesk@marriotthotels.com'
+      },
+      'description': {
+        'lang': 'en',
+        'text': "Embrace history and modernity at London Marriott Hotel County Hall, located in the bustling South Bank, steps away from Westminster Bridge. Situated in Londons former City Hall, overlooking the Houses of Parliament, our hotel embodies the city's storied history and quintessentially British spirit. Views of Big Ben and London Eye are vividly on display from many of our guest rooms, suites and public spaces, while 5-star amenities set the stage for an inspired stay. Discover luxurious bedding, pristine bathrooms and complimentary Wi-Fi as well as a state-of-the-art fitness centre and indoor pool. Dine at Gillrays Steakhouse & Bar, where you'll find over 100 gins and locally-sourced steaks from OShea's Butchers or enjoy award-winning afternoon tea in The Library. Hold your next business meeting or special event at our hotel, which boasts 7,071 square feet of elegant space and 12 event venues with views of Westminster. A quintessentially British experience inside Londons most photographed destination."
+      },
+      'amenities': [
+        'EXECUTIVE_FLR',
+        'SAUNA',
+        'EXPRESS_CHECK_IN',
+        'EXPRESS_CHECK_OUT',
+        'LOUNGE',
+        'INT_ROOM_ENTRY',
+        'SERV_DOGS_ALWD',
+        'ACC_TOILETS',
+        'HANDRAIL_BTHRM',
+        'VALET_PARKING',
+        'CONCIERGE',
+        'SAFE_DEP_BOX',
+        'EXCHANGE_FAC',
+        'BABY-SITTING',
+        'LAUNDRY_SVC',
+        '24_HOUR_FRONT_DESK',
+        'ICE_MACHINES',
+        'FLORIST',
+        '24_HOUR_ROOM_SERVICE',
+        'ROOM_SERVICE',
+        'TRAVEL_AGENCY',
+        'CAR_RENTAL',
+        'WEDDING_SERVICES',
+        'GYM',
+        'PARKING',
+        'SWIMMING_POOL',
+        'RESTAURANT',
+        'HI_INTERNET',
+        'FREE_INTERNET',
+        'WIRELESS_CONNECTIVITY',
+        'ELEVATOR',
+        'MEETING_FACILITIES',
+        'INTERNET-HI_SPEED_IN_RM',
+        'WI-FI_IN_ROOM',
+        'NONSMOKING_RMS',
+        'TEA/COFFEE_MK_FACILITIES',
+        'MINIBAR',
+        'AIR_CONDITIONING',
+        'SAFE',
+        'BATH',
+        'HAIR_DRYER',
+        'IRON/IRON_BOARD',
+        'CRIBS_AVAILABLE',
+        'ROLLAWAY_BEDS',
+        'OUTLET_ADAPTERS',
+        'MICROWAVE',
+        'TELEVISION',
+        'CABLE_TELEVISION',
+        'VOICEMAIL_IN_ROOM',
+        'PHONE-DIR_DIAL',
+        'SPA',
+        'FITNESS_CENTER'
+      ],
+      'media': [
+        {
+          'uri': 'http://uat.multimediarepository.testing.amadeus.com/cmr/retrieve/hotel/3C68A09624D7479997EB7DC10A15864C',
+          'category': 'EXTERIOR'
+        }
+      ]
+    },
+    'available': True,
+    'offers': [
+      {
+        'id': '5C19642CC08F6D110C694FA7ADC64581E187DDC781DFA03E813E91FF690D431F',
+        'checkInDate': '2020-04-10',
+        'checkOutDate': '2020-04-11',
+        'rateCode': 'S9R',
+        'rateFamilyEstimated': {
+          'code': 'SRS',
+          'type': 'C'
+        },
+        'room': {
+          'type': 'XMI',
+          'typeEstimated': {
+            'category': 'DELUXE_ROOM',
+            'beds': 1,
+            'bedType': 'KING'
+          },
+          'description': {
+            'lang': 'EN',
+            'text': 'Marriott Senior Discount, includes 62 years and older valid ID \nDeluxe Room, 1 King, 30sqm/323sqft-45sqm/484sqf\nt, Wireless internet, for a fee, Wired internet'
+          }
+        },
+        'guests': {
+          'adults': 1
+        },
+        'price': {
+          'currency': 'GBP',
+          'total': '336.00',
+          'variations': {
+            'changes': [
+              {
+                'startDate': '2020-04-10',
+                'endDate': '2020-04-11',
+                'total': '336.00'
+              }
+            ]
+          }
+        },
+        'policies': {
+          'paymentType': 'guarantee',
+          'cancellation': {
+            'deadline': '2020-04-09T23:59:00+01:00'
+          }
+        }
+      }
+    ],
+    'self': 'https://test.api.amadeus.com/v2/shopping/hotel-offers/by-hotel?hotelId=MCLONCHM'
+  },
+  {
+    'type': 'hotel-offers',
+    'hotel': {
+      'type': 'hotel',
+      'hotelId': 'WVLON185',
+      'chainCode': 'WV',
+      'dupeId': '700225186',
+      'name': 'THE HOXTON HOLBORN',
+      'rating': '4',
+      'cityCode': 'LON',
+      'latitude': 51.51705,
+      'longitude': -0.12257,
+      'hotelDistance': {
+        'distance': 1.1,
+        'distanceUnit': 'KM'
+      },
+      'address': {
+        'lines': [
+          '199  206 HIGH HOLBORN'
+        ],
+        'postalCode': 'WC1V 7BD',
+        'cityName': 'LONDON',
+        'countryCode': 'GB'
+      },
+      'contact': {
+        'phone': '44-020-76613000',
+        'fax': '44-020-36032580'
+      },
+      'amenities': [
+        'AUDIO-VIS_EQT',
+        'MEETING_ROOMS',
+        'COFFEE_SHOP',
+        'RESTAURANT',
+        'DISABLED_FACILITIES',
+        'DIS_PARKG',
+        'ACC_RM_WCHAIR',
+        'FIRST_AID_STAF',
+        'INT_ROOM_ENTRY',
+        'EMERG_LIGHTING',
+        'FIRE_DETECTORS',
+        'EXTINGUISHERS',
+        'FIRE_SAFETY',
+        'GUARDED_PARKG',
+        'SMOKE_DETECTOR',
+        'VIDEO_SURVEIL',
+        'KIDS_WELCOME',
+        'ELEVATOR',
+        'INT_HOTSPOTS',
+        'FREE_INTERNET',
+        'WIFI',
+        'PARKING',
+        'LOUNGE',
+        'LOUNGE',
+        'ROOM_SERVICE',
+        'AIR_CONDITIONING',
+        'HAIR_DRYER',
+        'NONSMOKING_RMS',
+        'PHONE-DIR_DIAL',
+        'TELEVISION',
+        'WI-FI_IN_ROOM'
+      ],
+      'media': [
+        {
+          'uri': 'http://uat.multimediarepository.testing.amadeus.com/cmr/retrieve/hotel/7FC788AD62C04B88BB071FE427D80985',
+          'category': 'LOBBY'
+        }
+      ]
+    },
+    'available': True,
+    'offers': [
+      {
+        'id': '6DC6F5282686B133CC90CA89059607C07DEDA604CF58E08C57E3659AAF82C4ED',
+        'checkInDate': '2020-04-10',
+        'checkOutDate': '2020-04-11',
+        'rateCode': 'PRO',
+        'rateFamilyEstimated': {
+          'code': 'BAR',
+          'type': 'P'
+        },
+        'commission': {
+          'percentage': '10.0'
+        },
+        'boardType': 'BREAKFAST',
+        'room': {
+          'type': 'H1D',
+          'typeEstimated': {
+            'category': 'STANDARD_ROOM',
+            'beds': 2,
+            'bedType': 'DOUBLE'
+          },
+          'description': {
+            'lang': 'EN',
+            'text': 'Best Flex Bed and Light Brkfst\nSHOEBOX ROOM 12M2 DOUBLE BED FREE WIFI AND\nINCL VAT LIGHT BFAST WIFI 1HR FREE PHONE CALLS'
+          }
+        },
+        'guests': {
+          'adults': 1
+        },
+        'price': {
+          'currency': 'GBP',
+          'total': '129.00',
+          'variations': {
+            'average': {
+              'base': '129.00'
+            },
+            'changes': [
+              {
+                'startDate': '2020-04-10',
+                'endDate': '2020-04-11',
+                'total': '129.00'
+              }
+            ]
+          }
+        },
+        'policies': {
+          'guarantee': {
+            'acceptedPayments': {
+              'creditCards': [
+                'AX',
+                'MC',
+                'SW',
+                'VI'
+              ],
+              'methods': [
+                'CREDIT_CARD'
+              ]
+            }
+          },
+          'paymentType': 'guarantee',
+          'cancellation': {
+            'deadline': '2020-04-06T14:00:00+01:00'
+          }
+        }
+      }
+    ],
+    'self': 'https://test.api.amadeus.com/v2/shopping/hotel-offers/by-hotel?hotelId=WVLON185'
+  },
+  {
+    'type': 'hotel-offers',
+    'hotel': {
+      'type': 'hotel',
+      'hotelId': 'HXLON098',
+      'chainCode': 'HX',
+      'dupeId': '700216645',
+      'name': 'HAMPTON BY HILTON LONDON WATERLOO',
+      'rating': '3',
+      'cityCode': 'LON',
+      'latitude': 51.50356,
+      'longitude': -0.11081,
+      'hotelDistance': {
+        'distance': 1.2,
+        'distanceUnit': 'KM'
+      },
+      'address': {
+        'lines': [
+          '157 183 WATERLOO ROAD'
+        ],
+        'postalCode': 'SE18XA',
+        'cityName': 'LONDON',
+        'countryCode': 'GB'
+      },
+      'contact': {
+        'phone': '44-20-74018080',
+        'fax': '44-20-74019720'
+      },
+      'amenities': [
+        'BUSINESS_CENTER',
+        'MEETING_ROOMS',
+        'SERV_DOGS_ALWD',
+        'ADAPTED_PHONES',
+        'WIDE_ENTRANCE',
+        'WIDE_CORRIDORS',
+        'FIRST_AID_STAF',
+        'INT_ROOM_ENTRY',
+        'EMERG_LIGHTING',
+        'FIRE_DETECTORS',
+        'EXTINGUISHERS',
+        'GUARDED_PARKG',
+        'RESTRIC_RM_ACC',
+        'SMOKE_DETECTOR',
+        'SPRINKLERS',
+        'LAUNDRY_SVC',
+        'SAFE_DEP_BOX',
+        'AIR_CONDITIONING',
+        'HAIR_DRYER',
+        'FITNESS_CENTER'
+      ],
+      'media': [
+        {
+          'uri': 'http://uat.multimediarepository.testing.amadeus.com/cmr/retrieve/hotel/52A23AAA3E0F4EFD8BD246BA2FE3C9E6',
+          'category': 'EXTERIOR'
+        }
+      ]
+    },
+    'available': True,
+    'offers': [
+      {
+        'id': 'E9D82F10BC9D180D10E556338F6F6ABE8BA7BAA0385FB662F00C9ABC7A416A94',
+        'checkInDate': '2020-04-10',
+        'checkOutDate': '2020-04-11',
+        'rateCode': 'RAC',
+        'rateFamilyEstimated': {
+          'code': 'PRO',
+          'type': 'P'
+        },
+        'commission': {
+          'percentage': '10.00'
+        },
+        'boardType': 'BREAKFAST',
+        'room': {
+          'type': 'E1Q',
+          'typeEstimated': {
+            'category': 'ACCESSIBLE_ROOM',
+            'beds': 1,
+            'bedType': 'QUEEN'
+          },
+          'description': {
+            'lang': 'EN',
+            'text': 'SALE\nQUEEN ACCESSIBLE ROOM\nHDTV/WORK AREA'
+          }
+        },
+        'guests': {
+          'adults': 1
+        },
+        'price': {
+          'currency': 'GBP',
+          'total': '152.15',
+          'variations': {
+            'average': {
+              'base': '152.15'
+            },
+            'changes': [
+              {
+                'startDate': '2020-04-10',
+                'endDate': '2020-04-11',
+                'total': '152.15'
+              }
+            ]
+          }
+        },
+        'policies': {
+          'paymentType': 'deposit',
+          'cancellation': {
+            'deadline': '2020-04-07T12:00:00+01:00'
+          }
+        }
+      }
+    ],
+    'self': 'https://test.api.amadeus.com/v2/shopping/hotel-offers/by-hotel?hotelId=HXLON098'
+  },
+  {
+    'type': 'hotel-offers',
+    'hotel': {
+      'type': 'hotel',
+      'hotelId': 'WVLONMBH',
+      'chainCode': 'WV',
+      'dupeId': '700029593',
+      'name': 'MYHOTEL BLOOMSBURY',
+      'rating': '4',
+      'cityCode': 'LON',
+      'latitude': 51.51872,
+      'longitude': -0.13211,
+      'hotelDistance': {
+        'distance': 1.3,
+        'distanceUnit': 'KM'
+      },
+      'address': {
+        'lines': [
+          '11-13 BAYLEY STREET',
+          'BEDFORD SQUARE'
+        ],
+        'postalCode': 'WC1B 3HD',
+        'cityName': 'LONDON',
+        'countryCode': 'GB'
+      },
+      'contact': {
+        'fax': '44-20-30046044',
+        'phone': '44-20-30046000'
+      },
+      'amenities': [
+        'COFFEE_SHOP',
+        'RESTAURANT',
+        'DISABLED_FACILITIES',
+        'ACC_WCHAIR',
+        'FIRST_AID_STAF',
+        'INT_ROOM_ENTRY',
+        'EMERG_LIGHTING',
+        'FIRE_DETECTORS',
+        'FIRE_SAFETY',
+        'SMOKE_DETECTOR',
+        'VIDEO_SURVEIL',
+        'KIDS_WELCOME',
+        'ELEVATOR',
+        'EXCHANGE_FAC',
+        'LAUNDRY_SVC',
+        'MASSAGE',
+        'ROOM_SERVICE',
+        'SPA',
+        'AIR_CONDITIONING',
+        'HAIR_DRYER',
+        'MINIBAR',
+        'NONSMOKING_RMS',
+        'PHONE-DIR_DIAL',
+        'TELEVISION',
+        'WI-FI_IN_ROOM',
+        'SIGHTSEEING',
+        'FITNESS_CENTER'
+      ],
+      'media': [
+        {
+          'uri': 'http://uat.multimediarepository.testing.amadeus.com/cmr/retrieve/hotel/6AB81B9CFF394986AF6C3D2A3949AF39',
+          'category': 'ROOM'
+        }
+      ]
+    },
+    'available': True,
+    'offers': [
+      {
+        'id': '94B7F713183169A49809A1AB10902E1C9B97B3E05C7C60C058687AD229623574',
+        'checkInDate': '2020-04-10',
+        'checkOutDate': '2020-04-11',
+        'rateCode': 'P90',
+        'rateFamilyEstimated': {
+          'code': 'BAR',
+          'type': 'P'
+        },
+        'commission': {
+          'amount': '0',
+          'percentage': '0'
+        },
+        'room': {
+          'type': 'F1S',
+          'typeEstimated': {
+            'category': 'STANDARD_ROOM',
+            'beds': 1,
+            'bedType': 'SINGLE'
+          },
+          'description': {
+            'lang': 'EN',
+            'text': 'Best Available Rate\nSTANDARD SGL 1 LRG SGL BED SHWER FREE WIFI HOSP\nRoom Only, inc VAT and comp WiFi Cancel for'
+          }
+        },
+        'guests': {
+          'adults': 1
+        },
+        'price': {
+          'currency': 'GBP',
+          'total': '161.00',
+          'variations': {
+            'average': {
+              'base': '161.00'
+            },
+            'changes': [
+              {
+                'startDate': '2020-04-10',
+                'endDate': '2020-04-11',
+                'total': '161.00'
+              }
+            ]
+          }
+        },
+        'policies': {
+          'guarantee': {
+            'acceptedPayments': {
+              'creditCards': [
+                'AX',
+                'MC',
+                'VI',
+                'SW'
+              ],
+              'methods': [
+                'CREDIT_CARD'
+              ]
+            }
+          },
+          'paymentType': 'guarantee',
+          'cancellation': {
+            'deadline': '2020-04-09T14:00:00+01:00'
+          }
+        }
+      }
+    ],
+    'self': 'https://test.api.amadeus.com/v2/shopping/hotel-offers/by-hotel?hotelId=WVLONMBH'
+  },
+  {
+    'type': 'hotel-offers',
+    'hotel': {
+      'type': 'hotel',
+      'hotelId': 'HILON005',
+      'chainCode': 'HI',
+      'dupeId': '700029591',
+      'name': 'HOLIDAY INN EXP SOUTHWARK ST',
+      'rating': '2',
+      'cityCode': 'LON',
+      'latitude': 51.5061,
+      'longitude': -0.10144,
+      'hotelDistance': {
+        'distance': 1.8,
+        'distanceUnit': 'KM'
+      },
+      'address': {
+        'lines': [
+          '103-109 SOUTHWARK ST'
+        ],
+        'postalCode': 'SE10JQ',
+        'cityName': 'LONDON',
+        'countryCode': 'GB'
+      },
+      'contact': {
+        'phone': '+44 20 74012525',
+        'fax': '+44 20 36270877'
+      },
+      'description': {
+        'lang': 'en',
+        'text': "Make the Holiday Inn Express London Southwark hotel your base for a buzzing central London location and excellent transport links. Friendly staff welcomes you on your arrival at our intimate 136 room hotel near Londons cosmopolitan South Bank. Holiday Inn Express London Southwark is a short walk from Southwark Underground Station and Blackfriars Network Rail Station with direct train services to Gatwick and Luton Airports. Settle into your air conditioned Guest room  decorated in contemporary colours  and start each day with a complimentary breakfast in our lively Great Room. Getting around London is easy with London Bridge and Waterloo stations just a short stroll from the hotel. Cross Blackfriars Bridge to get to the London Stock Exchange and Bank of England. We're just minutes from the lively cafes  theatres and galleries that dot Londons trendy South Bank. Walk along the River Thames to the Tate Modern gallery housed in a converted power station  or stroll over the futuristic Millennium Bridge to elegant St Pauls Cathedral. Why not stop by Borough Market for food tasting en route to the Shard. Holiday Inn Express London Southwarks central location puts chic bars and restaurants on your doorstep. Ask staff to recommend their favourites or do your own research via free wireless Internet in our open plan Lobby"
+      },
+      'amenities': [
+        '24_HOUR_FRONT_DESK',
+        'ATM/CASH_MACHINE',
+        'EXPRESS_CHECK_OUT',
+        'PARKING',
+        'SAFE_DEP_BOX',
+        'WIRELESS_CONNECTIVITY',
+        'FEMA_FIRE_SAFETY_COMPLIANT',
+        'PHOTOCOPIER',
+        'PRINTER',
+        'BUSINESS_CENTER',
+        'COMPUTER_RENTAL',
+        'FIRE_SAFETY',
+        'EMERG_LIGHTING',
+        'FIRE_DETECTORS',
+        'VIDEO_SURVEIL',
+        'EXTINGUISHERS',
+        'FEMA_FIRE_SAFETY_COMPLIANT'
+      ],
+      'media': [
+        {
+          'uri': 'http://uat.multimediarepository.testing.amadeus.com/cmr/retrieve/hotel/BEB226A7324349CA8184D12DB8425311',
+          'category': 'EXTERIOR'
+        }
+      ]
+    },
+    'available': True,
+    'offers': [
+      {
+        'id': '6B32AA0901C19A1D28F33132F7B188024C512C78BE575A6543E8892FDCC78E21',
+        'checkInDate': '2020-04-10',
+        'checkOutDate': '2020-04-11',
+        'rateCode': 'G8A',
+        'rateFamilyEstimated': {
+          'code': 'PRO',
+          'type': 'P'
+        },
+        'boardType': 'BREAKFAST',
+        'room': {
+          'type': '*2T',
+          'typeEstimated': {
+            'category': 'STANDARD_ROOM',
+            'beds': 2,
+            'bedType': 'TWIN'
+          },
+          'description': {
+            'lang': 'EN',
+            'text': 'ADVANCE SAVER NO REFUNDS\nTWIN BEDROOM NONSMOKING TAKE YOUR PICK FROM AN\nEXTENSIVE SELECTION OF FREE VIEW CHANNELS ON'
+          }
+        },
+        'guests': {
+          'adults': 1
+        },
+        'price': {
+          'currency': 'GBP',
+          'base': '162.00',
+          'total': '162.00',
+          'variations': {
+            'average': {
+              'base': '162.00'
+            },
+            'changes': [
+              {
+                'startDate': '2020-04-10',
+                'endDate': '2020-04-11',
+                'base': '162.00'
+              }
+            ]
+          }
+        },
+        'policies': {
+          'deposit': {
+            'acceptedPayments': {
+              'creditCards': [
+                'AX',
+                'VI',
+                'CA',
+                'DC',
+                'CB',
+                'DS',
+                'BE'
+              ],
+              'methods': [
+                'CREDIT_CARD'
+              ]
+            }
+          },
+          'paymentType': 'deposit'
+        }
+      }
+    ],
+    'self': 'https://test.api.amadeus.com/v2/shopping/hotel-offers/by-hotel?hotelId=HILON005'
+  },
+  {
+    'type': 'hotel-offers',
+    'hotel': {
+      'type': 'hotel',
+      'hotelId': 'HSLONBGM',
+      'chainCode': 'HS',
+      'dupeId': '700136025',
+      'name': 'Regency House',
+      'rating': '3',
+      'cityCode': 'LON',
+      'latitude': 51.52171,
+      'longitude': -0.13214,
+      'hotelDistance': {
+        'distance': 1.6,
+        'distanceUnit': 'KM'
+      },
+      'address': {
+        'lines': [
+          'GOWER STREET 71'
+        ],
+        'postalCode': 'WC1E 6DP',
+        'cityName': 'LONDON',
+        'countryCode': 'GB'
+      },
+      'contact': {
+        'phone': '(44) 2076371804',
+        'fax': '(44) 2073235077',
+        'email': 'bookings@regencyhouse-hotel.com'
+      },
+      'description': {
+        'lang': 'en',
+        'text': 'The Regency House Hotel is a Georgian town house, located in Bloomsbury, 20 minutes walk from the International Train Station Kings Cross / St. Pancras and 15 minutes walk from the shops of Oxford Street.'
+      },
+      'amenities': [
+        '24_HOUR_FRONT_DESK',
+        'CONCIERGE',
+        'DRIVING_RANGE',
+        'NIGHT_CLUB',
+        'DOCTOR_ON_CALL',
+        'INTERNET_SERVICES',
+        'EXPRESS_CHECK_OUT',
+        'EXPRESS_CHECK_IN',
+        'FIRE_DETECTORS',
+        'VIDEO_SURVEIL'
+      ],
+      'media': [
+        {
+          'uri': 'http://uat.multimediarepository.testing.amadeus.com/cmr/retrieve/hotel/7294D87B579A404AB15E51755902D02C',
+          'category': 'EXTERIOR'
+        }
+      ]
+    },
+    'available': True,
+    'offers': [
+      {
+        'id': 'EBC4194B936D555F0D4E569E15D7D050E5B2D16A38752E5B4E01926E59C34B62',
+        'checkInDate': '2020-04-10',
+        'checkOutDate': '2020-04-11',
+        'rateCode': 'PRO',
+        'rateFamilyEstimated': {
+          'code': 'PRO',
+          'type': 'P'
+        },
+        'commission': {
+          'percentage': '4.00'
+        },
+        'boardType': 'ROOM_ONLY',
+        'room': {
+          'type': 'ROH',
+          'typeEstimated': {
+            'category': 'STANDARD_ROOM'
+          },
+          'description': {
+            'lang': 'EN',
+            'text': 'Hot Deal\nStandard room A standard room consists of a room with shower-toilet or bathtub-toilet.'
+          }
+        },
+        'guests': {
+          'adults': 1
+        },
+        'price': {
+          'currency': 'GBP',
+          'total': '103.50',
+          'variations': {
+            'average': {
+              'total': '103.50'
+            },
+            'changes': [
+              {
+                'startDate': '2020-04-10',
+                'endDate': '2020-04-11',
+                'total': '103.50'
+              }
+            ]
+          }
+        },
+        'policies': {
+          'guarantee': {
+            'acceptedPayments': {
+              'creditCards': [
+                'VI',
+                'MC',
+                'CA',
+                'AX',
+                'JC'
+              ],
+              'methods': [
+                'CREDIT_CARD'
+              ]
+            }
+          },
+          'paymentType': 'guarantee',
+          'cancellation': {
+            'deadline': '2020-03-31T02:19:00+01:00'
+          }
+        }
+      }
+    ],
+    'self': 'https://test.api.amadeus.com/v2/shopping/hotel-offers/by-hotel?hotelId=HSLONBGM'
+  },
+  {
+    'type': 'hotel-offers',
+    'hotel': {
+      'type': 'hotel',
+      'hotelId': 'MCLONDTG',
+      'chainCode': 'MC',
+      'dupeId': '700027181',
+      'name': 'LONDON MARRIOTT GROSVENOR SQ',
+      'rating': '4',
+      'cityCode': 'LON',
+      'latitude': 51.51288,
+      'longitude': -0.15079,
+      'hotelDistance': {
+        'distance': 1.7,
+        'distanceUnit': 'KM'
+      },
+      'address': {
+        'lines': [
+          'GROSVENOR SQUARE'
+        ],
+        'postalCode': 'W1K6JPP',
+        'cityName': 'LONDON',
+        'countryCode': 'GB'
+      },
+      'contact': {
+        'phone': '44-20-74931232',
+        'fax': '44-20-74913201'
+      },
+      'description': {
+        'lang': 'en',
+        'text': 'The elegant London Marriott Grosvenor Square is superbly located in mayfair next to the us embassy and near the shops of oxford street. West end theaters, major attractions and business areas are easily accessible. The hotel offers english style and service with the reliability of marriott. **2 minute walk to bond street station**'
+      },
+      'amenities': [
+        'BUSINESS_CENTER',
+        'CONVENTION_CTR',
+        'MEETING_ROOMS',
+        'COFFEE_SHOP',
+        'ICE_MACHINES',
+        'RESTAURANT',
+        'DISABLED_FACILITIES',
+        'ACC_TOILETS',
+        'SERV_DOGS_ALWD',
+        'HANDRAIL_BTHRM',
+        'ELEVATOR',
+        'EXCHANGE_FAC',
+        'WIFI',
+        'LAUNDRY_SVC',
+        'LOUNGE',
+        'ROOM_SERVICE',
+        'SAFE_DEP_BOX',
+        'BALLROOM',
+        'AIR_CONDITIONING',
+        'HAIR_DRYER',
+        'MINIBAR',
+        'MOVIE_CHANNELS',
+        'NONSMOKING_RMS',
+        'PHONE-DIR_DIAL',
+        'TELEVISION',
+        'FITNESS_CENTER'
+      ],
+      'media': [
+        {
+          'uri': 'http://uat.multimediarepository.testing.amadeus.com/cmr/retrieve/hotel/5B87D08EF15C439AA097A615A83F5347',
+          'category': 'EXTERIOR'
+        }
+      ]
+    },
+    'available': True,
+    'offers': [
+      {
+        'id': '123A35E515E6D572D1857F8C709E9AC0DC30A4E3A4A13458079075EFC1BE243A',
+        'checkInDate': '2020-04-10',
+        'checkOutDate': '2020-04-11',
+        'rateCode': 'RAC',
+        'rateFamilyEstimated': {
+          'code': 'PRO',
+          'type': 'P'
+        },
+        'room': {
+          'type': 'APN',
+          'typeEstimated': {
+            'category': 'DELUXE_ROOM',
+            'beds': 1,
+            'bedType': 'QUEEN'
+          },
+          'description': {
+            'lang': 'EN',
+            'text': 'Prepay and Save, prepay in full, non-refundable, no changes\nDeluxe room, 1 Queen, Mini fridge, 24sqm/258sqf\nt, Living/sitting area, Dining area, Wireless i'
+          }
+        },
+        'guests': {
+          'adults': 1
+        },
+        'price': {
+          'currency': 'GBP',
+          'total': '284.00',
+          'variations': {
+            'changes': [
+              {
+                'startDate': '2020-04-10',
+                'endDate': '2020-04-11',
+                'total': '284.00'
+              }
+            ]
+          }
+        },
+        'policies': {
+          'paymentType': 'deposit'
+        }
+      }
+    ],
+    'self': 'https://test.api.amadeus.com/v2/shopping/hotel-offers/by-hotel?hotelId=MCLONDTG'
+  },
+  {
+    'type': 'hotel-offers',
+    'hotel': {
+      'type': 'hotel',
+      'hotelId': 'HILON1E3',
+      'chainCode': 'HI',
+      'dupeId': '700008235',
+      'name': 'HOLIDAY INN BLOOMSBURY',
+      'rating': '2',
+      'cityCode': 'LON',
+      'latitude': 51.52301,
+      'longitude': -0.12613,
+      'hotelDistance': {
+        'distance': 1.7,
+        'distanceUnit': 'KM'
+      },
+      'address': {
+        'lines': [
+          'CORAM STREET'
+        ],
+        'postalCode': 'WC1N 1HT',
+        'cityName': 'LONDON',
+        'countryCode': 'GB'
+      },
+      'contact': {
+        'phone': '+44 871 9429222',
+        'fax': '+44 208 0434809'
+      },
+      'description': {
+        'lang': 'en',
+        'text': 'OPT FOR THE MODERN AND CENTRAL HOLIDAY INN LONDON BLOOMSBURY HOTEL  SET IN A QUIET STREET NEAR RUSSELL SQUARE TUBE STATION.     HOLIDAY INN LONDON BLOOMSBURY IS JUST 2 MINUTES WALK FROM THE TUBE AT RUSSELL SQUARE STATION  FOR SPEEDY CONNECTIONS ACROSS THE CAPITAL. WERE 10 MINUTES BY BUS FROM EUROSTAR CONNECTIONS AT ST PANCRAS STATION  AND A 45 MINUTE TAXI RIDE FROM LONDON HEATHROW AIRPORT. CHECK INTO YOUR STYLISH GUEST ROOM  AIR CONDITIONED AND CONNECTED TO WIRELESS INTERNET.     WE HAVE 15 MODERN MEETING ROOMS FOR UP TO 300 DELEGATES IN OUR PLUSH ACADEMY. OUR SPACIOUS FACILITIES ARE ALSO SUITABLE FOR SMALLER TRAINING DAYS AND CATCH UPS. MAJOR ORGANISATIONS SUCH AS THE BMA  UNISON AND UCL ARE 15 MINUTES WALK AWAY. YOU CAN ACCESS THE CITY WITH EASE AT HOLIDAY INN LONDON BLOOMSBURY FROM NEARBY HOLBORN UNDERGROUND STATION.     BALANCE EVENINGS OUT IN NEARBY COVENT GARDEN AND THEATRELAND WITH RELAXING AFTERNOONS IN QUAINT BLOOMSBURY CAFES. THE BRITISH MUSEUMS VAST COLLECTION OF WORLD TREASURES IS 15 MINUTES WALK FROM US  AND ADMISSION IS FREE. YOU CAN SPLASH THE CASH ON LONDONS FAMOUS SHOP LINED OXFORD STREET  JUST 10 MINUTES BY TUBE FROM THE HOTEL.     TREAT YOURSELF TO SIZZLING FAJITAS IN OUR JUNCTION RESTAURANT  OR A PINT OF GUINNESS WITH AN IRISH STEW IN THE BEER GARDEN AT HOLIDAY INN LONDON BLOOMSBURY. OUR FRIENDLY CONCIERGE CAN ASSIST YOU WITH DIRECTIONS AND TOURIST TIPS.'
+      },
+      'amenities': [
+        '24_HOUR_FRONT_DESK',
+        'ATM/CASH_MACHINE',
+        'COFFEE_SHOP',
+        'CONCIERGE',
+        'CONFERENCE_FACILITIES',
+        'DOCTOR_ON_CALL',
+        'GYM',
+        'EXPRESS_CHECK_OUT',
+        'ACC_WCHAIR',
+        'HANDRAIL_BTHRM',
+        'DIS_PARKG',
+        'ACC_RM_WCHAIR',
+        'GARAGE_PARKING',
+        'JOGGING_TRACK',
+        'LAUNDRY_SVC',
+        'ROOM_SERVICE',
+        'SAFE_DEP_BOX',
+        'CONVENIENCE_STOR',
+        'PORTER/BELLBOY',
+        'WIRELESS_CONNECTIVITY',
+        'CHILDRENS_PLAY_AREA',
+        'FEMA_FIRE_SAFETY_COMPLIANT',
+        'PHOTOCOPIER',
+        'PRINTER',
+        'AUDIO-VIS_EQT',
+        'BUSINESS_CENTER',
+        'COMPUTER_RENTAL',
+        'LCD/PROJECTOR',
+        'OVERHEAD_PROJECTOR',
+        'CONFERENCE_SUITE',
+        'CONVENTION_CTR',
+        'MEETING_FACILITIES',
+        'FIRE_SAFETY',
+        'EMERG_LIGHTING',
+        'FIRE_DETECTORS',
+        'VIDEO_SURVEIL',
+        'EXTINGUISHERS',
+        'FEMA_FIRE_SAFETY_COMPLIANT',
+        'FITNESS_CENTER'
+      ],
+      'media': [
+        {
+          'uri': 'http://uat.multimediarepository.testing.amadeus.com/cmr/retrieve/hotel/B23B994D35B6436698BBB7EAF5CFBDA4',
+          'category': 'EXTERIOR'
+        }
+      ]
+    },
+    'available': True,
+    'offers': [
+      {
+        'id': 'CB53555CE2D3DE49B7768B7FA43E6D8E475DDDD55B68538470B3EBDAEF6734DA',
+        'checkInDate': '2020-04-10',
+        'checkOutDate': '2020-04-11',
+        'rateCode': '22A',
+        'rateFamilyEstimated': {
+          'code': 'BAR',
+          'type': 'P'
+        },
+        'boardType': 'ROOM_ONLY',
+        'room': {
+          'type': '*RH',
+          'typeEstimated': {
+            'category': 'STANDARD_ROOM'
+          },
+          'description': {
+            'lang': 'EN',
+            'text': 'BEST FLEXIBLE RATE\nSTANDARD ROOM NON SMOKING BED TYPE PREF CANNOT\nBE GUARANTEED AND WILL BE ALLOCATED ON'
+          }
+        },
+        'guests': {
+          'adults': 1
+        },
+        'price': {
+          'currency': 'GBP',
+          'base': '149.00',
+          'total': '149.00',
+          'taxes': [
+            {
+              'code': 'MISCELLANEOUS',
+              'pricingFrequency': 'PER_NIGHT',
+              'pricingMode': 'PER_PRODUCT',
+              'percentage': 20.0,
+              'included': True
+            }
+          ],
+          'variations': {
+            'average': {
+              'base': '149.00'
+            },
+            'changes': [
+              {
+                'startDate': '2020-04-10',
+                'endDate': '2020-04-11',
+                'base': '149.00'
+              }
+            ]
+          }
+        },
+        'policies': {
+          'guarantee': {
+            'acceptedPayments': {
+              'creditCards': [
+                'AX',
+                'VI',
+                'CA',
+                'DC',
+                'CB',
+                'DS',
+                'BE'
+              ],
+              'methods': [
+                'CREDIT_CARD'
+              ]
+            }
+          },
+          'paymentType': 'guarantee',
+          'cancellation': {
+            'numberOfNights': 1,
+            'deadline': '2020-04-08T02:03:00+01:00'
+          }
+        }
+      }
+    ],
+    'self': 'https://test.api.amadeus.com/v2/shopping/hotel-offers/by-hotel?hotelId=HILON1E3'
+  },
+  {
+    'type': 'hotel-offers',
+    'hotel': {
+      'type': 'hotel',
+      'hotelId': 'HSLONBBI',
+      'chainCode': 'HS',
+      'dupeId': '700170995',
+      'name': 'Belle Cour',
+      'rating': '4',
+      'cityCode': 'LON',
+      'latitude': 51.49341,
+      'longitude': -0.1399,
+      'hotelDistance': {
+        'distance': 1.8,
+        'distanceUnit': 'KM'
+      },
+      'address': {
+        'lines': [
+          'UPPER TACHBROOK STREET 4'
+        ],
+        'postalCode': 'SW1V 1SH',
+        'cityName': 'LONDON',
+        'countryCode': 'GB'
+      },
+      'contact': {
+        'phone': '(44) 2078280206',
+        'fax': '(44) 2078283695',
+        'email': 'bellecouruk@gmail.com'
+      },
+      'description': {
+        'lang': 'en',
+        'text': 'Relax and unwind in the comfortable atmosphere of the Belle Cour Hotel. After an exciting day in the city, you can treat yourself to a visit to the Nail Spa. Then, you can retreat to one of the elegant rooms or apartments and benefit from the free Wi-Fi.'
+      },
+      'amenities': [
+        'SAFE_DEP_BOX',
+        'INTERNET_SERVICES',
+        'WIRELESS_CONNECTIVITY',
+        'FIRE_DETECTORS',
+        'SMOKE_DETECTOR',
+        'VIDEO_SURVEIL'
+      ],
+      'media': [
+        {
+          'uri': 'http://uat.multimediarepository.testing.amadeus.com/cmr/retrieve/hotel/74C3BC1A4C3A4EA6BA3DC2DC27A3E3D3',
+          'category': 'ROOM'
+        }
+      ]
+    },
+    'available': True,
+    'offers': [
+      {
+        'id': '8E658E4173F336DCDF79E85F4CCF2CE9A7786E4AC2E32FE536D36552E82B1695',
+        'checkInDate': '2020-04-10',
+        'checkOutDate': '2020-04-11',
+        'rateCode': 'PRO',
+        'rateFamilyEstimated': {
+          'code': 'PRO',
+          'type': 'P'
+        },
+        'commission': {
+          'percentage': '4.00'
+        },
+        'boardType': 'ROOM_ONLY',
+        'room': {
+          'type': 'ROH',
+          'typeEstimated': {
+            'category': 'STANDARD_ROOM'
+          },
+          'description': {
+            'lang': 'EN',
+            'text': 'HRS-Rate - LastMinute-Discount\nStandard room A standard room consists of a room with shower-toilet or bathtub-toilet.'
+          }
+        },
+        'guests': {
+          'adults': 1
+        },
+        'price': {
+          'currency': 'GBP',
+          'total': '144.00',
+          'variations': {
+            'average': {
+              'total': '144.00'
+            },
+            'changes': [
+              {
+                'startDate': '2020-04-10',
+                'endDate': '2020-04-11',
+                'total': '144.00'
+              }
+            ]
+          }
+        },
+        'policies': {
+          'guarantee': {
+            'acceptedPayments': {
+              'creditCards': [
+                'VI',
+                'MC',
+                'CA',
+                'AX'
+              ],
+              'methods': [
+                'CREDIT_CARD'
+              ]
+            }
+          },
+          'paymentType': 'guarantee',
+          'cancellation': {
+            'numberOfNights': 1,
+            'deadline': '2020-04-08T01:02:00+01:00'
+          }
+        }
+      }
+    ],
+    'self': 'https://test.api.amadeus.com/v2/shopping/hotel-offers/by-hotel?hotelId=HSLONBBI'
+  },
+  {
+    'type': 'hotel-offers',
+    'hotel': {
+      'type': 'hotel',
+      'hotelId': 'HSLONBFP',
+      'chainCode': 'HS',
+      'dupeId': '700219691',
+      'name': 'Haverstock',
+      'rating': '4',
+      'cityCode': 'LON',
+      'latitude': 51.54881,
+      'longitude': -0.16173,
+      'hotelDistance': {
+        'distance': 5.2,
+        'distanceUnit': 'KM'
+      },
+      'address': {
+        'lines': [
+          'HAVERSTOCK HILL 154'
+        ],
+        'postalCode': 'NW3 2AY',
+        'cityName': 'LONDON',
+        'countryCode': 'GB'
+      },
+      'contact': {
+        'phone': '(44) (0)2077225097',
+        'fax': '(44) (0)2074490087',
+        'email': 'reservations@haverstockhotel.com'
+      },
+      'description': {
+        'lang': 'en',
+        'text': 'Welcome to The Haverstock Hotel,a lovingly restored public house formerly known as The Haverstock Arms, providing very modern, boutique accommodation.'
+      },
+      'amenities': [
+        '24_HOUR_FRONT_DESK',
+        'MULTILINGUAL_STAFF',
+        'SAFE_DEP_BOX',
+        'RESTAURANT',
+        'CONCIERGE',
+        'DRIVING_RANGE',
+        'NIGHT_CLUB',
+        'INTERNET_SERVICES',
+        'WIRELESS_CONNECTIVITY',
+        'DOCTOR_ON_CALL',
+        'COFFEE_SHOP',
+        'PORTER/BELLBOY',
+        'FIRE_DETECTORS',
+        'VIDEO_SURVEIL'
+      ],
+      'media': [
+        {
+          'uri': 'http://uat.multimediarepository.testing.amadeus.com/cmr/retrieve/hotel/D9E879823D9F4D308073C95FD0F79257',
+          'category': 'EXTERIOR'
+        }
+      ]
+    },
+    'available': True,
+    'offers': [
+      {
+        'id': '8FD0F0CC08E1D4E9288D1A61DE47B8FA0A18A3CC9ED52635ED6B67B01AF6A6B4',
+        'checkInDate': '2020-04-10',
+        'checkOutDate': '2020-04-11',
+        'rateCode': 'PRO',
+        'rateFamilyEstimated': {
+          'code': 'PRO',
+          'type': 'P'
+        },
+        'commission': {
+          'percentage': '4.00'
+        },
+        'boardType': 'ROOM_ONLY',
+        'room': {
+          'type': 'ROH',
+          'typeEstimated': {
+            'category': 'STANDARD_ROOM'
+          },
+          'description': {
+            'lang': 'EN',
+            'text': 'Hot Deal\nStandard room A standard room consists of a room with shower-toilet or bathtub-toilet.'
+          }
+        },
+        'guests': {
+          'adults': 1
+        },
+        'price': {
+          'currency': 'GBP',
+          'total': '130.80',
+          'variations': {
+            'average': {
+              'total': '130.80'
+            },
+            'changes': [
+              {
+                'startDate': '2020-04-10',
+                'endDate': '2020-04-11',
+                'total': '130.80'
+              }
+            ]
+          }
+        },
+        'policies': {
+          'deposit': {
+            'acceptedPayments': {
+              'creditCards': [
+                'DC',
+                'DN',
+                'VI',
+                'MC',
+                'CA',
+                'AX'
+              ],
+              'methods': [
+                'CREDIT_CARD'
+              ]
+            }
+          },
+          'paymentType': 'deposit',
+          'cancellation': {
+            'deadline': '2020-03-24T22:14:00+01:00'
+          }
+        }
+      }
+    ],
+    'self': 'https://test.api.amadeus.com/v2/shopping/hotel-offers/by-hotel?hotelId=HSLONBFP'
+  },
+  {
+    'type': 'hotel-offers',
+    'hotel': {
+      'type': 'hotel',
+      'hotelId': 'HILON6AA',
+      'chainCode': 'HI',
+      'dupeId': '700020449',
+      'name': 'HOLIDAY INN OXFORD CIRCUS',
+      'rating': '2',
+      'cityCode': 'LON',
+      'latitude': 51.51697,
+      'longitude': -0.1492,
+      'hotelDistance': {
+        'distance': 1.8,
+        'distanceUnit': 'KM'
+      },
+      'address': {
+        'lines': [
+          '57 - 59 WELBECK STREET'
+        ],
+        'postalCode': 'W1G 9BL',
+        'cityName': 'LONDON',
+        'countryCode': 'GB'
+      },
+      'contact': {
+        'phone': '+44 207 9354442',
+        'fax': '+44 207 4873782'
+      },
+      'description': {
+        'lang': 'en',
+        'text': "Enjoy a quiet location right in the heart of cosmopolitan London at the Holiday Inn London Oxford Circus hotel. Marble columns frame the entrance to our London hotel, an elegant Edwardian building on a peaceful street in the smart Marylebone area. Choose an Executive room for city views and check email throughout the hotel with wireless Internet. Holiday Inn London Oxford Circus is just 150 metres from Oxford Street shopping and 10 minutes by taxi from Paddington Station for direct rail links to Heathrow Airport. Our central location makes getting around London easy. It's a short stroll to Harley Street, Bond Street station, for direct trains to Canary Wharf. Invite clients to Holiday Inn London Oxford Circus and give a presentation in one of 3 air conditioned meeting rooms with space for up to 135 people. Major London attractions like Madame Tussauds waxworks and stately Buckingham Palace are within walking distance of our hotel. See the sights on an open top bus tour, and ask our friendly Concierge to book your tickets to shows in London's buzzing Theatreland. Start your day with a full English breakfast and dine at the evening carvery in Oliver's Restaurant. You can work up an appetite in the MiniGym and unwind in The Londoner, our sociable bar. We're also a short walk from Soho's lively pubs and cafes."
+      },
+      'amenities': [
+        '24_HOUR_FRONT_DESK',
+        'CONCIERGE',
+        'CONFERENCE_FACILITIES',
+        'EXCHANGE_FAC',
+        'DOCTOR_ON_CALL',
+        'GYM',
+        'EXPRESS_CHECK_OUT',
+        'ACC_WCHAIR',
+        'HANDRAIL_BTHRM',
+        'ACC_ELEVATORS',
+        'ACC_RM_WCHAIR',
+        'LAUNDRY_SVC',
+        'PARKING',
+        'ROOM_SERVICE',
+        'SAFE_DEP_BOX',
+        'PORTER/BELLBOY',
+        'WIRELESS_CONNECTIVITY',
+        'FEMA_FIRE_SAFETY_COMPLIANT',
+        'PHOTOCOPIER',
+        'AUDIO-VIS_EQT',
+        'LCD/PROJECTOR',
+        'OVERHEAD_PROJECTOR',
+        'SECRETARIAL_SERVICES',
+        'MEETING_FACILITIES',
+        'FIRE_SAFETY',
+        'EMERG_LIGHTING',
+        'FIRE_DETECTORS',
+        'EXTINGUISHERS',
+        'FEMA_FIRE_SAFETY_COMPLIANT'
+      ],
+      'media': [
+        {
+          'uri': 'http://uat.multimediarepository.testing.amadeus.com/cmr/retrieve/hotel/B62CE309C5EA404A80AED7A56C3CDF88',
+          'category': 'EXTERIOR'
+        }
+      ]
+    },
+    'available': True,
+    'offers': [
+      {
+        'id': 'E38CC522D683CF5BFBD6A10FD0CF65E8F626940F99D8C648B8822B8A2EEFBD31',
+        'checkInDate': '2020-04-10',
+        'checkOutDate': '2020-04-11',
+        'rateCode': 'G8A',
+        'rateFamilyEstimated': {
+          'code': 'PRO',
+          'type': 'P'
+        },
+        'boardType': 'ROOM_ONLY',
+        'room': {
+          'type': '*2T',
+          'typeEstimated': {
+            'category': 'STANDARD_ROOM',
+            'beds': 2,
+            'bedType': 'SINGLE'
+          },
+          'description': {
+            'lang': 'EN',
+            'text': 'ADVANCE SAVER NO REFUNDS\n2 SINGLE BEDS NONSMOKING SURF THE WEB WITH\nWIRELESS INTERNET IN YOUR BRIGHT AIR'
+          }
+        },
+        'guests': {
+          'adults': 1
+        },
+        'price': {
+          'currency': 'GBP',
+          'base': '136.00',
+          'total': '136.00',
+          'variations': {
+            'average': {
+              'base': '136.00'
+            },
+            'changes': [
+              {
+                'startDate': '2020-04-10',
+                'endDate': '2020-04-11',
+                'base': '136.00'
+              }
+            ]
+          }
+        },
+        'policies': {
+          'deposit': {
+            'acceptedPayments': {
+              'creditCards': [
+                'AX',
+                'VI',
+                'CA',
+                'DC',
+                'CB',
+                'DS',
+                'BE'
+              ],
+              'methods': [
+                'CREDIT_CARD'
+              ]
+            }
+          },
+          'paymentType': 'deposit'
+        }
+      }
+    ],
+    'self': 'https://test.api.amadeus.com/v2/shopping/hotel-offers/by-hotel?hotelId=HILON6AA'
+  },
+  {
+    'type': 'hotel-offers',
+    'hotel': {
+      'type': 'hotel',
+      'hotelId': 'MCLONPLM',
+      'chainCode': 'MC',
+      'dupeId': '700024273',
+      'name': 'LONDON MARRIOTT PARK LANE',
+      'rating': '4',
+      'cityCode': 'LON',
+      'latitude': 51.51296,
+      'longitude': -0.15772,
+      'hotelDistance': {
+        'distance': 2.2,
+        'distanceUnit': 'KM'
+      },
+      'address': {
+        'lines': [
+          '140 PARK LANE'
+        ],
+        'postalCode': 'W1K 7AA',
+        'cityName': 'LONDON',
+        'countryCode': 'GB'
+      },
+      'contact': {
+        'phone': '44-20-74937000',
+        'fax': '44-20-74938333'
+      },
+      'amenities': [
+        'BUSINESS_CENTER',
+        'MEETING_ROOMS',
+        'COFFEE_SHOP',
+        'ICE_MACHINES',
+        'RESTAURANT',
+        'DISABLED_FACILITIES',
+        'ACC_TOILETS',
+        'SERV_DOGS_ALWD',
+        'HANDRAIL_BTHRM',
+        'BABY-SITTING',
+        'ELEVATOR',
+        'EXCHANGE_FAC',
+        'WIFI',
+        'LAUNDRY_SVC',
+        'SWIMMING_POOL',
+        'LOUNGE',
+        'ROOM_SERVICE',
+        'SAFE_DEP_BOX',
+        'BALLROOM',
+        'AIR_CONDITIONING',
+        'HAIR_DRYER',
+        'MINIBAR',
+        'MOVIE_CHANNELS',
+        'NONSMOKING_RMS',
+        'PHONE-DIR_DIAL',
+        'TELEVISION',
+        'FITNESS_CENTER'
+      ],
+      'media': [
+        {
+          'uri': 'http://uat.multimediarepository.testing.amadeus.com/cmr/retrieve/hotel/D7652C8980EC4686A90813886C37655E',
+          'category': 'EXTERIOR'
+        }
+      ]
+    },
+    'available': True,
+    'offers': [
+      {
+        'id': '65EBAE399C75F66EC4C28912902DC8F5F9751B7ECE5D48838454CDD887E274EE',
+        'checkInDate': '2020-04-10',
+        'checkOutDate': '2020-04-11',
+        'rateCode': 'RAC',
+        'rateFamilyEstimated': {
+          'code': 'PRO',
+          'type': 'P'
+        },
+        'room': {
+          'type': 'APN',
+          'typeEstimated': {
+            'category': 'DELUXE_ROOM',
+            'beds': 1,
+            'bedType': 'KING'
+          },
+          'description': {
+            'lang': 'EN',
+            'text': 'Prepay and Save, prepay in full, non-refundable, no changes\nDeluxe Room, 1 King, 28sqm/301sqft, Wireless in\nternet, for a fee, Wired internet, for a fee, C'
+          }
+        },
+        'guests': {
+          'adults': 1
+        },
+        'price': {
+          'currency': 'GBP',
+          'total': '375.00',
+          'variations': {
+            'changes': [
+              {
+                'startDate': '2020-04-10',
+                'endDate': '2020-04-11',
+                'total': '375.00'
+              }
+            ]
+          }
+        },
+        'policies': {
+          'paymentType': 'deposit'
+        }
+      }
+    ],
+    'self': 'https://test.api.amadeus.com/v2/shopping/hotel-offers/by-hotel?hotelId=MCLONPLM'
+  },
+  {
+    'type': 'hotel-offers',
+    'hotel': {
+      'type': 'hotel',
+      'hotelId': 'MCLONGHM',
+      'chainCode': 'MC',
+      'dupeId': '700031300',
+      'name': 'JW MARRIOTT GROSVENOR HOUSE',
+      'rating': '5',
+      'cityCode': 'LON',
+      'latitude': 51.50988,
+      'longitude': -0.15509,
+      'hotelDistance': {
+        'distance': 1.9,
+        'distanceUnit': 'KM'
+      },
+      'address': {
+        'lines': [
+          'PARK LANE'
+        ],
+        'postalCode': 'W1K 7TN',
+        'cityName': 'LONDON',
+        'countryCode': 'GB'
+      },
+      'contact': {
+        'phone': '44-20-74996363',
+        'fax': '44-20-76299337'
+      },
+      'amenities': [
+        'BUSINESS_CENTER',
+        'CONVENTION_CTR',
+        'MEETING_ROOMS',
+        'COFFEE_SHOP',
+        'ICE_MACHINES',
+        'RESTAURANT',
+        'DISABLED_FACILITIES',
+        'ACC_TOILETS',
+        'SERV_DOGS_ALWD',
+        'DIS_PARKG',
+        'HANDRAIL_BTHRM',
+        'BABY-SITTING',
+        'BEAUTY_PARLOUR',
+        'ELEVATOR',
+        'EXCHANGE_FAC',
+        'WIFI',
+        'LAUNDRY_SVC',
+        'VALET_PARKING',
+        'HAIRDRESSER',
+        'LOUNGE',
+        'ROOM_SERVICE',
+        'SAFE_DEP_BOX',
+        'BALLROOM',
+        'SPA',
+        'AIR_CONDITIONING',
+        'HAIR_DRYER',
+        'MINIBAR',
+        'MOVIE_CHANNELS',
+        'NONSMOKING_RMS',
+        'PHONE-DIR_DIAL',
+        'TELEVISION',
+        'FITNESS_CENTER'
+      ],
+      'media': [
+        {
+          'uri': 'http://uat.multimediarepository.testing.amadeus.com/cmr/retrieve/hotel/269C913428F74D608072C6A3D9058374',
+          'category': 'EXTERIOR'
+        }
+      ]
+    },
+    'available': True,
+    'offers': [
+      {
+        'id': '21F404976F79BC45715E69EDE5A13F62C54EC1F84D86061F6C561CB002165776',
+        'checkInDate': '2020-04-10',
+        'checkOutDate': '2020-04-11',
+        'rateCode': 'RAC',
+        'rateFamilyEstimated': {
+          'code': 'PRO',
+          'type': 'P'
+        },
+        'room': {
+          'type': 'APN',
+          'typeEstimated': {
+            'category': 'DELUXE_ROOM',
+            'beds': 1,
+            'bedType': 'DOUBLE'
+          },
+          'description': {
+            'lang': 'EN',
+            'text': 'Prepay and Save, prepay in full, non-refundable, no changes\nDeluxe Queen Room, 1 Queen, 20sqm/215sqft-29sqm\n/312sqft, Wireless internet, for a fee, Wired i'
+          }
+        },
+        'guests': {
+          'adults': 1
+        },
+        'price': {
+          'currency': 'GBP',
+          'total': '286.00',
+          'variations': {
+            'changes': [
+              {
+                'startDate': '2020-04-10',
+                'endDate': '2020-04-11',
+                'total': '286.00'
+              }
+            ]
+          }
+        },
+        'policies': {
+          'paymentType': 'deposit'
+        }
+      }
+    ],
+    'self': 'https://test.api.amadeus.com/v2/shopping/hotel-offers/by-hotel?hotelId=MCLONGHM'
+  },
+  {
+    'type': 'hotel-offers',
+    'hotel': {
+      'type': 'hotel',
+      'hotelId': 'HILON1E5',
+      'chainCode': 'HI',
+      'dupeId': '700024231',
+      'name': 'HOLIDAY INN REGENTS PARK',
+      'rating': '2',
+      'cityCode': 'LON',
+      'latitude': 51.52268,
+      'longitude': -0.14273,
+      'hotelDistance': {
+        'distance': 2.0,
+        'distanceUnit': 'KM'
+      },
+      'address': {
+        'lines': [
+          'CARBURTON STREET'
+        ],
+        'postalCode': 'W1W 5EE',
+        'cityName': 'LONDON',
+        'countryCode': 'GB'
+      },
+      'contact': {
+        'phone': '+44 871 9429111',
+        'fax': '+44 207 9909809'
+      },
+      'description': {
+        'lang': 'en',
+        'text': 'CHOOSE THE WELL CONNECTED HOLIDAY INN LONDON REGENTS PARK HOTEL  WITH A SUPERB CENTRAL LONDON LOCATION AND SPEEDY TRANSPORT LINKS.     HOLIDAY INN LONDON REGENTS PARK IS IN A LEAFY AND COSMOPOLITAN AREA OF CENTRAL LONDON  A 10 MINUTE WALK FROM BUSTLING OXFORD STREET. LEAVE YOUR CAR IN OUR UNDERGROUND CAR PARK  AND EXPLORE LONDON BY TUBE. GREAT PORTLAND STREET TUBE STATION IS 25 METRES FROM THE HOTEL  FROM WHERE YOU CAN REACH THE CITY AND CANARY WHARF IN 30 MINUTES  AND LONDON HEATHROW AIRPORT IN 45 MINUTES.     WIRELESS INTERNET IS AVAILABLE FOR INFORMAL MEETINGS IN OUR AIRY LOBBY  AND YOU CAN INVITE UP TO 300 PEOPLE TO EVENTS AT THE ACADEMY CONFERENCE CENTRE  WITH AN IT TECHNICIAN AND BREAK OUT ZONES. HOLIDAY INN LONDON REGENTS PARK IS A 10 MINUTE WALK FROM SANTANDERS OFFICES AND BUSINESSES IN THE BT TOWER.     STROLL 5 MINUTES TO REGENTS PARK  WHERE YOULL FIND LONDON ZOO AND PRETTY PRIMROSE HILL. WERE A 10 MINUTE WALK FROM BOND STREET BOUTIQUES AND 20 MINUTES FROM BUCKINGHAM PALACE AND CRUISES ON THE RIVER THAMES. ASK OUR CONCIERGE TO PLAN YOUR DAY OUT AND BOOK WEST END THEATRE TICKETS.     ROOM SERVICE IS AVAILABLE 24 HOURS AT HOLIDAY INN LONDON REGENTS PARK  AND YOU CAN DINE ON A SELECTION OF DELICIOUS CURRIES IN THE VIBRANT JUNCTION RESTAURANT. OUR JUNCTION BAR HAS A MENU OF LIGHT BITES  AND A HOT BREAKFAST BUFFET IS SERVED DAILY.'
+      },
+      'amenities': [
+        '24_HOUR_FRONT_DESK',
+        'CONCIERGE',
+        'CONFERENCE_FACILITIES',
+        'DOCTOR_ON_CALL',
+        'EXECUTIVE_FLR',
+        'GYM',
+        'EXPRESS_CHECK_IN',
+        'EXPRESS_CHECK_OUT',
+        'ACC_WCHAIR',
+        'HANDRAIL_BTHRM',
+        'ACC_ELEVATORS',
+        'ACC_RM_WCHAIR',
+        'GARAGE_PARKING',
+        'JOGGING_TRACK',
+        'LAUNDRY_SVC',
+        'PARKING',
+        'ROOM_SERVICE',
+        'SAFE_DEP_BOX',
+        'PORTER/BELLBOY',
+        'WIRELESS_CONNECTIVITY',
+        'FEMA_FIRE_SAFETY_COMPLIANT',
+        'PHOTOCOPIER',
+        'PRINTER',
+        'AUDIO-VIS_EQT',
+        'BUSINESS_CENTER',
+        'COMPUTER_RENTAL',
+        'LCD/PROJECTOR',
+        'OVERHEAD_PROJECTOR',
+        'SECRETARIAL_SERVICES',
+        'CONFERENCE_SUITE',
+        'CONVENTION_CTR',
+        'MEETING_FACILITIES',
+        'FIRE_SAFETY',
+        'ELEC_GENERATOR',
+        'EMERG_LIGHTING',
+        'FIRE_DETECTORS',
+        'SPRINKLERS',
+        'VIDEO_SURVEIL',
+        'EXTINGUISHERS',
+        'FEMA_FIRE_SAFETY_COMPLIANT'
+      ],
+      'media': [
+        {
+          'uri': 'http://uat.multimediarepository.testing.amadeus.com/cmr/retrieve/hotel/C82184ECBCF54C7D8839EF32C5D44A7C',
+          'category': 'EXTERIOR'
+        }
+      ]
+    },
+    'available': True,
+    'offers': [
+      {
+        'id': 'F1CED31C0E0E5D063DAF04DAB46275E16F7EF960658DA1D360CFEF92AD607595',
+        'checkInDate': '2020-04-10',
+        'checkOutDate': '2020-04-11',
+        'rateCode': 'U9A',
+        'rateFamilyEstimated': {
+          'code': 'GOV',
+          'type': 'C'
+        },
+        'boardType': 'BREAKFAST',
+        'room': {
+          'type': '*2T',
+          'typeEstimated': {
+            'category': 'STANDARD_ROOM',
+            'beds': 2,
+            'bedType': 'SINGLE'
+          },
+          'description': {
+            'lang': 'EN',
+            'text': 'GOVERNMENT RATE ROOM AND BREAKFAST RATE BED\n2 SINGLE BEDS NONSMOKING STAY IN TOUCH FROM\nYOUR GUEST ROOM WITH HIGH SPEED INTERNET AT'
+          }
+        },
+        'guests': {
+          'adults': 1
+        },
+        'price': {
+          'currency': 'GBP',
+          'base': '130.00',
+          'total': '130.00',
+          'variations': {
+            'average': {
+              'base': '130.00'
+            },
+            'changes': [
+              {
+                'startDate': '2020-04-10',
+                'endDate': '2020-04-11',
+                'base': '130.00'
+              }
+            ]
+          }
+        },
+        'policies': {
+          'guarantee': {
+            'acceptedPayments': {
+              'creditCards': [
+                'AX',
+                'VI',
+                'CA',
+                'DC',
+                'CB',
+                'DS',
+                'BE'
+              ],
+              'methods': [
+                'CREDIT_CARD'
+              ]
+            }
+          },
+          'paymentType': 'guarantee',
+          'cancellation': {
+            'numberOfNights': 1,
+            'deadline': '2020-04-09T16:00:00+01:00'
+          }
+        }
+      }
+    ],
+    'self': 'https://test.api.amadeus.com/v2/shopping/hotel-offers/by-hotel?hotelId=HILON1E5'
+  },
+  {
+    'type': 'hotel-offers',
+    'hotel': {
+      'type': 'hotel',
+      'hotelId': 'BWLON799',
+      'chainCode': 'BW',
+      'dupeId': '700006292',
+      'name': 'BEST WESTERN CORONA',
+      'rating': '3',
+      'cityCode': 'LON',
+      'latitude': 51.48992,
+      'longitude': -0.13721,
+      'hotelDistance': {
+        'distance': 2.0,
+        'distanceUnit': 'KM'
+      },
+      'address': {
+        'lines': [
+          '85-89 BELGRAVE ROAD',
+          'VICTORIA'
+        ],
+        'postalCode': 'SW1V 2BQ',
+        'cityName': 'LONDON',
+        'countryCode': 'GB'
+      },
+      'contact': {
+        'phone': '44-207-8289279',
+        'fax': '44-207-9318576'
+      },
+      'description': {
+        'lang': 'en',
+        'text': 'The best western corona hotel has recently completed a multi million pound refurbishment program. While the hotel is an elegant victorian conversion, it boasts all the requirements of a modern hotel, including electronic locks, and dataports. Centrally located within walking distance of buckingham palace, the corona is ideal for enjoying all the sites london has to offer. . .'
+      },
+      'amenities': [
+        'BABY-SITTING',
+        'KIDS_WELCOME',
+        'ELEVATOR',
+        'INT_HOTSPOTS',
+        'FREE_INTERNET',
+        'WIFI',
+        'LAUNDRY_SVC',
+        'ROOM_SERVICE',
+        'INT_ROOM_ENTRY',
+        'EMERG_LIGHTING',
+        'EXTINGUISHERS',
+        'FIRE_SAFETY',
+        'SMOKE_DETECTOR',
+        'VIDEO_SURVEIL',
+        'SAFE_DEP_BOX',
+        'HAIR_DRYER',
+        'NONSMOKING_RMS',
+        'PHONE-DIR_DIAL'
+      ]
+    },
+    'available': True,
+    'offers': [
+      {
+        'id': 'A071A98D5E5329A2B830A81AC1C17E218F61CB42480242FB1564CB7029E305A9',
+        'checkInDate': '2020-04-10',
+        'checkOutDate': '2020-04-11',
+        'rateCode': 'MIL',
+        'rateFamilyEstimated': {
+          'code': 'GOV',
+          'type': 'C'
+        },
+        'commission': {
+          'percentage': '10'
+        },
+        'room': {
+          'type': 'A2T',
+          'typeEstimated': {
+            'category': 'FAMILY_ROOM',
+            'beds': 2,
+            'bedType': 'TWIN'
+          },
+          'description': {
+            'lang': 'EN',
+            'text': 'GOVT/MILITARY RATE* GOVERNMENT/MILTARY\n1 DOUBLE 1 SINGLE,NONSMOKE,FAMILY ROOM\n I.D. REQUIRED AT CHECK-IN'
+          }
+        },
+        'guests': {
+          'adults': 1
+        },
+        'price': {
+          'currency': 'GBP',
+          'total': '80.10',
+          'variations': {
+            'average': {
+              'base': '80.10'
+            },
+            'changes': [
+              {
+                'startDate': '2020-04-10',
+                'endDate': '2020-04-11',
+                'total': '80.10'
+              }
+            ]
+          }
+        },
+        'policies': {
+          'paymentType': 'guarantee',
+          'cancellation': {
+            'deadline': '2020-04-10T16:00:00+01:00'
+          }
+        }
+      }
+    ],
+    'self': 'https://test.api.amadeus.com/v2/shopping/hotel-offers/by-hotel?hotelId=BWLON799'
+  }
+]

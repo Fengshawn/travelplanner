@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Email input</title>
+    <meta name="description" content="Email input"/>
+
+    <link rel="stylesheet" type="text/css" href="/static/css/styleemail.css">
+
+    <script type="text/javascript" src="/static/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/js/vector.js"></script>
+
+</head>
+<body>
+
+<script type="text/javascript" src="/static/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="/static/js/autoMail.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#email').autoMail({
+            emails: ['qq.com', '163.com', '126.com', 'sina.com', 'sohu.com', 'yahoo.cn', 'gmail.com', 'hotmail.com', 'live.cn']
+        });
+    });
+</script>
+
+
+{#<input id="email" type="text" name="email"/>#}
+
+<div id="container">
+    <div id="output">
+        <div class="containerT">
+            <h1>Email</h1>
+            <form class="form" id="entry_form" method="post" action="/success">
+                <input id="email" placeholder="email" type="text" name="email" />
+                <button type="submit" id="entry_btn">Send</button>
+                <div id="prompt" class="prompt"></div>
+            </form>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        Victor("container", "output");   //登陆背景函数
+        $("#email").focus();
+        $('#email').autoMail({
+            emails: ['qq.com', '163.com', '126.com', 'sina.com', 'sohu.com', 'yahoo.cn', 'gmail.com', 'hotmail.com', 'live.cn']
+        });
+        $(document).keydown(function (event) {
+            if (event.keyCode == 13) {
+                $("#entry_btn").click();
+            }
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,257 @@
+[
+  {
+    'bounds': {
+      'northeast': {
+        'lat': 48.902156,
+        'lng': 2.4697602
+      },
+      'southwest': {
+        'lat': 48.8155755,
+        'lng': 2.224122
+      }
+    },
+    'components': {
+      'ISO_3166-1_alpha-2': 'FR',
+      'ISO_3166-1_alpha-3': 'FRA',
+      '_category': 'place',
+      '_type': 'city',
+      'city': 'Paris',
+      'continent': 'Europe',
+      'country': 'France',
+      'country_code': 'fr',
+      'county': 'Paris',
+      'political_union': 'European Union',
+      'state': 'Ile-de-France',
+      'state_district': 'Paris'
+    },
+    'confidence': 6,
+    'formatted': 'Paris, France',
+    'geometry': {
+      'lat': 48.8566969,
+      'lng': 2.3514616
+    }
+  },
+  {
+    'bounds': {
+      'northeast': {
+        'lat': 33.7383866,
+        'lng': -95.4354115
+      },
+      'southwest': {
+        'lat': 33.6206345,
+        'lng': -95.6279396
+      }
+    },
+    'components': {
+      'ISO_3166-1_alpha-2': 'US',
+      'ISO_3166-1_alpha-3': 'USA',
+      '_category': 'place',
+      '_type': 'city',
+      'city': 'Paris',
+      'continent': 'North America',
+      'country': 'United States of America',
+      'country_code': 'us',
+      'county': 'Lamar County',
+      'postcode': '75460',
+      'state': 'Texas',
+      'state_code': 'TX'
+    },
+    'confidence': 5,
+    'formatted': 'Paris, TX, United States of America',
+    'geometry': {
+      'lat': 33.6617962,
+      'lng': -95.555513
+    }
+  },
+  {
+    'bounds': {
+      'northeast': {
+        'lat': 38.238271,
+        'lng': -84.232089
+      },
+      'southwest': {
+        'lat': 38.164922,
+        'lng': -84.307326
+      }
+    },
+    'components': {
+      'ISO_3166-1_alpha-2': 'US',
+      'ISO_3166-1_alpha-3': 'USA',
+      '_category': 'place',
+      '_type': 'city',
+      'city': 'Paris',
+      'continent': 'North America',
+      'country': 'United States of America',
+      'country_code': 'us',
+      'county': 'Bourbon County',
+      'state': 'Kentucky',
+      'state_code': 'KY'
+    },
+    'confidence': 7,
+    'formatted': 'Paris, KY, United States of America',
+    'geometry': {
+      'lat': 38.2097987,
+      'lng': -84.2529869
+    }
+  },
+  {
+    'bounds': {
+      'northeast': {
+        'lat': 36.329016,
+        'lng': -88.265067
+      },
+      'southwest': {
+        'lat': 36.266003,
+        'lng': -88.367113
+      }
+    },
+    'components': {
+      'ISO_3166-1_alpha-2': 'US',
+      'ISO_3166-1_alpha-3': 'USA',
+      '_category': 'place',
+      '_type': 'city',
+      'city': 'Paris',
+      'continent': 'North America',
+      'country': 'United States of America',
+      'country_code': 'us',
+      'county': 'Henry County',
+      'postcode': '38242',
+      'state': 'Tennessee',
+      'state_code': 'TN'
+    },
+    'confidence': 7,
+    'formatted': 'Paris, TN, United States of America',
+    'geometry': {
+      'lat': 36.3020023,
+      'lng': -88.3267107
+    }
+  },
+  {
+    'bounds': {
+      'northeast': {
+        'lat': 39.649981,
+        'lng': -87.649203
+      },
+      'southwest': {
+        'lat': 39.581493,
+        'lng': -87.721046
+      }
+    },
+    'components': {
+      'ISO_3166-1_alpha-2': 'US',
+      'ISO_3166-1_alpha-3': 'USA',
+      '_category': 'place',
+      '_type': 'city',
+      'city': 'Paris',
+      'continent': 'North America',
+      'country': 'United States of America',
+      'country_code': 'us',
+      'county': 'Edgar County',
+      'postcode': '61944',
+      'state': 'Illinois',
+      'state_code': 'IL'
+    },
+    'confidence': 7,
+    'formatted': 'Paris, IL, United States of America',
+    'geometry': {
+      'lat': 39.611146,
+      'lng': -87.6961374
+    }
+  },
+  {
+    'bounds': {
+      'northeast': {
+        'lat': 44.279954,
+        'lng': -70.480641
+      },
+      'southwest': {
+        'lat': 44.239954,
+        'lng': -70.520641
+      }
+    },
+    'components': {
+      'ISO_3166-1_alpha-2': 'US',
+      'ISO_3166-1_alpha-3': 'USA',
+      '_category': 'place',
+      '_type': 'village',
+      'continent': 'North America',
+      'country': 'United States of America',
+      'country_code': 'us',
+      'county': 'Oxford County',
+      'postcode': '04271',
+      'state': 'Maine',
+      'state_code': 'ME',
+      'village': 'Paris'
+    },
+    'confidence': 7,
+    'formatted': 'Paris, ME 04271, United States of America',
+    'geometry': {
+      'lat': 44.259954,
+      'lng': -70.500641
+    }
+  },
+  {
+    'bounds': {
+      'northeast': {
+        'lat': 35.3065882,
+        'lng': -93.6755169
+      },
+      'southwest': {
+        'lat': 35.2681485,
+        'lng': -93.761965
+      }
+    },
+    'components': {
+      'ISO_3166-1_alpha-2': 'US',
+      'ISO_3166-1_alpha-3': 'USA',
+      '_category': 'place',
+      '_type': 'city',
+      'city': 'Paris',
+      'continent': 'North America',
+      'country': 'United States of America',
+      'country_code': 'us',
+      'county': 'Logan County',
+      'postcode': '72855',
+      'state': 'Arkansas',
+      'state_code': 'AR'
+    },
+    'confidence': 7,
+    'formatted': 'Paris, AR, United States of America',
+    'geometry': {
+      'lat': 35.2920325,
+      'lng': -93.7299173
+    }
+  },
+  {
+    'bounds': {
+      'northeast': {
+        'lat': 39.489278,
+        'lng': -91.991679
+      },
+      'southwest': {
+        'lat': 39.469158,
+        'lng': -92.02148
+      }
+    },
+    'components': {
+      'ISO_3166-1_alpha-2': 'US',
+      'ISO_3166-1_alpha-3': 'USA',
+      '_category': 'place',
+      '_type': 'city',
+      'city': 'Paris',
+      'continent': 'North America',
+      'country': 'United States of America',
+      'country_code': 'us',
+      'county': 'Monroe County',
+      'postcode': '65275',
+      'state': 'Missouri',
+      'state_code': 'MO'
+    },
+    'confidence': 7,
+    'formatted': 'Paris, MO, United States of America',
+    'geometry': {
+      'lat': 39.4808721,
+      'lng': -92.0012811
+    }
+  }
+]

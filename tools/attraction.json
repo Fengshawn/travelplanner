@@ -1,0 +1,1028 @@
+{
+  'html_attributions': [],
+  'next_page_token': 'CqQCHwEAAKJY2i6pcSnYN-Dy8YiV60X8W00Dh13jirAM9zWj8JMxouBWvOXhijmgesPCYLSOBA_sP1_xax4mQ7YO2oIOUeC9ULOfkA64bFjwGhxXQt5v2umxZuroPHtFtyCdHqeV5e7-DhWwj3NuQe3tFEFHCjACmmkd1mIhVFYNduDLDUu-GF0VStuQ4EJWNqyxQqC1deAuVS_NTe0zn1-b0bq5ep7kMLdRrJNwiHJ5aCyFuIn7Oi2yOzs2OMDYGRNH_tATpuJY7jOOHrfdKBf0O7hr4we1O9MrecrogeUSGDVglN3gJdzu4AWX8DaqPDmxkXyX_2TnJE2ivK2a7xS5sDZEwbNW9oeBAMHEo8f78leNs2xTzX1AsTQ0rF2LRHXGgKrlthIQPgJJFlC7litwx_ngg8VLGBoUY6Svck5R75Y3TsO5v2fJ7LzsBGU',
+  'results': [
+    {
+      'geometry': {
+        'location': {
+          'lat': 51.5104568,
+          'lng': -0.1210495
+        },
+        'viewport': {
+          'northeast': {
+            'lat': 51.5118691302915,
+            'lng': -0.119692969708498
+          },
+          'southwest': {
+            'lat': 51.5091711697085,
+            'lng': -0.122390930291502
+          }
+        }
+      },
+      'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png',
+      'id': '28e87147783a208520cc1cf3aff453a3d34d2e48',
+      'name': 'Hotel The Savoy',
+      'opening_hours': {
+        'open_now': True
+      },
+      'photos': [
+        {
+          'height': 1080,
+          'html_attributions': [
+            '<a href="https://maps.google.com/maps/contrib/111756005236800162016">Hotel The Savoy</a>'
+          ],
+          'photo_reference': 'CmRZAAAAYcacaCY5bTCEF7V1u-xnzwWJyLII6vM1q9_LveeYwov0QTRnkTW6OZe812MhYbfx_bPBYlHKJJ5FcacY4HhiNoGZtdZRKxct2WFyPtK1SRyrOq_Zown9PmygLSjYSx-_EhCO-7bI9jiWgXR_qMJ-Q8geGhQ6hXfNpLjZCMelZgNHA6vYndCruw',
+          'width': 1920
+        }
+      ],
+      'place_id': 'ChIJTVquz8sEdkgRKdz7pP3v9BU',
+      'plus_code': {
+        'compound_code': 'GV6H+5H London, United Kingdom',
+        'global_code': '9C3XGV6H+5H'
+      },
+      'rating': 4.7,
+      'reference': 'ChIJTVquz8sEdkgRKdz7pP3v9BU',
+      'scope': 'GOOGLE',
+      'types': [
+        'lodging',
+        'restaurant',
+        'food',
+        'point_of_interest',
+        'establishment'
+      ],
+      'user_ratings_total': 6556,
+      'vicinity': 'Strand, London'
+    },
+    {
+      'geometry': {
+        'location': {
+          'lat': 51.5145353,
+          'lng': -0.1270205
+        },
+        'viewport': {
+          'northeast': {
+            'lat': 51.5158800302915,
+            'lng': -0.1256024197084979
+          },
+          'southwest': {
+            'lat': 51.5131820697085,
+            'lng': -0.128300380291502
+          }
+        }
+      },
+      'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png',
+      'id': '01cb84464f13c52c43462fa30dfc45a39136d178',
+      'name': 'Covent Garden Hotel',
+      'photos': [
+        {
+          'height': 5792,
+          'html_attributions': [
+            '<a href="https://maps.google.com/maps/contrib/103596128011107335827">Covent Garden Hotel</a>'
+          ],
+          'photo_reference': 'CmRaAAAAjJk_z9eX3QL826PDWnDfT_NEImQrsbmpLCRcM-bouddfTEzXOXN5NKoAp0XXkIoJk5DK6ffhZIUMk_UWUPYsg9AHij2a90gsTldwqnu5LhXHrJpWrFDFk8z-abXRogFrEhBi_i5CVQ9ycZ9Kg1OMV6OWGhScUCwRoL4gbhtqAX3cmf-GzY9q4A',
+          'width': 8688
+        }
+      ],
+      'place_id': 'ChIJe0XrMc0EdkgR73cT3U4ghp4',
+      'plus_code': {
+        'compound_code': 'GV7F+R5 London, United Kingdom',
+        'global_code': '9C3XGV7F+R5'
+      },
+      'rating': 4.5,
+      'reference': 'ChIJe0XrMc0EdkgR73cT3U4ghp4',
+      'scope': 'GOOGLE',
+      'types': [
+        'lodging',
+        'restaurant',
+        'food',
+        'point_of_interest',
+        'establishment'
+      ],
+      'user_ratings_total': 397,
+      'vicinity': '10 Monmouth Street, London'
+    },
+    {
+      'geometry': {
+        'location': {
+          'lat': 51.5184005,
+          'lng': -0.1348734
+        },
+        'viewport': {
+          'northeast': {
+            'lat': 51.5198142302915,
+            'lng': -0.133483669708498
+          },
+          'southwest': {
+            'lat': 51.5171162697085,
+            'lng': -0.136181630291502
+          }
+        }
+      },
+      'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png',
+      'id': '0cc1576c3429b08732e1db5cac4f02804e7de1dd',
+      'name': 'Charlotte Street Hotel',
+      'photos': [
+        {
+          'height': 1379,
+          'html_attributions': [
+            '<a href="https://maps.google.com/maps/contrib/115014074177257357240">Charlotte Street Hotel</a>'
+          ],
+          'photo_reference': 'CmRaAAAAbLZNG8uWfpQfyWC0MMKr2JUUSuNC3h_vto1hqrEZG6ET_NE3QjE1oiKNG7MxlBKMfn8XxS4XMQAp8zBwILDLAMdyeMmthEjFs9TS5TmOxJCHlbsTFIqQcbC0q1vbU_NtEhDzTOA-4sg23H5dLqwvfyvxGhSg2-5DU7OidUBW2AwPupnglfWcpg',
+          'width': 2001
+        }
+      ],
+      'place_id': 'ChIJZWQtdiwbdkgRDtcPz5yALlU',
+      'plus_code': {
+        'compound_code': 'GV98+93 London, United Kingdom',
+        'global_code': '9C3XGV98+93'
+      },
+      'price_level': 2,
+      'rating': 4.5,
+      'reference': 'ChIJZWQtdiwbdkgRDtcPz5yALlU',
+      'scope': 'GOOGLE',
+      'types': [
+        'lodging',
+        'bar',
+        'restaurant',
+        'food',
+        'point_of_interest',
+        'establishment'
+      ],
+      'user_ratings_total': 903,
+      'vicinity': '15-17 Charlotte Street, London'
+    },
+    {
+      'geometry': {
+        'location': {
+          'lat': 51.5047144,
+          'lng': -0.1474673
+        },
+        'viewport': {
+          'northeast': {
+            'lat': 51.50595903029149,
+            'lng': -0.146049919708498
+          },
+          'southwest': {
+            'lat': 51.50326106970849,
+            'lng': -0.148747880291502
+          }
+        }
+      },
+      'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png',
+      'id': '427bbe71928341a1506d965003b08312ca57a2df',
+      'name': 'The Athenaeum Hotel & Residences',
+      'opening_hours': {
+        'open_now': True
+      },
+      'photos': [
+        {
+          'height': 3336,
+          'html_attributions': [
+            '<a href="https://maps.google.com/maps/contrib/109525622728906293131">The Athenaeum Hotel &amp; Residences</a>'
+          ],
+          'photo_reference': 'CmRaAAAAdfqIYJ4JGRR243y_jffTuvf9XSIAWQS6T8c2Tiiu5nPXWCIwz2-bcK-rdrvd7o04yKQnZOjPALVlvKE_YpBwNLk_raCqN6jGXVMXpm9rgxwrJ6btxAPZCxxq5K1DKHX-EhBJZSwvIKYwrb_fbG0M36WdGhTLWCDU9ENyLVkwywz9xKTyRTRHAg',
+          'width': 5000
+        }
+      ],
+      'place_id': 'ChIJr_4cVy8FdkgRXpqn7k7UTeY',
+      'plus_code': {
+        'compound_code': 'GV33+V2 London, United Kingdom',
+        'global_code': '9C3XGV33+V2'
+      },
+      'rating': 4.3,
+      'reference': 'ChIJr_4cVy8FdkgRXpqn7k7UTeY',
+      'scope': 'GOOGLE',
+      'types': [
+        'spa',
+        'lodging',
+        'bar',
+        'restaurant',
+        'food',
+        'point_of_interest',
+        'establishment'
+      ],
+      'user_ratings_total': 780,
+      'vicinity': '116 Piccadilly, London'
+    },
+    {
+      'geometry': {
+        'location': {
+          'lat': 51.5192911,
+          'lng': -0.1208769
+        },
+        'viewport': {
+          'northeast': {
+            'lat': 51.5205573302915,
+            'lng': -0.119626119708498
+          },
+          'southwest': {
+            'lat': 51.5178593697085,
+            'lng': -0.122324080291502
+          }
+        }
+      },
+      'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png',
+      'id': '3ea99bdd99a1944c60004c7b92d1a5ef56443033',
+      'name': 'Jurys Inn London Holborn',
+      'opening_hours': {
+        'open_now': True
+      },
+      'photos': [
+        {
+          'height': 2988,
+          'html_attributions': [
+            '<a href="https://maps.google.com/maps/contrib/107577088225452866018">Sue McGhie</a>'
+          ],
+          'photo_reference': 'CmRaAAAANF2P6x6t5r42t8B9joLV8Yw4RR1QD9Xr7FWb3jBID-jlClRiDWnSEhjn_nyJe1Bc8uuza2dlBMqKwj-tknfb1kwO8MskgYNKgDAmdtSggDP4hOj-cLm8me2XRyGEZyIFEhBjX95nvP-t3r8IoLAgY5cuGhSqVmrHeTVIFMe2OMGSKlTb2g28qw',
+          'width': 5312
+        }
+      ],
+      'place_id': 'ChIJ0di7ITQbdkgRqnkC66DRfrU',
+      'plus_code': {
+        'compound_code': 'GV9H+PJ London, United Kingdom',
+        'global_code': '9C3XGV9H+PJ'
+      },
+      'rating': 4,
+      'reference': 'ChIJ0di7ITQbdkgRqnkC66DRfrU',
+      'scope': 'GOOGLE',
+      'types': [
+        'lodging',
+        'bar',
+        'restaurant',
+        'food',
+        'point_of_interest',
+        'establishment'
+      ],
+      'user_ratings_total': 1159,
+      'vicinity': '50 - 60 Southampton Row, London'
+    },
+    {
+      'geometry': {
+        'location': {
+          'lat': 51.494665,
+          'lng': -0.1186849
+        },
+        'viewport': {
+          'northeast': {
+            'lat': 51.4961032302915,
+            'lng': -0.117373519708498
+          },
+          'southwest': {
+            'lat': 51.4934052697085,
+            'lng': -0.120071480291502
+          }
+        }
+      },
+      'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png',
+      'id': '427593f6d5e37d578bac04bbc8d0d8a6606a48f6',
+      'name': 'Hotel Novotel London Waterloo',
+      'opening_hours': {
+        'open_now': True
+      },
+      'photos': [
+        {
+          'height': 2988,
+          'html_attributions': [
+            '<a href="https://maps.google.com/maps/contrib/116554887862594167541">Frank Othmer</a>'
+          ],
+          'photo_reference': 'CmRaAAAA5Y3KrnixooFbN7clJQ8SmlpuHRTgAMRd31H4BhnzUYxCCU9ku1OpjzpPIDY1echNLnWu9mU-1_BxUMuK55UIC4PEXa-JgD4eBXiDrgwiYh-hssX9SUZR3tLB1hkhoVLXEhCzKAkQ3AB0HIo0sm8Ny5njGhRisZuU0UqWiwcoyCQlpTr7CsGFtA',
+          'width': 5312
+        }
+      ],
+      'place_id': 'ChIJAax3EcAEdkgR0m_aZjCm_94',
+      'plus_code': {
+        'compound_code': 'FVVJ+VG London, United Kingdom',
+        'global_code': '9C3XFVVJ+VG'
+      },
+      'rating': 4.4,
+      'reference': 'ChIJAax3EcAEdkgR0m_aZjCm_94',
+      'scope': 'GOOGLE',
+      'types': [
+        'lodging',
+        'restaurant',
+        'food',
+        'point_of_interest',
+        'establishment'
+      ],
+      'user_ratings_total': 1882,
+      'vicinity': '113 Lambeth Road, London'
+    },
+    {
+      'geometry': {
+        'location': {
+          'lat': 51.49560779999999,
+          'lng': -0.1455098
+        },
+        'viewport': {
+          'northeast': {
+            'lat': 51.49695533029149,
+            'lng': -0.144155769708498
+          },
+          'southwest': {
+            'lat': 51.49425736970849,
+            'lng': -0.146853730291502
+          }
+        }
+      },
+      'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png',
+      'id': '97d8d3b9ca17d31e60c10b77ce9d66dfe41d9b59',
+      'name': 'Amba Hotel Grosvenor',
+      'opening_hours': {
+        'open_now': True
+      },
+      'photos': [
+        {
+          'height': 2662,
+          'html_attributions': [
+            '<a href="https://maps.google.com/maps/contrib/106269456920194920386">Amba Hotel Grosvenor</a>'
+          ],
+          'photo_reference': 'CmRaAAAA-qb46AbGtR9TSeWHIZ-PA_xT6-9s10nNBCqI61Ma3VaY_aqTOHb2jpe7--l1uFwtECct8kAj3kJqeXIp49vnSJRx6dHz8LQCjw54V2KtRX2FBVCFwkYPDENOn7rH_GpiEhB37pOqHgDZb6o5e022Z2QIGhQrIzNRs0UmbpfizkzH9FqEhBREjQ',
+          'width': 3994
+        }
+      ],
+      'place_id': 'ChIJ4_SIlCEFdkgRb8KIploTI3s',
+      'plus_code': {
+        'compound_code': 'FVW3+6Q London, United Kingdom',
+        'global_code': '9C3XFVW3+6Q'
+      },
+      'rating': 4.2,
+      'reference': 'ChIJ4_SIlCEFdkgRb8KIploTI3s',
+      'scope': 'GOOGLE',
+      'types': [
+        'lodging',
+        'bar',
+        'restaurant',
+        'food',
+        'point_of_interest',
+        'establishment'
+      ],
+      'user_ratings_total': 1781,
+      'vicinity': '101 Buckingham Palace Road, London'
+    },
+    {
+      'geometry': {
+        'location': {
+          'lat': 51.5129432,
+          'lng': -0.0997305
+        },
+        'viewport': {
+          'northeast': {
+            'lat': 51.5142247802915,
+            'lng': -0.09808296970849797
+          },
+          'southwest': {
+            'lat': 51.5115268197085,
+            'lng': -0.100780930291502
+          }
+        }
+      },
+      'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png',
+      'id': '6404fee4ceb60f2f51ba87c6be6a5df0eb9c0e69',
+      'name': "Leonardo Royal London St Paul's",
+      'opening_hours': {
+        'open_now': True
+      },
+      'photos': [
+        {
+          'height': 450,
+          'html_attributions': [
+            '<a href="https://maps.google.com/maps/contrib/105847351088434246296">Leonardo Royal London St Paul&#39;s</a>'
+          ],
+          'photo_reference': 'CmRaAAAAKJJ1XUxvc7ewYjfuB-YSH_H9FF-_U37kGGGCMjB_Q7EynJrl-iYEsYl9Lug7HZE1NaLz0-nB6L_yo0sCuvDpE7AeDRXnpVGrFq50q7mfFUojGd1Di_ZTWux9mZtE7CQ0EhASCwUcavmQQpLl-SLtokPJGhQuD3Srmxq__aEUwnbIaCODYmVz7g',
+          'width': 780
+        }
+      ],
+      'place_id': 'ChIJfZsneKsEdkgRRMXOh4K6TvY',
+      'plus_code': {
+        'compound_code': 'GW72+54 London, United Kingdom',
+        'global_code': '9C3XGW72+54'
+      },
+      'rating': 4.2,
+      'reference': 'ChIJfZsneKsEdkgRRMXOh4K6TvY',
+      'scope': 'GOOGLE',
+      'types': [
+        'lodging',
+        'restaurant',
+        'food',
+        'point_of_interest',
+        'establishment'
+      ],
+      'user_ratings_total': 2341,
+      'vicinity': '10 Godliman Street, London'
+    },
+    {
+      'geometry': {
+        'location': {
+          'lat': 51.52270939999999,
+          'lng': -0.1036733
+        },
+        'viewport': {
+          'northeast': {
+            'lat': 51.52398698029149,
+            'lng': -0.102277269708498
+          },
+          'southwest': {
+            'lat': 51.5212890197085,
+            'lng': -0.104975230291502
+          }
+        }
+      },
+      'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png',
+      'id': '439a75a4b04935658d6ef0618b5e911ee262a4f0',
+      'name': 'The Zetter Hotel',
+      'photos': [
+        {
+          'height': 853,
+          'html_attributions': [
+            '<a href="https://maps.google.com/maps/contrib/113835562097140707406">The Zetter Hotel</a>'
+          ],
+          'photo_reference': 'CmRaAAAAEkXtBDNW0d4Vd_6VUnJGLEo6BTOzNxB1rgEeqyBFk_OA_Kk-QX4nNbiweow7aNuqd3-wB08_X5P3I0e9CIbqad0SlBxCH8_DSGc-yxczWdYqhE1ty__OtKRs7z1b7dPDEhD4wSVKNtu9o5WhwSazCEu9GhRmwF8gKQKxtk5fy6Ufpm-mDudWHA',
+          'width': 1280
+        }
+      ],
+      'place_id': 'ChIJrR1NqlEbdkgRIC69_zTGsRs',
+      'plus_code': {
+        'compound_code': 'GVFW+3G London, United Kingdom',
+        'global_code': '9C3XGVFW+3G'
+      },
+      'price_level': 4,
+      'rating': 4.3,
+      'reference': 'ChIJrR1NqlEbdkgRIC69_zTGsRs',
+      'scope': 'GOOGLE',
+      'types': [
+        'lodging',
+        'bar',
+        'restaurant',
+        'food',
+        'point_of_interest',
+        'establishment'
+      ],
+      'user_ratings_total': 408,
+      'vicinity': "86-88 Saint John's Square, Clerkenwell Road, London"
+    },
+    {
+      'geometry': {
+        'location': {
+          'lat': 51.50711429999999,
+          'lng': -0.09289200000000002
+        },
+        'viewport': {
+          'northeast': {
+            'lat': 51.50831023029149,
+            'lng': -0.09162241970849797
+          },
+          'southwest': {
+            'lat': 51.5056122697085,
+            'lng': -0.09432038029150203
+          }
+        }
+      },
+      'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png',
+      'id': 'b69c7e1b1541864cc7e8b9efe801f99ea6b13504',
+      'name': 'Premier Inn London Southwark (Bankside) hotel',
+      'photos': [
+        {
+          'height': 3328,
+          'html_attributions': [
+            '<a href="https://maps.google.com/maps/contrib/118428512531950110026">Premier Inn London Southwark (Bankside) hotel</a>'
+          ],
+          'photo_reference': 'CmRaAAAAGvmowXpTKXLCF4sXJ7N7u1KZdIFaiAUqdorlIFIRZit8MFRDPbbPph_H0xZ9r_6A5H1DWY2uqpsFI24vIVsHm8K49eAh4v0t5jHoX4HGiXgUeG2lEkRo-S-N2ZDYFefJEhCAl0qxYg0O3ZRNe2CCRZsVGhRxhMOqPKoyg3HWHmbOLkrqtKwAsg',
+          'width': 4992
+        }
+      ],
+      'place_id': 'ChIJgXlxzVcDdkgRWi5_YPdOOf4',
+      'plus_code': {
+        'compound_code': 'GW44+RR London, United Kingdom',
+        'global_code': '9C3XGW44+RR'
+      },
+      'rating': 4.3,
+      'reference': 'ChIJgXlxzVcDdkgRWi5_YPdOOf4',
+      'scope': 'GOOGLE',
+      'types': [
+        'lodging',
+        'restaurant',
+        'food',
+        'point_of_interest',
+        'establishment'
+      ],
+      'user_ratings_total': 349,
+      'vicinity': 'Bankside, 34 Park Street, London'
+    },
+    {
+      'geometry': {
+        'location': {
+          'lat': 51.50518899999999,
+          'lng': -0.08813599999999998
+        },
+        'viewport': {
+          'northeast': {
+            'lat': 51.50659383029149,
+            'lng': -0.08672726970849795
+          },
+          'southwest': {
+            'lat': 51.50389586970849,
+            'lng': -0.08942523029150203
+          }
+        }
+      },
+      'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png',
+      'id': '9d4f6783e7eac87b9b078886b999c5b5341486bc',
+      'name': 'London Bridge Hotel',
+      'opening_hours': {
+        'open_now': True
+      },
+      'photos': [
+        {
+          'height': 1363,
+          'html_attributions': [
+            '<a href="https://maps.google.com/maps/contrib/118069367069644985806">London Bridge Hotel</a>'
+          ],
+          'photo_reference': 'CmRaAAAAphL800K6k0oxaH6pRWZxvGGhWnEajymlBPPKtXym-f9ouQ_h9TUhUiKZZznw8I_zMZDoHRJm2KrlYDOyhI0p341MSfs-t-A4IscgR4-UW2nXqEEV3dLUZMcxFJcpzKmiEhBhRfjEjY8wMzhnRWBGVMF0GhS637dn0uJaUYns5XVWaCDLnCZQvg',
+          'width': 2048
+        }
+      ],
+      'place_id': 'ChIJu6GgulADdkgRisE18ox2rdU',
+      'plus_code': {
+        'compound_code': 'GW46+3P London, United Kingdom',
+        'global_code': '9C3XGW46+3P'
+      },
+      'rating': 4.3,
+      'reference': 'ChIJu6GgulADdkgRisE18ox2rdU',
+      'scope': 'GOOGLE',
+      'types': [
+        'lodging',
+        'bar',
+        'restaurant',
+        'food',
+        'gym',
+        'health',
+        'point_of_interest',
+        'establishment'
+      ],
+      'user_ratings_total': 616,
+      'vicinity': '8-18 London Bridge Street, London'
+    },
+    {
+      'geometry': {
+        'location': {
+          'lat': 51.49602770000001,
+          'lng': -0.1703533
+        },
+        'viewport': {
+          'northeast': {
+            'lat': 51.49747448029149,
+            'lng': -0.169100369708498
+          },
+          'southwest': {
+            'lat': 51.49477651970849,
+            'lng': -0.171798330291502
+          }
+        }
+      },
+      'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png',
+      'id': 'd2c6da0e424b870ce70a8cba378442468a37f8cc',
+      'name': 'The Rembrandt Hotel',
+      'opening_hours': {
+        'open_now': True
+      },
+      'photos': [
+        {
+          'height': 1366,
+          'html_attributions': [
+            '<a href="https://maps.google.com/maps/contrib/116402435641601260330">The Rembrandt Hotel</a>'
+          ],
+          'photo_reference': 'CmRaAAAAuVDCOfILwpU-GL62nKq9m9XZXb1R7LjF44UVcNIAFt6LISrFoHyGW8-7T9NrnA65FmlbKXwf9VkRrOWltvCeTecZD7kFvGG_GhEjRyMDxwGkyqtjTAzmE89g3GlaZb4EEhC0isBFT8iOQ90ZFupnyzq7GhS4Ebu6IdTpmr5dolyQFeK8sGSUyQ',
+          'width': 2048
+        }
+      ],
+      'place_id': 'ChIJkUNmiEEFdkgRP2VcGWbshrM',
+      'plus_code': {
+        'compound_code': 'FRWH+CV London, United Kingdom',
+        'global_code': '9C3XFRWH+CV'
+      },
+      'rating': 4.3,
+      'reference': 'ChIJkUNmiEEFdkgRP2VcGWbshrM',
+      'scope': 'GOOGLE',
+      'types': [
+        'lodging',
+        'bar',
+        'restaurant',
+        'food',
+        'point_of_interest',
+        'establishment'
+      ],
+      'user_ratings_total': 1335,
+      'vicinity': '11 Thurloe Place, London'
+    },
+    {
+      'geometry': {
+        'location': {
+          'lat': 51.5123465,
+          'lng': -0.1752518
+        },
+        'viewport': {
+          'northeast': {
+            'lat': 51.51374183029149,
+            'lng': -0.173813769708498
+          },
+          'southwest': {
+            'lat': 51.51104386970849,
+            'lng': -0.176511730291502
+          }
+        }
+      },
+      'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png',
+      'id': '9045b926fe701a8c1a9e0dc70c4494535cdfc74e',
+      'name': 'Royal Lancaster London',
+      'photos': [
+        {
+          'height': 2808,
+          'html_attributions': [
+            '<a href="https://maps.google.com/maps/contrib/114781109553646936088">Royal Lancaster London</a>'
+          ],
+          'photo_reference': 'CmRaAAAAGjfqku528rJYZClhZtfw9D0HgyxSQJxQFCaDLHkzw7bOwmQ4-zQr2ce12KJGA0MiXgb5MnOAoEYFAhxaYLokxAoIdRrnp68Vz_nW_nabwYoJodGiS6ahfEVzeAAA3IaFEhApjmDVTdlQVAefTk2MH8BaGhTxYhQwZ-oMKV6mfIWrscGli9jlKA',
+          'width': 4992
+        }
+      ],
+      'place_id': 'ChIJYQCtg00FdkgREw34v1ji0m4',
+      'plus_code': {
+        'compound_code': 'GR6F+WV London, United Kingdom',
+        'global_code': '9C3XGR6F+WV'
+      },
+      'rating': 4.4,
+      'reference': 'ChIJYQCtg00FdkgREw34v1ji0m4',
+      'scope': 'GOOGLE',
+      'types': [
+        'cafe',
+        'lodging',
+        'bar',
+        'restaurant',
+        'food',
+        'gym',
+        'health',
+        'point_of_interest',
+        'establishment'
+      ],
+      'user_ratings_total': 1571,
+      'vicinity': 'Lancaster Terrace, London'
+    },
+    {
+      'geometry': {
+        'location': {
+          'lat': 51.5107254,
+          'lng': -0.0773324
+        },
+        'viewport': {
+          'northeast': {
+            'lat': 51.5121166302915,
+            'lng': -0.07602821970849796
+          },
+          'southwest': {
+            'lat': 51.5094186697085,
+            'lng': -0.07872618029150202
+          }
+        }
+      },
+      'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png',
+      'id': '3c063a439e5bbae6921216f6718ebc837ae6bfa5',
+      'name': 'Hotel Novotel London Tower Bridge',
+      'opening_hours': {
+        'open_now': True
+      },
+      'photos': [
+        {
+          'height': 1365,
+          'html_attributions': [
+            '<a href="https://maps.google.com/maps/contrib/100488652756737800417">Hotel Novotel London Tower Bridge</a>'
+          ],
+          'photo_reference': 'CmRaAAAAERdoXGBPECkzNd3005QlUbCcTjnSCqoNWeJS_fe6-nK0EfUArVtwanNA4gQYpe0fIE2-0yW3iZjokuoL_-OclIPcR-jFU8GmWkh-lyOQT8KxgGNpr22Lalkn8m-7fuoOEhAfIWnPV0zLCUkEYMvS3g1GGhRvQ84BkcrxaRX1GHSQMi-zDPvYAw',
+          'width': 2048
+        }
+      ],
+      'place_id': 'ChIJtx22FUwDdkgRpORimUrdYlQ',
+      'plus_code': {
+        'compound_code': 'GW6F+73 London, United Kingdom',
+        'global_code': '9C3XGW6F+73'
+      },
+      'rating': 4.4,
+      'reference': 'ChIJtx22FUwDdkgRpORimUrdYlQ',
+      'scope': 'GOOGLE',
+      'types': [
+        'lodging',
+        'restaurant',
+        'food',
+        'point_of_interest',
+        'establishment'
+      ],
+      'user_ratings_total': 1710,
+      'vicinity': '10 Pepys Street, London'
+    },
+    {
+      'geometry': {
+        'location': {
+          'lat': 51.5107644,
+          'lng': -0.0767761
+        },
+        'viewport': {
+          'northeast': {
+            'lat': 51.5121991802915,
+            'lng': -0.07558426970849798
+          },
+          'southwest': {
+            'lat': 51.5095012197085,
+            'lng': -0.07828223029150204
+          }
+        }
+      },
+      'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png',
+      'id': 'da0bf7b55bedf31a0fb2aa9a8c471a198e4daf9e',
+      'name': 'Leonardo Royal London City',
+      'opening_hours': {
+        'open_now': True
+      },
+      'photos': [
+        {
+          'height': 450,
+          'html_attributions': [
+            '<a href="https://maps.google.com/maps/contrib/108372043550890167201">Leonardo Royal London City</a>'
+          ],
+          'photo_reference': 'CmRaAAAAiqANOWAf7bXsCfBlBXAuqANR1I6nW5A3iCIKI8JGmTwCYYGbw_ZOv8-Rw8-FnQ5s5ea4dxZ6uoudQZzmtTZn44LKaPvkNQ7INmaF0OrGDZjXxWoz4SpnI-PyLuatrCPFEhCQ7PcGwrhoJll9Cis_v6S0GhQG3ru6vtl_HpqLezPMBDTtWgoSWQ',
+          'width': 780
+        }
+      ],
+      'place_id': 'ChIJM8Z8DUwDdkgRAfOOreRfemE',
+      'plus_code': {
+        'compound_code': 'GW6F+87 London, United Kingdom',
+        'global_code': '9C3XGW6F+87'
+      },
+      'rating': 4.2,
+      'reference': 'ChIJM8Z8DUwDdkgRAfOOreRfemE',
+      'scope': 'GOOGLE',
+      'types': [
+        'lodging',
+        'restaurant',
+        'food',
+        'point_of_interest',
+        'establishment'
+      ],
+      'user_ratings_total': 1830,
+      'vicinity': "8-14 Cooper's Row, London"
+    },
+    {
+      'geometry': {
+        'location': {
+          'lat': 51.5064869,
+          'lng': -0.07288100000000002
+        },
+        'viewport': {
+          'northeast': {
+            'lat': 51.50804163029149,
+            'lng': -0.07215051970849798
+          },
+          'southwest': {
+            'lat': 51.50534366970849,
+            'lng': -0.07484848029150204
+          }
+        }
+      },
+      'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png',
+      'id': 'a90be7ca8c61b021e672503a68935247a45ec11a',
+      'name': 'The Tower Hotel',
+      'opening_hours': {
+        'open_now': True
+      },
+      'photos': [
+        {
+          'height': 1931,
+          'html_attributions': [
+            '<a href="https://maps.google.com/maps/contrib/117845116291138430458">The Tower Hotel</a>'
+          ],
+          'photo_reference': 'CmRaAAAARGmxAGbdjlQAbXSRu1UEzvgcWEogTzLGP1GN9XiPKgfMaesjhQcB50JGxZNYnYw_-gTQB4P5nZby9rnpa5lIyKO7LFmaquih2nJF2Ev5CjFGzTjIxwCkYVAHA_sJAjmfEhAjJ5h2D3CFFZDvPLeQNwXeGhSo_sf-ZgyBrctLwKIyheq8lFCyRQ',
+          'width': 2896
+        }
+      ],
+      'place_id': 'ChIJN8TLJEgDdkgRLEFtFv_mVcs',
+      'plus_code': {
+        'compound_code': 'GW4G+HR London, United Kingdom',
+        'global_code': '9C3XGW4G+HR'
+      },
+      'rating': 4.2,
+      'reference': 'ChIJN8TLJEgDdkgRLEFtFv_mVcs',
+      'scope': 'GOOGLE',
+      'types': [
+        'lodging',
+        'bar',
+        'restaurant',
+        'food',
+        'point_of_interest',
+        'establishment'
+      ],
+      'user_ratings_total': 5259,
+      'vicinity': "Saint Katharine's Way, London"
+    },
+    {
+      'geometry': {
+        'location': {
+          'lat': 51.50249909999999,
+          'lng': -0.1879906
+        },
+        'viewport': {
+          'northeast': {
+            'lat': 51.50379393029149,
+            'lng': -0.186648569708498
+          },
+          'southwest': {
+            'lat': 51.50109596970849,
+            'lng': -0.189346530291502
+          }
+        }
+      },
+      'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png',
+      'id': '26563fc6eaecf1ea1cddeff009ee54a769c117ee',
+      'name': 'Royal Garden Hotel',
+      'photos': [
+        {
+          'height': 768,
+          'html_attributions': [
+            '<a href="https://maps.google.com/maps/contrib/105938501440307787100">Royal Garden Hotel</a>'
+          ],
+          'photo_reference': 'CmRaAAAAEk514edYf4TUN_y3BfEycXiOsFrbLcvuuXqlmBzkvD_9ffjxlkjN2zleJjq8BCKudr9uFwhjAHZ4DSgkzeisbPuicnFwQIOoH7svSu_GTP82qfzqR6y88ArZTbS1LhFQEhBtWxv-Wm2NekeTYPuzlpWkGhS_vP8FjHBcBIgpJylbQgoE3kAc5A',
+          'width': 1024
+        }
+      ],
+      'place_id': 'ChIJz1y33_cPdkgRP3ghYOpJYoI',
+      'plus_code': {
+        'compound_code': 'GR26+XR London, United Kingdom',
+        'global_code': '9C3XGR26+XR'
+      },
+      'rating': 4.4,
+      'reference': 'ChIJz1y33_cPdkgRP3ghYOpJYoI',
+      'scope': 'GOOGLE',
+      'types': [
+        'lodging',
+        'bar',
+        'restaurant',
+        'food',
+        'point_of_interest',
+        'establishment'
+      ],
+      'user_ratings_total': 1531,
+      'vicinity': '2-24 Kensington High Street, London'
+    },
+    {
+      'geometry': {
+        'location': {
+          'lat': 51.49365379999999,
+          'lng': -0.1907153
+        },
+        'viewport': {
+          'northeast': {
+            'lat': 51.49502948029149,
+            'lng': -0.189304319708498
+          },
+          'southwest': {
+            'lat': 51.49233151970849,
+            'lng': -0.192002280291502
+          }
+        }
+      },
+      'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png',
+      'id': '16a34a1288c50b967a6fa6777bd42b8f995417b4',
+      'name': "Premier Inn London Kensington (Earl's Court) hotel",
+      'opening_hours': {
+        'open_now': True
+      },
+      'photos': [
+        {
+          'height': 1000,
+          'html_attributions': [
+            '<a href="https://maps.google.com/maps/contrib/106518135541029614877">Premier Inn London Kensington (Earl&#39;s Court) hotel</a>'
+          ],
+          'photo_reference': 'CmRaAAAAZqXSVg-xoaYm9ajtNGfFRAzFfFmortkWhp4rNg91aXEV8jKnX9A-dVLerCME-LoG-SKBckjtsIh4rNdH2Yol52WRv8KR0nk1LMoh17u9PHxvPi1bCVDGvjtuKR8Mn0H-EhBWMpCZtqSBxvrZkDxXCm9BGhQYPgdewVeagEx_naLRvvLLMyZk7Q',
+          'width': 1500
+        }
+      ],
+      'place_id': 'ChIJQRA31fQPdkgRDa8iiwy-GcI',
+      'plus_code': {
+        'compound_code': 'FRV5+FP London, United Kingdom',
+        'global_code': '9C3XFRV5+FP'
+      },
+      'rating': 4.1,
+      'reference': 'ChIJQRA31fQPdkgRDa8iiwy-GcI',
+      'scope': 'GOOGLE',
+      'types': [
+        'lodging',
+        'restaurant',
+        'food',
+        'point_of_interest',
+        'establishment'
+      ],
+      'user_ratings_total': 1112,
+      'vicinity': '11 Knaresborough Place, London'
+    },
+    {
+      'geometry': {
+        'location': {
+          'lat': 51.5018768,
+          'lng': -0.0236953
+        },
+        'viewport': {
+          'northeast': {
+            'lat': 51.50317873029149,
+            'lng': -0.02244921970849797
+          },
+          'southwest': {
+            'lat': 51.5004807697085,
+            'lng': -0.02514718029150203
+          }
+        }
+      },
+      'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png',
+      'id': 'dfbfd669a46e646cb29c9e13399c7430ee6ea4e8',
+      'name': 'Britannia International Hotel',
+      'opening_hours': {
+        'open_now': True
+      },
+      'photos': [
+        {
+          'height': 483,
+          'html_attributions': [
+            '<a href="https://maps.google.com/maps/contrib/109678096568825159271">International Hotel</a>'
+          ],
+          'photo_reference': 'CmRaAAAAZRtE9lDi_130MoKJ9nTG1mFDN2GZgMArI79s_oErqS_YMNHcJvpTsNhe9hvmkxhRi1XeCpL-YbY-on2nbLoSYAQt2ZvL8Mys6SQhwvCx6FrwmPgzLmJCAvRFRah4ulpIEhDUpDaeriJo7uljahpS4dtXGhT3fteKJZVcrpeXwSjMzYZFrPBlgg',
+          'width': 1000
+        }
+      ],
+      'place_id': 'ChIJyZap4LsCdkgR15bK4_L6-m0',
+      'plus_code': {
+        'compound_code': 'GX2G+QG London, United Kingdom',
+        'global_code': '9C3XGX2G+QG'
+      },
+      'rating': 3.3,
+      'reference': 'ChIJyZap4LsCdkgR15bK4_L6-m0',
+      'scope': 'GOOGLE',
+      'types': [
+        'lodging',
+        'bar',
+        'restaurant',
+        'food',
+        'point_of_interest',
+        'establishment'
+      ],
+      'user_ratings_total': 3258,
+      'vicinity': 'Marsh Wall, London'
+    },
+    {
+      'geometry': {
+        'location': {
+          'lat': 51.52674,
+          'lng': -0.135865
+        },
+        'viewport': {
+          'northeast': {
+            'lat': 51.5281399302915,
+            'lng': -0.134495869708498
+          },
+          'southwest': {
+            'lat': 51.5254419697085,
+            'lng': -0.137193830291502
+          }
+        }
+      },
+      'icon': 'https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png',
+      'id': '3275ac705017fd1ac038afe3936ebdf74cd198a9',
+      'name': 'The Wesley Euston Hotel & Conference Venue',
+      'opening_hours': {
+        'open_now': True
+      },
+      'photos': [
+        {
+          'height': 3003,
+          'html_attributions': [
+            '<a href="https://maps.google.com/maps/contrib/105548250244925994219">The Wesley Euston Hotel &amp; Conference Venue</a>'
+          ],
+          'photo_reference': 'CmRaAAAAhYqIUQAslLlo_z_LcVH5A3zrMGhfV61vr5OlKaLGRsgmnfLMIYMaoPYOTR_PE7QPSODwG0Oe7sokEHY2WIXGM9PesY4uUIuDtOXNzX8TbBU1BPgEeLwGaYaRqo4suo8zEhB7u9xuo-tXa7Chd6pI-4zDGhSwwsn7yAn76W73mMlO-2TcLS5a9Q',
+          'width': 2000
+        }
+      ],
+      'place_id': 'ChIJSXkoEyYbdkgRpmQAturmT2k',
+      'plus_code': {
+        'compound_code': 'GVG7+MM London, United Kingdom',
+        'global_code': '9C3XGVG7+MM'
+      },
+      'rating': 3.8,
+      'reference': 'ChIJSXkoEyYbdkgRpmQAturmT2k',
+      'scope': 'GOOGLE',
+      'types': [
+        'lodging',
+        'restaurant',
+        'food',
+        'point_of_interest',
+        'establishment'
+      ],
+      'user_ratings_total': 1170,
+      'vicinity': '81-103 Euston Street, London'
+    }
+  ],
+  'status': 'OK'
+}
