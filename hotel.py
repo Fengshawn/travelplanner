@@ -54,8 +54,8 @@ def get_hotel(place):
                 hotel_latitude = temp_hotel['hotel']['latitude']
             if ('longitude' in temp_hotel['hotel']):
                 hotel_longitude = temp_hotel['hotel']['longitude']
-            if ('price' in temp_hotel['offers'][0] and 'total' in temp_hotel['offers'][0]['price']):
-                hotel_price = temp_hotel['offers'][0]['price']['total']
+            # if ('price' in temp_hotel['offers'][0] and 'total' in temp_hotel['offers'][0]['price']):
+            hotel_price = temp_hotel['offers'][0]['price']['total']
             if ('price' in temp_hotel['offers'][0] and 'currency' in temp_hotel['offers'][0]['price']):
                 hotel_unit = temp_hotel['offers'][0]['price']['currency']
             hotel_prase = hotel(name=hotel_name, unit=hotel_unit, rate=hotel_rating, price=hotel_price,
@@ -79,14 +79,15 @@ def get_hotel(place):
                 hotel_latitude = temp_hotel['hotel']['latitude']
             if ('longitude' in temp_hotel['hotel']):
                 hotel_longitude = temp_hotel['hotel']['longitude']
-            if ('price' in temp_hotel['offers'] and 'total' in temp_hotel['offers']['price']):
-                hotel_price = temp_hotel['offers']['price']['total']
+            if ('price' in temp_hotel['offers'][0] and 'total' in temp_hotel['offers'][0]['price']):
+                hotel_price = temp_hotel['offers'][0]['price']['total']
             if ('price' in temp_hotel['offers'][0] and 'currency' in temp_hotel['offers'][0]['price']):
                 hotel_unit = temp_hotel['offers'][0]['price']['currency']
             hotel_prase = hotel(name=hotel_name, unit=hotel_unit, rate=hotel_rating, price=hotel_price,
                                 latitude=hotel_latitude, longitude=hotel_longitude, communication=hotel_contact,
                                 position=hotel_address)
             all_hotel.append(hotel_prase)
+    all_hotel.sort(key=lambda x: x.rate, reverse=True)
     return all_hotel[0]
 
 

@@ -58,15 +58,17 @@ def result():
     startday = request.form.get('startday')
     endday = request.form.get('endday')
     travellers = request.form.get('travellers')
-    cabin = request.form.get('Cabin')
-    print(cabin)
-    print(type(cabin))
+    cabin = request.form.get('cabin')
+    # this is cabin informaiton
+    cabin = str(cabin).strip()
 
     # transfer into code
+
     Airline_start_code = str(get_location(Airline_start))
     Airline_end_code = str(get_location(Airline_end))
     startday = str(startday).strip()
     travellers = int(travellers)
+
     # init information user selected in frontend
     checked_cats = []
     checked_cats.append('art gallery') if 'art_gallery' in request.form else None  # check if sights are selected
@@ -94,13 +96,19 @@ def result():
     # get user want travel days
     days = days_diff.days + 1
 
-    all_flight = retrive_flight_data(Airline_start_code, Airline_end_code, startday, travellers)
+    all_flight_economy, all_flight_pre_economy = retrive_flight_data(Airline_start_code, Airline_end_code, startday,
+                                                                     travellers)
     # get hotel data from here
     hotel_data = get_hotel(Airline_end)
     # get days activities
     restaurant_list, attraction_list = get_travel_line(Airline_end, days, checked_cats, 2)
+    restaurant_list.sort(key=lambda x: x.rating, reverse=True)
+    attraction_list.sort(key=lambda x: x.rating, reverse=True)
     # get average transportation
     average_transportation = get_london_static()
+    all_flight = []
+    if (cabin == "economy"): all_flight = all_flight_economy
+    if (cabin == "premium economy"): all_flight = all_flight_pre_economy
     return render_template("result.html", name=all_flight[0].name, time=all_flight[0].time
                            , price=all_flight[0].price, package=all_flight[0].package,
                            cabin=all_flight[0].cabin, details=all_flight[0].details,

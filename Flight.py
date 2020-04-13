@@ -6,7 +6,6 @@ amadeus = Client(
     client_secret='IWBwclckwNgBKNWr'
 )
 
-
 # # get All flight Information
 # def get_flight(start_place_code, end_place_code, start_data, traveller):
 #     try:
@@ -30,7 +29,8 @@ traveller = 1
 # test information PEK  LHR  2020-03-29    2020-03-31
 def retrive_flight_data(start_place_code, end_place_code, start_data, traveller):
     # store flight information
-    all_flight_list = list()
+    all_flight_list_economy = list()
+    all_flight_list_pre_economy = list()
     response = amadeus.shopping.flight_offers_search.get(
         originLocationCode=start_place_code,
         destinationLocationCode=end_place_code,
@@ -101,9 +101,10 @@ def retrive_flight_data(start_place_code, end_place_code, start_data, traveller)
         temp_flight = flight(temp_name, temp_total_time, total_cost, temp_stop_times, temp_package,
                              details=flight_details,
                              cabin=temp_cabin)
+        if (temp_flight.cabin == "ECONOMY"): all_flight_list_economy.append(temp_flight)
+        if (temp_flight.cabin == "PREMIUM_ECONOMY"): all_flight_list_pre_economy.append(temp_flight)
 
-        all_flight_list.append(temp_flight)
-    return all_flight_list
+    return all_flight_list_economy, all_flight_list_pre_economy
 
 
 flight_list = retrive_flight_data(start_place_code, end_place_code, start_data, traveller)

@@ -107,7 +107,7 @@ def get_attraction(start_place, selected_categories):
                 page_token = temp_response['next_page_token']
                 # need time to check
                 time.sleep(2)
-                response = gmaps.places_nearby(location=[latitude, longitude], radius=10000, type='restaurant',
+                response = gmaps.places_nearby(location=[latitude, longitude], radius=10000, type=type,
                                                page_token=page_token)
                 temp_response = response
             else:
@@ -145,8 +145,8 @@ def get_restaurant(start_place, type='restaurant'):
         # prase information
         # print(temp_response)
         restaurant_number = len(temp_response['results'])
-        if (restaurant_number >= 3):
-            for temp_restaurant in temp_response['results'][0:3]:
+        if (restaurant_number >= 15):
+            for temp_restaurant in temp_response['results'][0:15]:
                 if ('geometry' in temp_restaurant):
                     restaurant_latitude = temp_restaurant['geometry']['location']['lat']
                     restaurant_longitude = temp_restaurant['geometry']['location']['lng']
@@ -160,7 +160,7 @@ def get_restaurant(start_place, type='restaurant'):
                                               latitude=restaurant_latitude, name=restaurant_name,
                                               rating=restaurant_rating, type=restaurant_type)
                 all_restaurant.append(restaurant_prase)
-        elif (restaurant_number < 3):
+        elif (restaurant_number < 15):
             for temp_restaurant in temp_response['result']:
                 if ('geometry' in temp_restaurant):
                     restaurant_latitude = temp_restaurant['geometry']['location']['lat']
@@ -198,6 +198,7 @@ def get_travel_line(start_place, days, selected_categories, activity_threshold):
     :return: attractions list  && restaurant we choose
     """
     restaurant_list = get_restaurant(start_place, type='restaurant')
+    print("restaurant_list", len(restaurant_list))
     attraction_list = get_attraction(start_place, selected_categories)
     restaurant_choose = []
     attraction_choose = []
@@ -217,6 +218,11 @@ def get_travel_line(start_place, days, selected_categories, activity_threshold):
     elif (travel_all_number > attraction_list_all_number):
         try:
             print("no more related place")
+            # for i in attraction_list_all_number:
+            #     attraction_choose.append(attraction_list[i])
+            #     attraction_choose.append(attraction_list[i])
+            # if (len(attraction_choose) > list_number):
+            #     attraction_choose.remove(len(attraction_choose - 2))
         except:
             SystemError
         # out of index will lead to revisite
@@ -225,7 +231,10 @@ def get_travel_line(start_place, days, selected_categories, activity_threshold):
         for i in range(days):
             restaurant_choose.append(restaurant_list[i])
     elif (days > list_number_restaurant):
-        restaurant_choose.append(restaurant_list)
+        try:
+            print("no more related restaurant")
+        except:
+            SystemError
 
     return restaurant_choose, attraction_choose
 
@@ -244,6 +253,7 @@ def get_various_number(times, max_number):
     elif (max_number < times):
         for i in range(max_number):
             list_number.add(i)
+    list_number = list(list_number)
     list_number = list(list_number)
     return list_number
 
