@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5b759b4-9884-4a5a-abab-9f4aa93a4b4d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/hotel.py" beforeDir="false" afterPath="$PROJECT_DIR$/hotel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/email.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/email.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/tools/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,38 +28,24 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hotel.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="28" column="24" lean-forward="true" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-              <folding>
-                <element signature="e#38#62#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tools/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3660">
-              <caret line="257" lean-forward="true" selection-start-line="257" selection-end-line="257" />
+            <state relative-caret-position="7710">
+              <caret line="257" selection-start-line="257" selection-end-line="257" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/locations.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-495" />
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="52" column="24" lean-forward="true" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
+            <state relative-caret-position="1560">
+              <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -70,7 +53,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tools/hotel.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-360">
+            <state relative-caret-position="540">
               <caret line="66" column="16" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
               <folding>
                 <element signature="e#47#745#0" />
@@ -90,7 +73,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/QQSend.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
+            <state relative-caret-position="1590">
               <caret line="55" selection-start-line="55" selection-end-line="55" />
             </state>
           </provider>
@@ -99,8 +82,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+            <state relative-caret-position="240">
+              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -108,7 +91,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/transportation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-178">
+            <state relative-caret-position="1080">
               <caret line="41" column="37" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
@@ -117,14 +100,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/images/IATA_codes.csv">
           <provider editor-type-id="csv-table-editor">
             <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
           </provider>
           <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="-455">
               <caret line="699" column="10" selection-start-line="699" selection-end-line="699" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/result.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="141" column="40" selection-start-line="141" selection-start-column="40" selection-end-line="141" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="61" column="25" lean-forward="true" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -212,7 +216,6 @@
         <option value="$PROJECT_DIR$/place.py" />
         <option value="$PROJECT_DIR$/static/css/resStyle.css" />
         <option value="$PROJECT_DIR$/static/css/styles404.css" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/Flight.py" />
         <option value="$PROJECT_DIR$/tools/successattraction.json" />
         <option value="$PROJECT_DIR$/templates/404.html" />
@@ -232,6 +235,7 @@
         <option value="$PROJECT_DIR$/tools/package.json" />
         <option value="$PROJECT_DIR$/hotel.py" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
       </list>
     </option>
   </component>
@@ -265,8 +269,7 @@
             <path>
               <item name="travelplanner" type="b2602c69:ProjectViewProjectNode" />
               <item name="travelplanner" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="travelplanner" type="b2602c69:ProjectViewProjectNode" />
@@ -461,7 +464,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="243198000" />
+    <option name="totallyTimeSpent" value="243377000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -474,8 +477,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14599092" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1482602" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -489,14 +493,14 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3262295" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5015129" side_tool="true" weight="0.40163934" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.13606557" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="12" sideWeight="0.49848714" visible="true" weight="0.33442622" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.29836065" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49848714" weight="0.33442622" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" sideWeight="0.48711944" weight="0.20196672" />
       <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="5" sideWeight="0.51288056" side_tool="true" weight="0.28517398" />
+      <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="5" sideWeight="0.51288056" side_tool="true" visible="true" weight="0.28517398" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14599092" />
@@ -586,13 +590,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Attractions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Attractions.py" />
     <entry file="file://$PROJECT_DIR$/templates/404.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -624,16 +622,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/google_places.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-          <folding>
-            <element signature="e#46#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/google_places.py" />
     <entry file="file://D:/Anaconda3/Lib/site-packages/jinja2/parser.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
@@ -709,13 +698,7 @@
     <entry file="file://$PROJECT_DIR$/static/js/html2canvas.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/success.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/success.py" />
     <entry file="file://$PROJECT_DIR$/static/jquery/jquery.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -737,8 +720,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="121" column="14" lean-forward="true" selection-start-line="117" selection-start-column="12" selection-end-line="121" selection-end-column="14" />
+        <state relative-caret-position="198">
+          <caret line="61" column="25" lean-forward="true" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -750,11 +736,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/result.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
+        <state relative-caret-position="320">
           <caret line="141" column="40" selection-start-line="141" selection-start-column="40" selection-end-line="141" selection-end-column="40" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -816,27 +799,25 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/locations.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-495" />
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/QQSend.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
+        <state relative-caret-position="1590">
           <caret line="55" selection-start-line="55" selection-end-line="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        <state relative-caret-position="240">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/transportation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-178">
+        <state relative-caret-position="1080">
           <caret line="41" column="37" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
@@ -846,8 +827,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tools/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3660">
-          <caret line="257" lean-forward="true" selection-start-line="257" selection-end-line="257" />
+        <state relative-caret-position="7710">
+          <caret line="257" selection-start-line="257" selection-end-line="257" />
         </state>
       </provider>
     </entry>
@@ -863,7 +844,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tools/hotel.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-360">
+        <state relative-caret-position="540">
           <caret line="66" column="16" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
           <folding>
             <element signature="e#47#745#0" />
@@ -892,8 +873,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="52" column="24" lean-forward="true" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
+        <state relative-caret-position="1560">
+          <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -902,7 +883,7 @@
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="85">
+        <state relative-caret-position="-455">
           <caret line="699" column="10" selection-start-line="699" selection-end-line="699" selection-end-column="10" />
         </state>
       </provider>
