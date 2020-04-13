@@ -58,6 +58,9 @@ def result():
     startday = request.form.get('startday')
     endday = request.form.get('endday')
     travellers = request.form.get('travellers')
+    cabin = request.form.get('Cabin')
+    print(cabin)
+    print(type(cabin))
 
     # transfer into code
     Airline_start_code = str(get_location(Airline_start))
