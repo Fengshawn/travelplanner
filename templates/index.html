@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8"/>
     <title>Travel Planner</title>
     <script src="/static/jquery/jquery-3.2.1.min.js"></script>
@@ -16,9 +17,9 @@
             src="https://kit.fontawesome.com/fc95cba7ed.js"
             crossorigin="anonymous"
     ></script>
-    <script src="https://cdn.bootcss.com/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
 </head>
 <body>
+
 <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
 	<div class="container">
 		<div class="navbar-header">
@@ -145,7 +146,50 @@
         </div>
     </form>
 </div>
+<footer class="panel-footer" >
+    <div class="container">
+        <div class="row footer-top"></div>
+        <hr>
+        <div class="row ">
+            <div class="col-sm-4 col-md-4 col-lg-4" style="align-content: center">
+                <h4>Address</h4>
+                <p>Location:1234 block,Sheffield,United Kingdom</p>
+                <p>Phone:+44 12345678</p>
+                <p>Email:236@gmail.com</p>
+                <p>Fax:+44 12345678</p>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <h4>Travel places</h4>
+                <div class="row" style="align-content: center">
+                    <ul class="col-6 links" style="width: 150px">
+                        <li><a href="#" >New Zealand</a></li>
+                        <li><a href="#">Austria</a></li>
+                        <li><a href="#">France</a></li>
+                        <li><a href="#">South Koera</a></li>
+                        <li><a href="#">China</a></li>
+                        <li><a href="#">Japan</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4" style="align-content: center">
+                <h4>Newsletter</h4>
+                <div class="footer-text">
+                    <p>By subscribing to our mailing list you will alway get lateset news and updates from us
+                    </p>
+                    <form action="#" method="post">
+                        <input type="email" name="Email" placeholder="Enter you email..." required>
+                        <button class="btn1">
+                            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
+
 
 <script>
     $(function () {
@@ -157,5 +201,16 @@
             {#hh:mm#}
         });
     });
+</script>
+
+<script>
+     $(function () {$('#myCarousel').carousel({
+         interval: 2000,
+     })
+         $("#myCarousel li").click(function () {
+             var index=$(this).attr("data-slide-to")
+            $('#myCarousel').carousel(parseInt(index))
+         })
+     })
 </script>
 </html>

@@ -85,7 +85,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/My project/travelplanner" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -244,6 +244,7 @@
       <workItem from="1586524460699" duration="710000" />
       <workItem from="1586525520790" duration="78206000" />
       <workItem from="1586909981197" duration="83000" />
+      <workItem from="1586955264991" duration="38000" />
     </task>
     <servers />
   </component>
@@ -263,6 +264,10 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="requirements.txt" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1586955317895">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586955317895" />
     <state x="270" y="57" key="SettingsEditor" timestamp="1586910065907">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
