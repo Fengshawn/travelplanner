@@ -100,6 +100,8 @@ def result():
                                                                      travellers)
     # get hotel data from here
     hotel_data = get_hotel(Airline_end)
+    
+    hotel_data.sort(key=lambda x: x.rate, reverse=True)
     # get days activities
     restaurant_list, attraction_list = get_travel_line(Airline_end, days, checked_cats, 2)
     restaurant_list.sort(key=lambda x: x.rating, reverse=True)
@@ -113,7 +115,7 @@ def result():
                            , price=all_flight[0].price, package=all_flight[0].package,
                            cabin=all_flight[0].cabin, details=all_flight[0].details,
                            restaurant_list=restaurant_list,
-                           hotel_data=hotel_data,
+                           hotel_data=hotel_data[0],
                            days_diff=int(days),
                            days_activities=attraction_list,
                            average_transportation=average_transportation

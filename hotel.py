@@ -49,7 +49,7 @@ def get_hotel(place):
             if ('address' in temp_hotel['hotel'] and 'lines' in temp_hotel['hotel']['address']):
                 hotel_address = temp_hotel['hotel']['address']['lines'][0]
             if ('contact' in temp_hotel['hotel'] and 'phone' in temp_hotel['hotel']['contact']):
-                hotel_contact = temp_hotel['hotel']['contact']['hotel']
+                hotel_contact = temp_hotel['hotel']['contact']['phone']
             if ('latitude' in temp_hotel['hotel']):
                 hotel_latitude = temp_hotel['hotel']['latitude']
             if ('longitude' in temp_hotel['hotel']):
@@ -88,7 +88,7 @@ def get_hotel(place):
                                 position=hotel_address)
             all_hotel.append(hotel_prase)
     all_hotel.sort(key=lambda x: x.rate, reverse=True)
-    return all_hotel[0]
+    return all_hotel[:3]
 
 
 if __name__ == '__main__':

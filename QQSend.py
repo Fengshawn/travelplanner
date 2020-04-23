@@ -45,7 +45,6 @@ def send_email(toAddr):
     #this is hotel informaiton
 
     #this is attractions infroamtion
-
     '''
     msg.attach(MIMEText(body, 'plain'))
     server = smtplib.SMTP_SSL("smtp.qq.com", 465)
