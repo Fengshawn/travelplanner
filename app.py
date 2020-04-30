@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from Flight import retrive_flight_data
+from Flight import get_flight
 # from EmailSend import send_email
 from QQSend import send_email
 from hotel import get_hotel
@@ -91,16 +91,21 @@ def result():
     # get user want travel days
     days = days_diff.days + 1
 
-    all_flight = retrive_flight_data(Airline_start_code, Airline_end_code, startday, travellers)
+    all_flight = get_flight(Airline_start_code, Airline_end_code, startday, travellers)
     # get hotel data from here
     hotel_data = get_hotel(Airline_end)
     # get days activities
     restaurant_list, attraction_list = get_travel_line(Airline_end, days, checked_cats, 2)
     # get average transportation
     average_transportation = get_london_static()
-    return render_template("result.html", name=all_flight[0].name, time=all_flight[0].time
-                           , price=all_flight[0].price, package=all_flight[0].package,
-                           cabin=all_flight[0].cabin, details=all_flight[0].details,
+    return render_template("result.html",
+                           name=all_flight['aircraft_code'],
+                           dtime=all_flight['departure_dtime'],
+                           atime=all_flight['arrival_dtime'],
+                           arr_airport=all_flight['arrival_airport'],
+                           dep_airport=all_flight['departure_airport'],
+                           price=all_flight['price'],
+                           duration=all_flight['duration'],
                            restaurant_list=restaurant_list,
                            hotel_data=hotel_data,
                            days_diff=int(days),
