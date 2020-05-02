@@ -15,25 +15,25 @@ directions_result = gmaps.directions([51.50732, -0.13239],
                                      mode="walking")
 
 
-# def get_transportation(startplace, destination):
-#     # print(len(destination), "destination")
-#     all_transportation = []
-#     transportation_type = 'walking'
-#     transportation_money = 0
-#     transportation_time = 15
-#     transportation_distance = 1
-#     for temp_destination in destination:
-#         directions_result = gmaps.directions([startplace.latitude, startplace.longitude],
-#                                              [temp_destination.latitude, temp_destination.longitude],
-#                                              mode="walking")
-#         transportation_distance = directions_result[0]['legs'][0]['distance']['text']
-#         transportation_time = directions_result[0]['legs'][0]['duration']['text']
-#         temp_transportation = transportation(type=transportation_type, distance=transportation_distance,
-#                                              time=transportation_time, money=transportation_money,
-#                                              startplace=startplace.name, endplace=temp_destination.name)
-#         all_transportation.append(temp_transportation)
-#
-#     return all_transportation
+def get_transportation(startplace, destination):
+    # print(len(destination), "destination")
+    all_transportation = []
+    transportation_type = 'walking'
+    transportation_money = 0
+    transportation_time = 15
+    transportation_distance = 1
+    for temp_destination in destination:
+        directions_result = gmaps.directions([startplace.latitude, startplace.longitude],
+                                             [temp_destination.latitude, temp_destination.longitude],
+                                             mode="walking")
+        transportation_distance = directions_result[0]['legs'][0]['distance']['text']
+        transportation_time = directions_result[0]['legs'][0]['duration']['text']
+        temp_transportation = transportation(type=transportation_type, distance=transportation_distance,
+                                             time=transportation_time, money=transportation_money,
+                                             startplace=startplace.name, endplace=temp_destination.name)
+        all_transportation.append(temp_transportation)
+
+    return all_transportation
 
 
 def get_london_static():
