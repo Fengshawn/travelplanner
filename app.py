@@ -6,7 +6,7 @@ from hotel import get_hotel
 from datetime import date, datetime
 from locations import get_location
 from Activities import get_travel_line
-from transportation import get_london_static
+from transportation import get_transportation
 
 app = Flask(__name__)
 
@@ -106,8 +106,13 @@ def result():
     restaurant_list, attraction_list = get_travel_line(Airline_end, days, checked_cats, 2)
     restaurant_list.sort(key=lambda x: x.rating, reverse=True)
     attraction_list.sort(key=lambda x: x.rating, reverse=True)
+
     # get average transportation
-    average_transportation = get_london_static()
+    average_transportation = []
+    # for i in range(len(attraction_list)):
+    #     dayTransportation1 = get_transportation(restaurant_list[i],attraction_list[i])
+    #     dayTransportation2 = get_transportation(attraction_list[i],attraction_list[i+1])
+
     all_flight = []
     if (cabin == "economy"): all_flight = all_flight_economy
     if (cabin == "premium economy"): all_flight = all_flight_pre_economy

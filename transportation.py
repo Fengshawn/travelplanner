@@ -8,47 +8,51 @@ from hotel import get_hotel
 gmaps = googlemaps.Client(key='AIzaSyDVs1QGncUOixJm3-ODbkg_OZ4THdknzwI')
 
 # Request directions via public transit
-now = datetime.now()
+# now = datetime.now()
+#
+# directions_result = gmaps.directions([51.50732, -0.13239],
+#                                      [51.5104568, -0.1210495],
+#                                      mode="walking")
 
-directions_result = gmaps.directions([51.50732, -0.13239],
-                                     [51.5104568, -0.1210495],
-                                     mode="walking")
 
-
-def get_transportation(startplace, destination):
+def get_transportation(origin, destination):
     # print(len(destination), "destination")
     all_transportation = []
-    transportation_type = 'walking'
-    transportation_money = 0
-    transportation_time = 15
-    transportation_distance = 1
-    for temp_destination in destination:
-        directions_result = gmaps.directions([startplace.latitude, startplace.longitude],
-                                             [temp_destination.latitude, temp_destination.longitude],
-                                             mode="walking")
-        transportation_distance = directions_result[0]['legs'][0]['distance']['text']
-        transportation_time = directions_result[0]['legs'][0]['duration']['text']
-        temp_transportation = transportation(type=transportation_type, distance=transportation_distance,
-                                             time=transportation_time, money=transportation_money,
-                                             startplace=startplace.name, endplace=temp_destination.name)
-        all_transportation.append(temp_transportation)
+    directions_result = gmaps.directions([origin.latitude, origin.longitude],
+                                         [destination.latitude, destination.longitude],
+                                         mode="transit")
 
-    return all_transportation
+    transportation_distance = directions_result[0]['legs'][0]['distance']['text'] # total distance
+    transportation_time = directions_result[0]['legs'][0]['duration']['text']  # total time cost
 
+    transportation_type = []  # from origin to destination may contains more than 1 type for transportation
+    steps_distance = []  # distance for each step
+    steps_time = []  # time cost for each step
+    steps_instruction = []  # html instruction for each step
 
-def get_london_static():
-    all_transportation = []
-    transportation_type = ['walking', 'bus', 'taxi']
-    transportation_time = [25, 30, 15]
-    transportation_cost = [0, 5, 15]
-    transportation_0 = transportation(time=transportation_time[0], money=transportation_cost[0],
-                                      type=transportation_type[0])
-    transportation_1 = transportation(time=transportation_time[1], money=transportation_cost[1],
-                                      type=transportation_type[1])
-    transportation_2 = transportation(time=transportation_time[2], money=transportation_cost[2],
-                                      type=transportation_type[2])
-    all_transportation.append(transportation_0)
-    all_transportation.append(transportation_1)
-    all_transportation.append(transportation_2)
+    steps_num = len(directions_result[0]['legs'][0]['steps'])  # the number of steps from startplace to destination
+
+    for i in range(steps_num):  # iterate each step
+        steps_instruction += [directions_result[0]['legs'][0]['steps'][i]['html_instructions']]
+        steps_time += [directions_result[0]['legs'][0]['steps'][i]['duration']['text']]
+        steps_distance += [directions_result[0]['legs'][0]['steps'][i]['distance']['text']]
+
+        if 'transit_details' in directions_result[0]['legs'][0]['steps'][i]:
+            transportation_type_temp = \
+            directions_result[0]['legs'][0]['steps'][i]['transit_details']['line']['vehicle']['type']
+        else:
+            transportation_type_temp = 'Walking'
+
+        transportation_type += [transportation_type_temp]
+
+    temp_transportation = transportation(total_distance=transportation_distance,
+                                         total_time=transportation_time,
+                                         steps_distance=steps_distance,
+                                         steps_time=steps_time,
+                                         steps_instruction=steps_instruction,
+                                         transit_type=transportation_type)
+
+    all_transportation.append(temp_transportation)
+
     return all_transportation
 
