@@ -24,11 +24,10 @@ def get_transportation(origin, destination):
 
     transportation_distance = directions_result[0]['legs'][0]['distance']['text'] # total distance
     transportation_time = directions_result[0]['legs'][0]['duration']['text']  # total time cost
-
-    transportation_type = []  # from origin to destination may contains more than 1 type for transportation
     steps_distance = []  # distance for each step
     steps_time = []  # time cost for each step
     steps_instruction = []  # html instruction for each step
+    transportation_type = []  # from origin to destination may contains more than 1 type for transportation
 
     steps_num = len(directions_result[0]['legs'][0]['steps'])  # the number of steps from startplace to destination
 
@@ -38,8 +37,7 @@ def get_transportation(origin, destination):
         steps_distance += [directions_result[0]['legs'][0]['steps'][i]['distance']['text']]
 
         if 'transit_details' in directions_result[0]['legs'][0]['steps'][i]:
-            transportation_type_temp = \
-            directions_result[0]['legs'][0]['steps'][i]['transit_details']['line']['vehicle']['type']
+            transportation_type_temp = directions_result[0]['legs'][0]['steps'][i]['transit_details']['line']['vehicle']['type']
         else:
             transportation_type_temp = 'Walking'
 
