@@ -18,7 +18,6 @@ def get_attraction(start_place, selected_categories):
     """
 
     :param start_place: City find places in
-
     :param selected_categories: selected categories except for the restaurants
     :return:
     """
@@ -30,14 +29,19 @@ def get_attraction(start_place, selected_categories):
         "tourist attraction": "tourist_attraction",
         "amusement park": "amusement_park",
         "aquarium": "aquarium",
-        "shopping mall": "shopping_mall"
+        "shopping mall": "shopping_mall",
+        "zoo": "zoo",
+        "museum": "museum"
     }
+
     if (len(selected_categories) == 0):
         selected_categories.append("art gallery")
         selected_categories.append("tourist attraction")
         selected_categories.append("shopping mall")
         selected_categories.append("aquarium")
         selected_categories.append("amusement park")
+        selected_categories.append("zoo")
+        selected_categories.append("museum")
 
     # deal with categories user selected
     params_cat = [category_ref_dict[category] for category in selected_categories]
@@ -48,7 +52,7 @@ def get_attraction(start_place, selected_categories):
     result = geocoder.geocode(start_place, no_annotations='1')  # Gecoding Service API key
     longitude = result[0]['geometry']['lng']  # Parsing Latitude
     latitude = result[0]['geometry']['lat']  # Parsing Longitude
-    gmaps = googlemaps.Client(key='AIzaSyDVs1QGncUOixJm3-ODbkg_OZ4THdknzwI')
+    gmaps = googlemaps.Client(key='AIzaSyDUu2EVWYs1E5Wv7xuaJGZTCBqeDMXeu4U')
 
     """
     1.here need sometime to check where your api is okay 
@@ -69,7 +73,7 @@ def get_attraction(start_place, selected_categories):
         for i in range(3):
             # use temp_response to store response
             temp_response = response
-            # prase information
+            # parse information
             print(temp_response)
             attraction_number = len(temp_response['results'])
             if (attraction_number >= 15):
@@ -142,7 +146,7 @@ def get_restaurant(start_place, type='restaurant'):
     for i in range(3):
         # use temp_response to store response
         temp_response = response
-        # prase information
+        # parse information
         # print(temp_response)
         restaurant_number = len(temp_response['results'])
         if (restaurant_number >= 3):
