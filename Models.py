@@ -55,10 +55,13 @@ class restaurant():
 # #         self.money = money
 
 class transportation():
-    def __init__(self,  total_distance, total_time, steps_distance, steps_time, steps_instruction,transit_type):
+    def __init__(self, total_distance, total_time, steps_distance, steps_time, steps_instruction, transit_type,
+                 transit_departure, transit_arrival):
         self.total_distance = total_distance
         self.total_time = total_time
         self.steps_distance = steps_distance
         self.steps_time = steps_time
         self.steps_instruction = steps_instruction
         self.transit_type = transit_type
+        self.transit_departure = transit_departure
+        self.transit_arrival = transit_arrival
