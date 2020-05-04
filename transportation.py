@@ -40,8 +40,7 @@ def get_transportation(origin, destination):
         steps_distance += [directions_result[0]['legs'][0]['steps'][i]['distance']['text']]
 
         if 'transit_details' in directions_result[0]['legs'][0]['steps'][i]:
-            transportation_type_temp = \
-            directions_result[0]['legs'][0]['steps'][i]['transit_details']['line']['vehicle']['name']
+            transportation_type_temp = directions_result[0]['legs'][0]['steps'][i]['transit_details']['line']['vehicle']['name']
             transit_departure += [directions_result[0]['legs'][0]['steps'][i]['transit_details']['departure_stop']['name']]
             transit_arrival += [directions_result[0]['legs'][0]['steps'][i]['transit_details']['arrival_stop']['name']]
         else:
