@@ -108,10 +108,24 @@ def result():
     attraction_list.sort(key=lambda x: x.rating, reverse=True)
 
     # get average transportation
+
     average_transportation = []
-    # for i in range(len(attraction_list)):
-    #     dayTransportation1 = get_transportation(restaurant_list[i],attraction_list[i])
-    #     dayTransportation2 = get_transportation(attraction_list[i],attraction_list[i+1])
+    j = 0 #a pointer, start from 0, plus 2 for attraction list iteration
+    k = 0 #a pointer, start from 0, plus 1 for restaurant list iteration
+    for i in range(days):
+        hotel_to_attraction = get_transportation(hotel_data[0],attraction_list[j])
+        attraction_to_restaurant = get_transportation(attraction_list[j], restaurant_list[k])
+        restaurant_to_attraction = get_transportation(restaurant_list[k], attraction_list[j+1])
+        attraction_to_hotel = get_transportation(attraction_list[j+1], hotel_data[0])
+
+        # a transportation model list for each day
+        transportation_temp = [hotel_to_attraction] + [attraction_to_restaurant] + [restaurant_to_attraction]+[attraction_to_hotel]
+        average_transportation += [transportation_temp] # add all transportation models for each day
+        j+=2
+        k+=1
+
+
+
 
     all_flight = []
     if (cabin == "economy"): all_flight = all_flight_economy

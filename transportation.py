@@ -9,14 +9,10 @@ gmaps = googlemaps.Client(key='AIzaSyDVs1QGncUOixJm3-ODbkg_OZ4THdknzwI')
 
 # Request directions via public transit
 # now = datetime.now()
-#
-# directions_result = gmaps.directions([51.50732, -0.13239],
-#                                      [51.5104568, -0.1210495],
-#                                      mode="walking")
 
 
 def get_transportation(origin, destination):
-    # print(len(destination), "destination")
+
     all_transportation = []
     directions_result = gmaps.directions([origin.latitude, origin.longitude],
                                          [destination.latitude, destination.longitude],
@@ -29,7 +25,7 @@ def get_transportation(origin, destination):
     steps_distance = []  # distance for each step
     steps_time = []  # time cost for each step
     steps_instruction = []  # html instruction for each step
-    transit_departure = []
+    transit_departure = [] # when step != 'walking', it would have departure stop and arrival stop
     transit_arrival = []
 
     steps_num = len(directions_result[0]['legs'][0]['steps'])  # the number of steps from startplace to destination
@@ -61,3 +57,4 @@ def get_transportation(origin, destination):
 
     return all_transportation
 
+#def get_all_transport(startplace_list,endplace_list):

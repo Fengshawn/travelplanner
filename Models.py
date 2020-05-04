@@ -48,11 +48,6 @@ class restaurant():
         self.type = type
 
 
-# class transportation():
-# #     def __init__(self, type, time, money):
-# #         self.type = type
-# #         self.time = time
-# #         self.money = money
 
 class transportation():
     def __init__(self, total_distance, total_time, steps_distance, steps_time, steps_instruction, transit_type,
