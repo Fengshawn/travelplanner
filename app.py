@@ -75,7 +75,11 @@ def result():
         'shopping mall') if 'shopping_mall' in request.form else None  # check if shopping are selected
     checked_cats.append('aquarium') if 'aquarium' in request.form else None
 
-    # if user donot choose
+    checked_cats.append('zoo') if 'zoo' in request.form else None
+    checked_cats.append('museum') if 'museum' in request.form else None
+
+
+    # if user does not choose any options
     if len(checked_cats) == 0:
         checked_cats.append('art gallery')
         checked_cats.append('amusement park')
@@ -84,7 +88,7 @@ def result():
         checked_cats.append('shopping mall')
     print(checked_cats)
 
-    # calculate the days users will travel
+    # calculate days users will travel
     days_diff = datetime.strptime(str(endday).strip(), '%Y-%m-%d') - datetime.strptime(str(startday).strip(),
                                                                                        '%Y-%m-%d')
     days_diff = days_diff
