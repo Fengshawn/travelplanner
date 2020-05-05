@@ -98,7 +98,7 @@ def retrive_flight_data(start_place_code, end_place_code, start_data, traveller)
                 start_terminal), iata_code_arrival, arrive_time, 'Terminal: ' + str(arrival_terminal)
             flight_details.append(temp_details)
 
-        ++temp_flight = flight(temp_name, temp_total_time, total_cost, temp_stop_times, temp_package,
+        temp_flight = flight(temp_name, temp_total_time, total_cost, temp_stop_times, temp_package,
                              details=flight_details,
                              cabin=temp_cabin)
         if (temp_flight.cabin == "ECONOMY"): all_flight_list_economy.append(temp_flight)

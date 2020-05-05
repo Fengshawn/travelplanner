@@ -6,7 +6,7 @@ from hotel import get_hotel
 from datetime import date, datetime
 from locations import get_location
 from Activities import get_travel_line
-from transportation import get_transportation
+from transportation import get_all_transport
 
 app = Flask(__name__)
 
@@ -107,24 +107,11 @@ def result():
     restaurant_list.sort(key=lambda x: x.rating, reverse=True)
     attraction_list.sort(key=lambda x: x.rating, reverse=True)
 
-    # get average transportation
-
-    average_transportation = []
-    j = 0 #a pointer, start from 0, plus 2 for attraction list iteration
-    k = 0 #a pointer, start from 0, plus 1 for restaurant list iteration
-    for i in range(days):
-        hotel_to_attraction = get_transportation(hotel_data[0],attraction_list[j])
-        attraction_to_restaurant = get_transportation(attraction_list[j], restaurant_list[k])
-        restaurant_to_attraction = get_transportation(restaurant_list[k], attraction_list[j+1])
-        attraction_to_hotel = get_transportation(attraction_list[j+1], hotel_data[0])
-
-        # a transportation model list for each day
-        transportation_temp = [hotel_to_attraction] + [attraction_to_restaurant] + [restaurant_to_attraction]+[attraction_to_hotel]
-        average_transportation += [transportation_temp] # add all transportation models for each day
-        j+=2
-        k+=1
-
-
+    print('restaurant list length :',len(hotel_data))
+    print('restaurant list length :',len(restaurant_list))
+    print('attraction list length :',len(attraction_list))
+    # get all transportation
+    average_transportation = get_all_transport(days,hotel_data[0],attraction_list,restaurant_list)
 
 
     all_flight = []

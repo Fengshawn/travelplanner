@@ -13,7 +13,7 @@ gmaps = googlemaps.Client(key='AIzaSyDVs1QGncUOixJm3-ODbkg_OZ4THdknzwI')
 
 def get_transportation(origin, destination):
 
-    all_transportation = []
+    one_transportation = []
     directions_result = gmaps.directions([origin.latitude, origin.longitude],
                                          [destination.latitude, destination.longitude],
                                          mode="transit")
@@ -46,7 +46,7 @@ def get_transportation(origin, destination):
 
         transportation_type += [transportation_type_temp]
 
-    all_transportation = transportation(total_distance=transportation_distance,
+    one_transportation = transportation(total_distance=transportation_distance,
                                         total_time=transportation_time,
                                         steps_distance=steps_distance,
                                         steps_time=steps_time,
@@ -55,6 +55,24 @@ def get_transportation(origin, destination):
                                         transit_departure=transit_departure,
                                         transit_arrival=transit_arrival)
 
-    return all_transportation
+    return one_transportation
 
-#def get_all_transport(startplace_list,endplace_list):
+def get_all_transport(days, hotel, attraction_list, restaurant_list):
+
+    transportation_list = []
+    j = 0  # a pointer, start from 0, plus 2 for attraction list iteration
+    k = 0  # a pointer, start from 0, plus 1 for restaurant list iteration
+    for i in range(days):
+        hotel_to_attraction = get_transportation(hotel, attraction_list[j])
+        attraction_to_restaurant = get_transportation(attraction_list[j], restaurant_list[k])
+        restaurant_to_attraction = get_transportation(restaurant_list[k], attraction_list[j+1])
+        attraction_to_hotel = get_transportation(attraction_list[j+1], hotel)
+
+        # a transportation model list for each day
+        transportation_temp = [hotel_to_attraction] + [attraction_to_restaurant] + [restaurant_to_attraction] + [
+            attraction_to_hotel]
+        transportation_list += [transportation_temp]  # add all transportation models for each day
+        j += 2
+        k += 1
+
+    return transportation_list
