@@ -52,6 +52,7 @@ def index():
 
 @app.route('/result', methods=["POST", "GET"])
 def result():
+
     # get information from frontend
     Airline_start = request.form.get('startplace')
     Airline_end = request.form.get('endplace')
@@ -64,22 +65,22 @@ def result():
     Airline_end_code = str(get_location(Airline_end))
     startday = str(startday).strip()
     travellers = int(travellers)
+
     # init information user selected in frontend
     checked_cats = []
-    checked_cats.append('art gallery') if 'art_gallery' in request.form else None  # check if sights are selected
+    checked_cats.append('art gallery') if 'art_gallery' in request.form else None  # check if art gallery is selected
     checked_cats.append(
-        'amusement park') if 'amusement_park' in request.form else None  # check if nightlife are selected
+        'amusement park') if 'amusement_park' in request.form else None  # check if amusement park is selected
     checked_cats.append(
-        'tourist attraction') if 'tourist_attraction' in request.form else None  # check if shopping are selected
+        'tourist attraction') if 'tourist_attraction' in request.form else None  # check if tourist attraction is selected
     checked_cats.append(
-        'shopping mall') if 'shopping_mall' in request.form else None  # check if shopping are selected
-    checked_cats.append('aquarium') if 'aquarium' in request.form else None
+        'shopping mall') if 'shopping_mall' in request.form else None  # check if shopping is selected
+    checked_cats.append('aquarium') if 'aquarium' in request.form else None # check if aquarium is selected
+    checked_cats.append('zoo') if 'zoo' in request.form else None # check if zoo is selected
+    checked_cats.append('museum') if 'museum' in request.form else None # check if museum is selected
 
-    checked_cats.append('zoo') if 'zoo' in request.form else None
-    checked_cats.append('museum') if 'museum' in request.form else None
 
-
-    # if user doesnt choose any options
+    # if user does not choose any options
     if len(checked_cats) == 0:
         checked_cats.append('art gallery')
         checked_cats.append('amusement park')
@@ -94,14 +95,18 @@ def result():
     days_diff = datetime.strptime(str(endday).strip(), '%Y-%m-%d') - datetime.strptime(str(startday).strip(),
                                                                                        '%Y-%m-%d')
     days_diff = days_diff
+
     # get user want travel days
     days = days_diff.days + 1
 
     all_flight = get_flight(Airline_start_code, Airline_end_code, startday, travellers)
+
     # get hotel data from here
     hotel_data = get_hotel(Airline_end)
+
     # get days activities
     restaurant_list, attraction_list = get_travel_line(Airline_end, days, checked_cats, 2)
+
     # get average transportation
     average_transportation = calculate_time_distance(hotel_data, attraction_list, restaurant_list, days)
 
