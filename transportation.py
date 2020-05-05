@@ -1,13 +1,9 @@
-"""
-@author:Areej&ZRM
-@file:Flight.py
-"""
-
 import googlemaps
 from datetime import datetime
 from humanfriendly import format_timespan, round_number
 from Models import transportation
-
+from hotel import get_hotel
+from Activities import get_travel_line
 
 def get_london_static():
     all_transportation = []
@@ -28,6 +24,7 @@ def get_london_static():
 
 def calculate_time_distance(hotel, places_list, restaurants_list, days):
     """
+
     :param hotel: Hotel Object
     :param places_list: List of Place Objects
     :param restaurants_list: List of Restaurants
@@ -35,15 +32,17 @@ def calculate_time_distance(hotel, places_list, restaurants_list, days):
     """
     places_list = [places_list[i:i+days] for i in range(0, len(places_list), days)]  # create sub-lists for days
 
-    total_distance = 0
-    total_duration = 0
-    total_price = 0
 
+    transportaion_list = []
     gmaps = googlemaps.Client(key='AIzaSyDUu2EVWYs1E5Wv7xuaJGZTCBqeDMXeu4U')
     #
     for index, places in enumerate(places_list):
-        line_sequence = [hotel, places[0], restaurants_list[index]] + places[1:] if len(places) > 1 else [] + [hotel]
+        day_list = []
+        line_sequence = [hotel, places[0], restaurants_list[index]] + places[1:] if len(places) > 1 else []
         for sindex, sequence in enumerate(line_sequence):
+            total_distance = 0
+            total_duration = 0
+            total_price = 0
             if sindex < len(line_sequence) - 1:
                 directions_result = gmaps.directions(origin=[sequence.latitude, sequence.longitude],
                                                      destination=[line_sequence[sindex+1].latitude,
@@ -54,8 +53,18 @@ def calculate_time_distance(hotel, places_list, restaurants_list, days):
                         total_distance += path['distance']['value']
                         total_duration += path['duration']['value']
                         total_price += path['fare']['value'] if 'fare' in path.keys() else 0
-    total_distance = f"{round_number(total_distance/1000)} KM"
-    total_duration = format_timespan(total_duration)
-    total_price = f"{total_price} GBP" if total_price else "N/A"
-    return total_distance, total_duration, total_price
+            total_distance = f"{round_number(total_distance/1000)} KM"
+            total_duration = format_timespan(total_duration)
+            total_price = f"{total_price} GBP" if total_price else "N/A"
+            day_list.append([total_distance, total_duration, total_price])
+        transportaion_list.append(day_list)
 
+    return transportaion_list
+
+
+if __name__ == '__main__':
+
+    hotel = get_hotel('London')
+    restaurants_list, places_list = get_travel_line('London', 2, ["art gallery"], 2)
+    response = calculate_time_distance(hotel, places_list, restaurants_list, 2)
+    print("Done!")
