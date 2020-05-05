@@ -79,8 +79,8 @@ def get_hotel(place):
                 hotel_latitude = temp_hotel['hotel']['latitude']
             if ('longitude' in temp_hotel['hotel'].keys()):
                 hotel_longitude = temp_hotel['hotel']['longitude']
-            if ('price' in temp_hotel['offers'].keys() and 'total' in temp_hotel['offers']['price'].keys()):
-                hotel_price = temp_hotel['offers']['price']['total']
+            if ('price' in temp_hotel['offers'][0].keys() and 'total' in temp_hotel['offers'][0]['price'].keys()):
+                hotel_price = temp_hotel['offers'][0]['price']['total']
             if ('price' in temp_hotel['offers'][0].keys() and 'currency' in temp_hotel['offers'][0]['price'].keys()):
                 hotel_unit = temp_hotel['offers'][0]['price']['currency']
             hotel_prase = hotel(name=hotel_name, unit=hotel_unit, rate=hotel_rating, price=hotel_price,
@@ -92,7 +92,7 @@ def get_hotel(place):
 
 if __name__ == '__main__':
     pass
-    resp = get_hotel('Paris')
+    resp = get_hotel('London')
     print(resp.latitude)
     print(resp.longitude)
     print("Done!")
