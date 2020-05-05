@@ -1,39 +1,12 @@
+"""
+@author:Areej&ZRM
+@file:Flight.py
+"""
+
 import googlemaps
 from datetime import datetime
-
-from Activities import get_travel_line
+from humanfriendly import format_timespan, round_number
 from Models import transportation
-from hotel import get_hotel
-
-gmaps = googlemaps.Client(key='AIzaSyDVs1QGncUOixJm3-ODbkg_OZ4THdknzwI')
-
-# Request directions via public transit
-now = datetime.now()
-
-directions_result = gmaps.directions([51.50732, -0.13239],
-                                     [51.5104568, -0.1210495],
-                                     mode="walking")
-
-
-# def get_transportation(startplace, destination):
-#     # print(len(destination), "destination")
-#     all_transportation = []
-#     transportation_type = 'walking'
-#     transportation_money = 0
-#     transportation_time = 15
-#     transportation_distance = 1
-#     for temp_destination in destination:
-#         directions_result = gmaps.directions([startplace.latitude, startplace.longitude],
-#                                              [temp_destination.latitude, temp_destination.longitude],
-#                                              mode="walking")
-#         transportation_distance = directions_result[0]['legs'][0]['distance']['text']
-#         transportation_time = directions_result[0]['legs'][0]['duration']['text']
-#         temp_transportation = transportation(type=transportation_type, distance=transportation_distance,
-#                                              time=transportation_time, money=transportation_money,
-#                                              startplace=startplace.name, endplace=temp_destination.name)
-#         all_transportation.append(temp_transportation)
-#
-#     return all_transportation
 
 
 def get_london_static():
@@ -51,4 +24,38 @@ def get_london_static():
     all_transportation.append(transportation_1)
     all_transportation.append(transportation_2)
     return all_transportation
+
+
+def calculate_time_distance(hotel, places_list, restaurants_list, days):
+    """
+    :param hotel: Hotel Object
+    :param places_list: List of Place Objects
+    :param restaurants_list: List of Restaurants
+    :return:
+    """
+    places_list = [places_list[i:i+days] for i in range(0, len(places_list), days)]  # create sub-lists for days
+
+    total_distance = 0
+    total_duration = 0
+    total_price = 0
+
+    gmaps = googlemaps.Client(key='AIzaSyDUu2EVWYs1E5Wv7xuaJGZTCBqeDMXeu4U')
+    #
+    for index, places in enumerate(places_list):
+        line_sequence = [hotel, places[0], restaurants_list[index]] + places[1:] if len(places) > 1 else [] + [hotel]
+        for sindex, sequence in enumerate(line_sequence):
+            if sindex < len(line_sequence) - 1:
+                directions_result = gmaps.directions(origin=[sequence.latitude, sequence.longitude],
+                                                     destination=[line_sequence[sindex+1].latitude,
+                                                                  line_sequence[sindex+1].longitude],
+                                                     mode="transit")
+                if directions_result:
+                    for path in directions_result[0]['legs']:
+                        total_distance += path['distance']['value']
+                        total_duration += path['duration']['value']
+                        total_price += path['fare']['value'] if 'fare' in path.keys() else 0
+    total_distance = f"{round_number(total_distance/1000)} KM"
+    total_duration = format_timespan(total_duration)
+    total_price = f"{total_price} GBP" if total_price else "N/A"
+    return total_distance, total_duration, total_price
 
