@@ -105,12 +105,32 @@
 <!--        </div>-->
 <!--    </div>-->
 
-    {% for day in range(1,days_diff) %}
-        <div class="row">
+    {% for day in range(0,days_diff) %}
+    <div class="row">
+        {% for transportation in average_transportation[day] %}
+        <div class="col-lg-3">
+        <div class="panel panel-default">
+            <i class="fa fa-bus" style="font-size:36px;float:right"></i>
+            <h2 style="float:left;margin-top:0px !important">Transportation</h2>
+            <div style="margin-top:10%;margin-left:1px">
+                <div class="">
+                    <h5>day {{ day+1 }}</h5>
+                </div>
+                <h6>Transportation Type: Transit</h6>
+                <h6>Average Travel Distance:{{ transportation[0]}}</h6>
+                <h6>Average price(GBP):{{ transportation[2]}}</h6>
+                <h6>Average time :{{ transportation[1].time }}</h6>
+
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    </div>
+    <div class="row">
             <div class="col-lg-4">
                 <div class="panel panel-default">
                     <div class="">
-                        <h5>day {{ day }}</h5>
+                        <h5>day {{ day+1 }}</h5>
                     </div>
                     <h6>type: {{ restaurant_list[day].type }} </h6>
                     <h6>Name: {{ restaurant_list[day].name }} </h6>
@@ -125,7 +145,7 @@
                 <div class="col-lg-4">
                     <div class="panel panel-default">
                         <div class="">
-                            <h5>day {{ day }}</h5>
+                            <h5>day {{ day+1 }}</h5>
                         </div>
                         <h6>type: {{ activities.type }} </h6>
                         <h6>Name: {{ activities.name }} </h6>
