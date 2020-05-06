@@ -70,3 +70,4 @@ if __name__ == '__main__':
     restaurants_list, places_list = get_travel_line('London', 2, ["art gallery"], 2)
     response = calculate_time_distance(hotel, places_list, restaurants_list, 2)
     print("Done!")
+
