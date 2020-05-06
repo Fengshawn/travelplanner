@@ -5,6 +5,7 @@ from Models import transportation
 from hotel import get_hotel
 from Activities import get_travel_line
 
+
 def get_london_static():
     all_transportation = []
     transportation_type = ['walking', 'bus', 'taxi']
@@ -53,12 +54,13 @@ def calculate_time_distance(hotel, places_list, restaurants_list, days):
                         total_distance += path['distance']['value']
                         total_duration += path['duration']['value']
                         total_price += path['fare']['value'] if 'fare' in path.keys() else 0
-            total_distance = f"{round_number(total_distance/1000)} KM"
-            total_duration = format_timespan(total_duration)
-            total_price = f"{total_price} GBP" if total_price else "N/A"
-            day_list.append([total_distance, total_duration, total_price])
+            if total_distance:
+                total_distance = f"{round_number(total_distance/1000)} KM"
+                total_duration = format_timespan(total_duration)
+                total_price = f"{total_price} GBP" if total_price else "N/A"
+                day_list.append([total_distance, total_duration, total_price])
         transportaion_list.append(day_list)
-
+    transportaion_list.remove([])
     return transportaion_list
 
 
