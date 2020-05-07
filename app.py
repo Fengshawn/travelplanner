@@ -103,7 +103,7 @@ def result():
     # get days activities
     restaurant_list, attraction_list = get_travel_line(Airline_end, days, checked_cats, 2)
     # get average transportation
-    average_transportation = calculate_time_distance(hotel_data, attraction_list, restaurant_list, days)
+    average_transportation, attraction_list,  restaurant_list = calculate_time_distance(hotel_data, attraction_list, restaurant_list, days)
 
     # Added the function to calculate time price and distance
     return render_template("result.html",
