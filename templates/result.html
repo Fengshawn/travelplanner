@@ -74,8 +74,6 @@
                 </div>
             </div>
         </div>
-
-
     </div>
 
     {% for day in range(1,days_diff) %}
@@ -90,6 +88,7 @@
                                     <h5>day {{ day }}</h5>
                                 </div>
                                 <h6>Transportation Type: Transit</h6>
+                                <h6>Allotted Time:{{ transportation[3]}}</h6>
                                 <h6>Average Travel Distance:{{ transportation[0]}}</h6>
                                 <h6>Average price(GBP):{{ transportation[2]}}</h6>
                                 <h6>Average time :{{ transportation[1] }}</h6>
@@ -105,6 +104,7 @@
                         <div class="">
                             <h5>day {{ day }}</h5>
                         </div>
+                        <h6>Allotted Time: {{ restaurant_list[day].time_range }} </h6>
                         <h6>type: {{ restaurant_list[day].type }} </h6>
                         <h6>Name: {{ restaurant_list[day].name }} </h6>
                         <h6>Rating: {{ restaurant_list[day].rating }} </h6>
@@ -120,6 +120,7 @@
                         <div class="">
                             <h5>day {{ day }}</h5>
                         </div>
+                        <h6>Allotted Time: {{ activities.time_range }} </h6>
                         <h6>type: {{ activities.type }} </h6>
                         <h6>Name: {{ activities.name }} </h6>
                         <h6>Rating: {{ activities.rating }} </h6>
@@ -127,8 +128,6 @@
                     </div>
                 </div>
             {% endfor %}
-
-
         </div>
     {% endfor %}
 </div>
@@ -188,6 +187,5 @@
 </script>
 <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
 </body>
-
 
 </html>
