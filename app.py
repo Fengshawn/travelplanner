@@ -6,7 +6,7 @@ from hotel import get_hotel
 from datetime import date, datetime
 from locations import get_location
 from Activities import get_travel_line
-from transportation import get_london_static, calculate_time_distance
+from transportation import calculate_time_distance
 
 app = Flask(__name__)
 
@@ -103,7 +103,7 @@ def result():
     # get days activities
     restaurant_list, attraction_list = get_travel_line(Airline_end, days, checked_cats, 2)
     # get average transportation
-    average_transportation, attraction_list,  restaurant_list = calculate_time_distance(hotel_data, attraction_list, restaurant_list, days)
+    days_activities = calculate_time_distance(hotel_data, attraction_list, restaurant_list, days)
 
     # Added the function to calculate time price and distance
     return render_template("result.html",
@@ -114,11 +114,9 @@ def result():
                            dep_airport=all_flight['departure_airport'],
                            price=all_flight['price'],
                            duration=all_flight['duration'],
-                           restaurant_list=restaurant_list,
                            hotel_data=hotel_data,
                            days_diff=int(days),
-                           days_activities=attraction_list,
-                           average_transportation=average_transportation
+                           days_activities=days_activities
                            )
 
 
