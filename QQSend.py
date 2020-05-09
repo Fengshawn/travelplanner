@@ -1,16 +1,11 @@
-"""
-@author:ZRM
-@file:qq_send.py
-@time:2020/03/29
-"""
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 #
-# msg_from = '623654589@qq.com'  # 发送方邮箱
+# msg_from = '623654589@qq.com'  
 # passwd = 'hdaiceqfeymhbbbc'
-#           hdaiceqfeymhbbbc填入发送方邮箱的授权码
-# msg_to = 'rzhang64@sheffield.ac.uk'  # 收件人邮箱
+#           hdaiceqfeymhbbbc 
+# msg_to = 'rzhang64@sheffield.ac.uk'  # send email
 #
 # body = '''
 #    #this is flight inforamtion
@@ -25,7 +20,7 @@ from email.mime.text import MIMEText
 # msg['From'] = msg_from
 # msg['To'] = msg_to
 #
-# s = smtplib.SMTP_SSL("smtp.qq.com", 465)  # 邮件服务器及端口号
+# s = smtplib.SMTP_SSL("smtp.qq.com", 465) 
 # s.login(msg_from, passwd)
 # s.sendmail(msg_from, msg_to, msg.as_string())
 # s.quit()
