@@ -18,7 +18,6 @@ def get_attraction(start_place, selected_categories):
     """
 
     :param start_place: City find places in
-
     :param selected_categories: selected categories except for the restaurants
     :return:
     """
@@ -74,7 +73,7 @@ def get_attraction(start_place, selected_categories):
         for i in range(3):
             # use temp_response to store response
             temp_response = response
-            # prase information
+            # parse information
             print(temp_response)
             attraction_number = len(temp_response['results'])
             if (attraction_number >= 15):
