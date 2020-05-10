@@ -18,6 +18,7 @@ def get_attraction(start_place, selected_categories):
     """
 
     :param start_place: City find places in
+
     :param selected_categories: selected categories except for the restaurants
     :return:
     """
@@ -33,7 +34,6 @@ def get_attraction(start_place, selected_categories):
         "zoo": "zoo",
         "museum": "museum"
     }
-
     if (len(selected_categories) == 0):
         selected_categories.append("art gallery")
         selected_categories.append("tourist attraction")
@@ -51,7 +51,7 @@ def get_attraction(start_place, selected_categories):
     geocoder = OpenCageGeocode(key)  # Gecoding Service to get coordinates of city
     result = geocoder.geocode(start_place, no_annotations='1')  # Gecoding Service API key
     longitude = result[0]['geometry']['lng']  # Parsing Latitude
-    latitude = result[0]['geometry']['lat']  # Parsing Longitude
+    latitude = result[0]['geometry']['lat']   # Parsing Longitude
     gmaps = googlemaps.Client(key='AIzaSyDUu2EVWYs1E5Wv7xuaJGZTCBqeDMXeu4U')
 
     """
@@ -68,12 +68,13 @@ def get_attraction(start_place, selected_categories):
         attraction_address = 'null'
         attraction_name = 'null'
         attraction_rating = 'null'
+        attraction_photo = 'N/A'
         attraction_latitude = 0
         attraction_longitude = 0
         for i in range(3):
             # use temp_response to store response
             temp_response = response
-            # parse information
+            # prase information
             print(temp_response)
             attraction_number = len(temp_response['results'])
             if (attraction_number >= 15):
@@ -87,9 +88,12 @@ def get_attraction(start_place, selected_categories):
                         attraction_name = temp_attraction['name']
                     if ('vicinity' in temp_attraction):
                         attraction_address = temp_attraction['vicinity']
+                    if ('photos' in temp_attraction):
+                        attraction_photo = temp_attraction['photos'][0]['photo_reference']
                     attraction_prase = attraction(address=attraction_address, longitude=attraction_longitude,
                                                   latitude=attraction_latitude, name=attraction_name,
-                                                  rating=attraction_rating, type=attraction_type)
+                                                  rating=attraction_rating, type=attraction_type,
+                                                  photo=attraction_photo)
                     all_attraction.append(attraction_prase)
             elif (attraction_number < 15):
                 for temp_attraction in temp_response['results']:
@@ -102,9 +106,11 @@ def get_attraction(start_place, selected_categories):
                         attraction_name = temp_attraction['name']
                     if ('vicinity' in temp_attraction):
                         attraction_address = temp_attraction['vicinity']
+                    if ('photos' in temp_attraction):
+                        attraction_photo = temp_attraction['photos'][0]['photo_reference']
                     attraction_prase = attraction(address=attraction_address, longitude=attraction_longitude,
                                                   latitude=attraction_latitude, name=attraction_name,
-                                                  rating=attraction_rating, type=attraction_type)
+                                                  rating=attraction_rating, type=attraction_type,photo=attraction_photo)
                     all_attraction.append(attraction_prase)
             # check whether is contain next_page_token
             if ('next_page_token' in temp_response):
@@ -142,11 +148,12 @@ def get_restaurant(start_place, type='restaurant'):
     restaurant_rating = 'null'
     restaurant_latitude = 0
     restaurant_longitude = 0
+    restaurant_photo = 'N/A'
     restaurant_type = 'restaurant'
     for i in range(3):
         # use temp_response to store response
         temp_response = response
-        # parse information
+        # prase information
         # print(temp_response)
         restaurant_number = len(temp_response['results'])
         if (restaurant_number >= 3):
@@ -160,9 +167,12 @@ def get_restaurant(start_place, type='restaurant'):
                     restaurant_name = temp_restaurant['name']
                 if ('vicinity' in temp_restaurant):
                     restaurant_address = temp_restaurant['vicinity']
+                if ('photos' in temp_restaurant):
+                    restaurant_photo = temp_restaurant['photos'][0]['photo_reference']
                 restaurant_prase = restaurant(address=restaurant_address, longitude=restaurant_longitude,
                                               latitude=restaurant_latitude, name=restaurant_name,
-                                              rating=restaurant_rating, type=restaurant_type)
+                                              rating=restaurant_rating, type=restaurant_type,
+                                              photo=restaurant_photo)
                 all_restaurant.append(restaurant_prase)
         elif (restaurant_number < 3):
             for temp_restaurant in temp_response['result']:
@@ -175,9 +185,12 @@ def get_restaurant(start_place, type='restaurant'):
                     restaurant_name = temp_restaurant['name']
                 if ('vicinity' in temp_restaurant):
                     restaurant_address = temp_restaurant['vicinity']
+                if ('photos' in temp_restaurant):
+                    restaurant_photo = temp_restaurant['photos'][0]['photo_reference']
                 restaurant_prase = restaurant(address=restaurant_address, longitude=restaurant_longitude,
                                               latitude=restaurant_latitude, name=restaurant_name,
-                                              rating=restaurant_rating, type=restaurant_type)
+                                              rating=restaurant_rating, type=restaurant_type.index,
+                                              photo=restaurant_photo)
                 all_restaurant.append(restaurant_prase)
         # check whether is contain next_page_token
         if ('next_page_token' in temp_response):
@@ -223,7 +236,7 @@ def get_travel_line(start_place, days, selected_categories, activity_threshold):
             print("no more related place")
         except:
             SystemError
-        # out of index will lead to revisite
+        # out of index will lead to revisit
 
     if (days <= list_number_restaurant):
         for i in range(days):
