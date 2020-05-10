@@ -3,7 +3,7 @@ from Flight import get_flight
 # from EmailSend import send_email
 from QQSend import send_email
 from hotel import get_hotel
-from datetime import date, datetime
+from datetime import datetime, timedelta
 from locations import get_location
 from Activities import get_travel_line
 from transportation import calculate_time_distance
@@ -93,13 +93,17 @@ def result():
     # calculate the days users will travel
     days_diff = datetime.strptime(str(endday).strip(), '%Y-%m-%d') - datetime.strptime(str(startday).strip(),
                                                                                        '%Y-%m-%d')
+    dates_list = list()
+    for day in range(0, days_diff.days):
+        date = datetime.strptime(str(startday).strip(), '%Y-%m-%d') + timedelta(days=day)
+        dates_list.append(date.strftime('%Y-%m-%d'))
     days_diff = days_diff
     # get user want travel days
     days = days_diff.days + 1
 
     all_flight = get_flight(Airline_start_code, Airline_end_code, startday, travellers)
     # get hotel data from here
-    hotel_data = get_hotel(Airline_end)
+    hotel_data = get_hotel(Airline_end, days)
     # get days activities
     restaurant_list, attraction_list = get_travel_line(Airline_end, days, checked_cats, 2)
     # get average transportation
@@ -116,7 +120,9 @@ def result():
                            duration=all_flight['duration'],
                            hotel_data=hotel_data,
                            days_diff=int(days),
-                           days_activities=days_activities
+                           days_activities=days_activities,
+                           city=Airline_end,
+                           dates=dates_list
                            )
 
 
