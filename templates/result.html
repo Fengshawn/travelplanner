@@ -23,14 +23,17 @@
             <div class="panel panel-default">
                 <i class="fas fa-plane" style="font-size:36px;float:right"></i>
                 <h2 style="float:left;margin-top:0px !important">Flight Information</h2>
-                <div style="margin-top:5%;margin-left:1px">
+                <div class="panel-body">
+             <img class="img-responsive" src="https://static.routesonline.com/images/cached/newsarticle-155570-scaled-580x0.jpg" id="Panel_Image" width="550" height="300" >
+          </div>
+                <div style="margin-top:5%;margin-left:10px">
                   <div style="display:flex">
                   <h6 style="color:grey; font-weight:bolder"> Flight Name</h6>&nbsp
                       <h6 style="font-weight:bolder;color:white;background-color:#000261">{{ name }}</h6>
                   </div>
                   <div style="display:flex">
                   <h6 style="color:grey; font-weight:bolder">Price</h6>&nbsp
-                  <h6 style="font-weight:bolder;margin-top:0px !important">{{ price }}</h6>
+                  <h6 style="font-weight:bolder">{{ price }}</h6>
                   </div>
 
                   <div style="display:flex">
@@ -65,11 +68,14 @@
             <div class="panel panel-default">
                 <i class="fa fa-hotel" style="font-size:36px;float:right"></i>
                 <h2 style="float:left;margin-top:0px !important">Hotel Information</h2>
-                <div style="margin-top:10%;margin-left:1px">
+                <div style="margin-top:10%;margin-left:10px">
+                    <div class="panel-body">
+                          <img class="img-responsive" src="https://cdn.pixabay.com/photo/2016/04/15/11/48/hotel-1330850_960_720.jpg" id="Panel_Image" width="550" height="300" >
+                    </div>
 
                     <h6>Hotel Name:{{ hotel_data.name }}</h6>
                     <h6>Hotel Address:{{ hotel_data.position }}</h6>
-                    <h6>Hotel Per Night Price(GBP):{{ hotel_data.price }}</h6>
+                    <h6>Hotel Stay Price(GBP):{{ hotel_data.price }}</h6>
                     <h6>Hotel Contact:{{ hotel_data.communication }}</h6>
                 </div>
             </div>
@@ -79,24 +85,38 @@
     </div>
     <div class="row">
     {% for day in range(1,days_diff) %}
-        <div class="col-lg-2">
+        <div class="col-lg-4">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <h5 style="font-weight:bolder">City {{ city }}</h5>
+                        <h5 style="font-weight:bolder">day {{ day }}</h5>
+                        <h6 style="font-weight:bolder;color:grey">{{ dates[day-1] }}  </h6>
+                    </div>
+                </div>
+            </div>
             {% for item in days_activities[(day-1)*6:(day)*6] %}
                 {% if "transportation" in item.type %}
+
                     <div class="row">
                             <div class="col-lg-12">
                                 <div class="panel panel-default">
                                     <i class="fa fa-bus" style="font-size:36px;float:right"></i>
                                     <h3 style="float:left;margin-top:0px !important">Transportation</h3>
+                                    <div class="panel-body">
+                                         <img class="img-responsive" src="https://www.glavny.tv/sites/default/files/styles/large/public/mainphotos/157845/gruzovik-protaranil-stoyashchiy-avtobus-s-detmi-vo-francii-144017.jpg?itok=vMOwBfo9" id="Panel_Image">
+                                      </div>
                                     <div style="margin-top:10%;margin-left:1px">
                                         <div class="">
-                                            <h5>day {{ day }}</h5>
+                                            <h5 style="font-weight:bolder">day {{ day }}</h5>
                                         </div>
-                                        <h6>Transportation Type: Transit</h6>
-                                        <h6>Allotted Time:{{ item.time_range}}</h6>
-                                        <h6>Average Travel Distance:{{ item.total_distance }}</h6>
-                                        <h6>Average price(GBP):{{ item.total_price }}</h6>
-                                        <h6>Average time :{{ item.total_duration }}</h6>
-
+                                        <div style="margin-left:10px">
+                                            <h6>Transportation Type: Transit</h6>
+                                            <h6>Allotted Time:{{ item.time_range}}</h6>
+                                            <h6>Average Travel Distance:{{ item.total_distance }}</h6>
+                                            <h6>Average price(GBP):{{ item.total_price }}</h6>
+                                            <h6>Average time :{{ item.total_duration }}</h6>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -105,14 +125,20 @@
                     <div class="row">
                             <div class="col-lg-12">
                                 <div class="panel panel-default">
-                                    <div class="">
-                                        <h5>day {{ day }}</h5>
+
+                                    <div class="panel-body">
+                                         <img class="img-responsive" src="{{ item.photo }}">
                                     </div>
-                                    <h6>Allotted Time: {{ item.time_range }} </h6>
-                                    <h6>type: {{ item.type }} </h6>
-                                    <h6>Name: {{ item.name }} </h6>
-                                    <h6>Rating: {{ item.rating }} </h6>
-                                    <h6>Address: {{ item.address }} </h6>
+                                    <div class="">
+                                        <h5 style="font-weight:bolder">day {{ day }}</h5>
+                                    </div>
+                                    <div style="margin-left:10px">
+                                        <h6>Allotted Time: {{ item.time_range }} </h6>
+                                        <h6>type: {{ item.type }} </h6>
+                                        <h6>Name: {{ item.name }} </h6>
+                                        <h6>Rating: {{ item.rating }} </h6>
+                                        <h6>Address: {{ item.address }} </h6>
+                                    </div>
                                 </div>
                             </div>
                         </div>
