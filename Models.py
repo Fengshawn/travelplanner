@@ -29,14 +29,14 @@ class hotel():
 
 
 class attraction():
-    def __init__(self, name, type, rating, latitude, longitude, address, budgets):
+    def __init__(self, name, type, rating, latitude, longitude, address):
         self.name = name
         self.type = type
         self.rating = rating
         self.latitude = latitude
         self.longitude = longitude
         self.address = address
-        self.budgets= budgets
+        
 
 
 class restaurant():
