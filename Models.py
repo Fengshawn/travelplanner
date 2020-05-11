@@ -36,6 +36,7 @@ class attraction():
         self.latitude = latitude
         self.longitude = longitude
         self.address = address
+        self.budgets= budgets
 
 
 class restaurant():
