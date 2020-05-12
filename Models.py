@@ -1,5 +1,5 @@
 """
-@author:ZRM
+@author:Runmin Zhang&Yanghao Zhou
 @file:Models.py
 @time:2020/03/28
 """
@@ -36,6 +36,7 @@ class attraction():
         self.latitude = latitude
         self.longitude = longitude
         self.address = address
+        
 
 
 class restaurant():
