@@ -1,15 +1,18 @@
+"""
+@author:Areej
+@file:transportation.py
+"""
+
 import googlemaps
 from datetime import datetime, timedelta
 from humanfriendly import format_timespan, round_number
-from Models import transportation
-from hotel import get_hotel
-from Activities import get_travel_line
-from time import time
 from Models import transportation
 
 
 def calculate_time_distance(hotel, places_list, restaurants_list, days):
     """
+
+    Calculate the transportation
 
     :param hotel: Hotel Object
     :param places_list: List of Place Objects
@@ -21,7 +24,7 @@ def calculate_time_distance(hotel, places_list, restaurants_list, days):
         places_days_list.append([activities for activities in places_list[(day+1 - 1) * 2:(day+1) * 2]])
 
     compiled_list = []
-    gmaps = googlemaps.Client(key='AIzaSyDUu2EVWYs1E5Wv7xuaJGZTCBqeDMXeu4U')
+    gmaps = googlemaps.Client(key='AIzaSyDVs1QGncUOixJm3-ODbkg_OZ4THdknzwI')
     #
     for index, places in enumerate(places_days_list[:days]):
         if len(places) > 1:
@@ -78,11 +81,3 @@ def calculate_time_distance(hotel, places_list, restaurants_list, days):
 
     compiled_list.remove([]) if [] in compiled_list else None
     return compiled_list
-
-
-if __name__ == '__main__':
-
-    hotel = get_hotel('London', 2)
-    restaurants_list, places_list = get_travel_line('London', 2, ["art gallery"], 2)
-    response = calculate_time_distance(hotel, places_list, restaurants_list, 2)
-    print("Done!")
