@@ -10,8 +10,9 @@ from opencage.geocoder import OpenCageGeocode
 
 def get_hotel(place, days):
     """
-
-    :param place_code: suggests the best hotel deal based on the city selected
+     suggests the best hotel deal based on the city selected
+    :param place: City Name
+    :param days: Number of days to stay
     :return:
     """
     client = Client(
@@ -90,9 +91,3 @@ def get_hotel(place, days):
     return all_hotel[0]
 
 
-if __name__ == '__main__':
-    pass
-    resp = get_hotel('London')
-    print(resp.latitude)
-    print(resp.longitude)
-    print("Done!")
