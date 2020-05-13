@@ -23,8 +23,8 @@ def get_hotel(place, days):
     result = geocoder.geocode(place, no_annotations='1')  # Geo-coding Service API key
     # here we get only london (there will be many london in the world)
     longitude = result[0]['geometry']['lng']  # Parsing Latitude
-    latitude = result[0]['geometry']['lat']  # Parsing Longitude
-    response = client.shopping.hotel_offers.get(latitude=latitude, longitude=longitude)
+    latitude = result[0]['geometry']['lat']   # Parsing Longitude
+    response = client.shopping.hotel_offers.get(latitude=latitude, longitude=longitude, currency='GBP')
     print(response.data)
     # get all hotel number in london
     hotel_number = len(response.data)
