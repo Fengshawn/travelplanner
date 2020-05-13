@@ -1,8 +1,9 @@
 """
-@author:Runmin Zhang&Yanghao Zhou & Areej
+@author:ZRM
 @file:Models.py
 @time:2020/03/28
 """
+
 
 class flight():
     def __init__(self, name, time, price, stop_times, package, details, cabin):
@@ -38,7 +39,7 @@ class attraction():
         self.address = address
         self.duration = 3600*2
         self.time_range = time_range
-        self.photo = f"https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&maxheight=500&photoreference={ photo }&key=AIzaSyDUu2EVWYs1E5Wv7xuaJGZTCBqeDMXeu4U"
+        self.photo = f"https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&maxheight=500&photoreference={ photo }&key=AIzaSyDVs1QGncUOixJm3-ODbkg_OZ4THdknzwI"
 
 
 class restaurant():
@@ -51,7 +52,7 @@ class restaurant():
         self.type = type.title()
         self.duration = 3600
         self.time_range = time_range
-        self.photo = f"https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&maxheight=500&photoreference={ photo }&key=AIzaSyDUu2EVWYs1E5Wv7xuaJGZTCBqeDMXeu4U"
+        self.photo = f"https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&maxheight=500&photoreference={ photo }&key=AIzaSyDVs1QGncUOixJm3-ODbkg_OZ4THdknzwI"
 
 
 class transportation():
