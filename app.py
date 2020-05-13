@@ -1,12 +1,13 @@
 from flask import Flask, render_template, request
 from Flight import get_flight
 # from EmailSend import send_email
-from QQSend import send_email
+from EmailSend import send_email
 from hotel import get_hotel
 from datetime import datetime, timedelta
 from locations import get_location
 from Activities import get_travel_line
 from transportation import calculate_time_distance
+import pdfkit
 
 app = Flask(__name__)
 
@@ -109,8 +110,7 @@ def result():
     # get average transportation
     days_activities = calculate_time_distance(hotel_data, attraction_list, restaurant_list, days)
 
-    # Added the function to calculate time price and distance
-    return render_template("result.html",
+    html = render_template("result.html",
                            name=all_flight['aircraft_code'],
                            dtime=all_flight['departure_dtime'],
                            atime=all_flight['arrival_dtime'],
@@ -124,6 +124,15 @@ def result():
                            city=Airline_end,
                            dates=dates_list
                            )
+    # Added the function to calculate time price and distance
+    try:
+        path_wkhtmltopdf = r'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe'
+        config = pdfkit.configuration(wkhtmltopdf=path_wkhtmltopdf)
+        css = 'static/css/resStyle.css'
+        pdfkit.from_string(html, 'static/temp/plan.pdf', configuration=config, css=css)
+    except OSError:
+        pass
+    return html
 
 
 if __name__ == '__main__':
