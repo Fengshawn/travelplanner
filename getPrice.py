@@ -1,8 +1,11 @@
-
+"""
+@author:Areej
+@file:getPrice.py
+"""
 
 def get_price(hotel, flight, transportation):
     """
-
+    To get the sum of the total budget for all activities, hotel, transportation, and flight
     :param hotel: Hotel Object
     :param flight: Flight Object
     :param transportation: List of transportation objects
