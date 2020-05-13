@@ -48,7 +48,8 @@ def calculate_time_distance(hotel, places_list, restaurants_list, days):
                             total_distance += path['distance']['value']
                             total_duration += path['duration']['value']
                             total_price += path['fare']['value'] if 'fare' in path.keys() else 0
-                    from_to = f"{sequence.name} To {line_sequence[sindex + 1].name}"
+                    from_place = sequence.name
+                    to_place = line_sequence[sindex + 1].name
             except IndexError:
                 pass
 
@@ -74,7 +75,7 @@ def calculate_time_distance(hotel, places_list, restaurants_list, days):
             total_duration = format_timespan(total_duration)
             total_price = f"{total_price} GBP" if total_price else "N/A"
 
-            transport = transportation(total_distance, total_duration, total_price, trs_time_range, from_to)
+            transport = transportation(total_distance, total_duration, total_price, trs_time_range, from_place, to_place)
 
             if total_distance != '0 KM':
                 compiled_list.append(transport)
