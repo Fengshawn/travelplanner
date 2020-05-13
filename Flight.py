@@ -3,17 +3,23 @@
 @file:Flight.py
 """
 
-from amadeus import Client, ResponseError
-from locations import get_location
+from amadeus import Client
 
 
-
-def get_flight(start_place_code, end_place_code, start_date,traveller, cabin):
+def get_flight(start_place_code, end_place_code, start_date, traveller, cabin):
+    """
+    Get the flight data form the starting city to the destination using amadeus API
+    :param start_place_code: IATA city code
+    :param end_place_code: IATA city code
+    :param start_date: date object in
+    :param traveller:
+    :param cabin:
+    :return:
+    """
     client = Client(
         client_id='HmVt5vGJBXOCBhwJ3oHOMzDJQYuLCIpj',
         client_secret='cRxFUJZYWEAQtobG'
     )
-    # try:
     flight_data_dict = {}
     response = client.shopping.flight_offers_search.get(
         originLocationCode=start_place_code,
@@ -33,11 +39,4 @@ def get_flight(start_place_code, end_place_code, start_date,traveller, cabin):
     flight_data_dict["aircraft_code"] = response.data[0]['itineraries'][0]['segments'][0]['aircraft']['code']
     flight_data_dict['duration'] = response.data[0]['itineraries'][0]['segments'][0]['duration'].replace("PT", "").replace("H", " Hours ").replace("M", " Minutes")
     return flight_data_dict
-    # except ResponseError as error:
-    #     print(str(error))
 
-
-if __name__ == '__main__':
-
-    resp = get_flight(str(get_location("Dubai")), str(get_location("London")), "2020-05-13", 2)
-    print("Done")
