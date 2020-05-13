@@ -21,6 +21,20 @@
     <div class="row">
         <div class="col-lg-6">
             <div class="panel panel-default">
+                <div style="display:flex">
+                  <h6 style="color:grey; font-weight:bolder">Days Duration</h6>&nbsp
+                      <h6 style="font-weight:bolder">{{ days_diff }}</h6>
+                </div>
+                <div style="display:flex">
+                  <h6 style="color:grey; font-weight:bolder">Total Budget</h6>&nbsp
+                      <h6 style="font-weight:bolder">{{ budget }}</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="panel panel-default">
                 <i class="fas fa-plane" style="font-size:36px;float:right"></i>
                 <h2 style="float:left;margin-top:0px !important">Flight Information</h2>
                 <div class="panel-body">
@@ -107,11 +121,8 @@
                                          <img class="img-responsive" src="https://www.glavny.tv/sites/default/files/styles/large/public/mainphotos/157845/gruzovik-protaranil-stoyashchiy-avtobus-s-detmi-vo-francii-144017.jpg?itok=vMOwBfo9" id="Panel_Image">
                                       </div>
                                     <div style="margin-top:10%;margin-left:1px">
-                                        <div class="">
-                                            <h5 style="font-weight:bolder">day {{ day }}</h5>
-                                        </div>
-                                        <div style="margin-left:10px">
-                                            <h6>Transportation Type: Transit</h6>
+                                        <div style="padding-left:10px">
+                                            <h6>Transportation Type: <span class="badge">Transit</span></h6>
                                             <h6>Allotted Time:{{ item.time_range}}</h6>
                                             <h6>Average Travel Distance:{{ item.total_distance }}</h6>
                                             <h6>Average price(GBP):{{ item.total_price }}</h6>
@@ -129,12 +140,9 @@
                                     <div class="panel-body">
                                          <img class="img-responsive" src="{{ item.photo }}">
                                     </div>
-                                    <div class="">
-                                        <h5 style="font-weight:bolder">day {{ day }}</h5>
-                                    </div>
-                                    <div style="margin-left:10px">
+                                    <div style="padding-left:10px">
                                         <h6>Allotted Time: {{ item.time_range }} </h6>
-                                        <h6>type: {{ item.type }} </h6>
+                                        <h6>Type: <span class="badge">{{ item.type }}</span> </h6>
                                         <h6>Name: {{ item.name }} </h6>
                                         <h6>Rating: {{ item.rating }} </h6>
                                         <h6>Address: {{ item.address }} </h6>
