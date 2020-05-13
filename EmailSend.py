@@ -37,6 +37,5 @@ def send_email(toAddr):
 
     server.quit()
 
-#
 if __name__ == "__main__":
     send_email('travel.planner2030@gmail.com')
