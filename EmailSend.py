@@ -5,12 +5,13 @@
 """
 import smtplib
 from email.mime.multipart import MIMEMultipart
+from email.mime.application import MIMEApplication
 from email.mime.text import MIMEText
 
 
 def send_email(toAddr):
-    fromAddr = 'zrmzack@gmail.com'
-    mypass = '123dreamture'
+    fromAddr = 'travel.planner2030@gmail.com'
+    mypass = 'Sh12345678'
     msg = MIMEMultipart()
     msg['From'] = fromAddr
     msg['to'] = toAddr
@@ -24,6 +25,11 @@ def send_email(toAddr):
 
     '''
     msg.attach(MIMEText(body, 'plain'))
+    with open('static/temp/plan.pdf', "rb") as f:
+        # attach = email.mime.application.MIMEApplication(f.read(),_subtype="pdf")
+        attach = MIMEApplication(f.read(), _subtype="pdf")
+    attach.add_header('Content-Disposition', 'attachment', filename=str('static/temp/plan.pdf'))
+    msg.attach(attach)
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
     server.login(fromAddr, mypass)
@@ -32,5 +38,5 @@ def send_email(toAddr):
     server.quit()
 
 #
-# if __name__ == "__main__":
-#     send_email('rzhang64@sheffield.ac.uk')
+if __name__ == "__main__":
+    send_email('travel.planner2030@gmail.com')
