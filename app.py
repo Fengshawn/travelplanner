@@ -84,7 +84,6 @@ def result():
     checked_cats.append(
         'shopping mall') if 'shopping_mall' in request.form else None  # check if shopping are selected
     checked_cats.append('aquarium') if 'aquarium' in request.form else None
-
     checked_cats.append('zoo') if 'zoo' in request.form else None
     checked_cats.append('museum') if 'museum' in request.form else None
 
