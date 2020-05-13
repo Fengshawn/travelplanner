@@ -8,7 +8,7 @@ from amadeus import Client
 from opencage.geocoder import OpenCageGeocode
 
 
-def get_hotel(place):
+def get_hotel(place, days):
     """
 
     :param place_code: suggests the best hotel deal based on the city selected
@@ -41,50 +41,50 @@ def get_hotel(place):
     # only choose top 3
     if (hotel_number <= 3):
         for temp_hotel in response.data:
-            if ('name' in temp_hotel['hotel'].keys()):
+            if 'name' in temp_hotel['hotel'].keys():
                 hotel_name = temp_hotel['hotel']['name']
-            if ('rating' in temp_hotel['hotel'].keys()):
+            if 'rating' in temp_hotel['hotel'].keys():
                 hotel_rating = temp_hotel['hotel']['rating']
-            if ('address' in temp_hotel['hotel'].keys() and 'lines' in temp_hotel['hotel']['address'].keys()):
+            if 'address' in temp_hotel['hotel'].keys() and 'lines' in temp_hotel['hotel']['address'].keys():
                 hotel_address = temp_hotel['hotel']['address']['lines'][0]
-            if ('hotel' in temp_hotel['hotel']['contact'].keys() and 'phone' in temp_hotel['hotel']['contact'].keys()):
+            if 'hotel' in temp_hotel['hotel']['contact'].keys() and 'phone' in temp_hotel['hotel']['contact'].keys():
                 hotel_contact = temp_hotel['hotel']['contact']['hotel']
-            if ('latitude' in temp_hotel['hotel'].keys()):
+            if 'latitude' in temp_hotel['hotel'].keys():
                 hotel_latitude = temp_hotel['hotel']['latitude']
-            if ('longitude' in temp_hotel['hotel'].keys()):
+            if 'longitude' in temp_hotel['hotel'].keys():
                 hotel_longitude = temp_hotel['hotel']['longitude']
-            if ('price' in temp_hotel['offers'][0].keys() and 'total' in temp_hotel['offers'][0]['price'].keys()):
+            if 'price' in temp_hotel['offers'][0].keys() and 'total' in temp_hotel['offers'][0]['price'].keys():
                 hotel_price = temp_hotel['offers'][0]['price']['total']
-            if ('price' in temp_hotel['offers'][0].keys() and 'currency' in temp_hotel['offers'][0]['price'].keys()):
+            if 'price' in temp_hotel['offers'][0].keys() and 'currency' in temp_hotel['offers'][0]['price'].keys():
                 hotel_unit = temp_hotel['offers'][0]['price']['currency']
             hotel_prase = hotel(name=hotel_name, unit=hotel_unit, rate=hotel_rating, price=hotel_price,
                                 latitude=hotel_latitude, longitude=hotel_longitude, communication=hotel_contact,
+                                days=days,
                                 position=hotel_address)
             all_hotel.append(hotel_prase)
-
-
 
     else:
         for temp_hotel in response.data[0:3]:
 
-            if ('name' in temp_hotel['hotel'].keys()):
+            if 'name' in temp_hotel['hotel'].keys():
                 hotel_name = temp_hotel['hotel']['name']
-            if ('rating' in temp_hotel['hotel'].keys()):
+            if 'rating' in temp_hotel['hotel'].keys():
                 hotel_rating = temp_hotel['hotel']['rating']
-            if ('address' in temp_hotel['hotel'].keys() and 'lines' in temp_hotel['hotel']['address'].keys()):
+            if 'address' in temp_hotel['hotel'].keys() and 'lines' in temp_hotel['hotel']['address'].keys():
                 hotel_address = temp_hotel['hotel']['address']['lines'][0]
-            if ('contact' in temp_hotel['hotel'].keys() and 'phone' in temp_hotel['hotel']['contact'].keys()):
+            if 'contact' in temp_hotel['hotel'].keys() and 'phone' in temp_hotel['hotel']['contact'].keys():
                 hotel_contact = temp_hotel['hotel']['contact']['phone']
-            if ('latitude' in temp_hotel['hotel'].keys()):
+            if 'latitude' in temp_hotel['hotel'].keys():
                 hotel_latitude = temp_hotel['hotel']['latitude']
-            if ('longitude' in temp_hotel['hotel'].keys()):
+            if 'longitude' in temp_hotel['hotel'].keys():
                 hotel_longitude = temp_hotel['hotel']['longitude']
-            if ('price' in temp_hotel['offers'][0].keys() and 'total' in temp_hotel['offers'][0]['price'].keys()):
+            if 'price' in temp_hotel['offers'][0].keys() and 'total' in temp_hotel['offers'][0]['price'].keys():
                 hotel_price = temp_hotel['offers'][0]['price']['total']
-            if ('price' in temp_hotel['offers'][0].keys() and 'currency' in temp_hotel['offers'][0]['price'].keys()):
+            if 'price' in temp_hotel['offers'][0].keys() and 'currency' in temp_hotel['offers'][0]['price'].keys():
                 hotel_unit = temp_hotel['offers'][0]['price']['currency']
             hotel_prase = hotel(name=hotel_name, unit=hotel_unit, rate=hotel_rating, price=hotel_price,
                                 latitude=hotel_latitude, longitude=hotel_longitude, communication=hotel_contact,
+                                days=days,
                                 position=hotel_address)
             all_hotel.append(hotel_prase)
     return all_hotel[0]
