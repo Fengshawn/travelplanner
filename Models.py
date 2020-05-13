@@ -20,6 +20,7 @@ class hotel():
     def __init__(self, name, price, position, communication, latitude, longitude, unit, rate, days):
         self.name = name
         self.price = str(float(price) * days)
+        self.day_price = price
         self.position = position
         self.communication = communication
         self.latitude = latitude
@@ -56,11 +57,12 @@ class restaurant():
 
 
 class transportation():
-    def __init__(self, total_distance, total_duration, total_price, time_range, from_to):
+    def __init__(self, total_distance, total_duration, total_price, time_range, from_place, to_place):
         self.type = 'transportation'
         self.total_distance = total_distance
         self.total_duration = total_duration
         self.total_price = total_price
         self.time_range = time_range
-        self.from_to = from_to
+        self.from_place = from_place
+        self.to_place = to_place
 
