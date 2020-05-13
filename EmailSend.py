@@ -1,5 +1,5 @@
 """
-@author:ZRM
+@author:ZRM&Areej
 @file:EmailSend.py
 @time:2020/03/29
 """
