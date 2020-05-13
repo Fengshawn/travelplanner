@@ -33,6 +33,7 @@ def calculate_time_distance(hotel, places_list, restaurants_list, days):
             total_distance = 0
             total_duration = 0
             total_price = 0
+            from_to = "N/A"
             try:
                 if sindex < len(line_sequence)-1:
                     directions_result = gmaps.directions(origin=[sequence.latitude, sequence.longitude],
@@ -44,29 +45,34 @@ def calculate_time_distance(hotel, places_list, restaurants_list, days):
                             total_distance += path['distance']['value']
                             total_duration += path['duration']['value']
                             total_price += path['fare']['value'] if 'fare' in path.keys() else 0
+                    from_to = f"{sequence.name} To {line_sequence[sindex + 1].name}"
             except IndexError:
                 pass
 
-            time_difference = last_time + timedelta(seconds=total_duration)
-            trs_time_range = f'{last_time.strftime("%I:%M %p")}-{time_difference.strftime("%I:%M %p")}'
-            last_time = time_difference
-            if sequence.type == 'restaurant':
+            if sequence.type == 'Restaurant':
                 time_difference = last_time + timedelta(seconds=sequence.duration)
                 time_range = f'{last_time.strftime("%I:%M %p")}-{time_difference.strftime("%I:%M %p")}'
                 last_time = time_difference
                 restaurants_list[index].time_range = time_range
                 compiled_list.append(restaurants_list[index])
-            elif sequence.type != 'hotel' and sequence.type != 'restaurant':
+            elif sequence.type not in ('hotel', 'Restaurant'):
                 time_difference = last_time + timedelta(seconds=sequence.duration)
                 time_range = f'{last_time.strftime("%I:%M %p")}-{time_difference.strftime("%I:%M %p")}'
                 last_time = time_difference
                 place_idx = places_list.index(sequence)
                 places_list[place_idx].time_range = time_range
                 compiled_list.append(places_list[place_idx])
+
+            time_difference = last_time + timedelta(seconds=total_duration)
+            trs_time_range = f'{last_time.strftime("%I:%M %p")}-{time_difference.strftime("%I:%M %p")}'
+            last_time = time_difference
+
             total_distance = f"{round_number(total_distance/1000)} KM"
             total_duration = format_timespan(total_duration)
             total_price = f"{total_price} GBP" if total_price else "N/A"
-            transport = transportation(total_distance, total_duration, total_price, trs_time_range)
+
+            transport = transportation(total_distance, total_duration, total_price, trs_time_range, from_to)
+
             if total_distance != '0 KM':
                 compiled_list.append(transport)
 
@@ -76,7 +82,7 @@ def calculate_time_distance(hotel, places_list, restaurants_list, days):
 
 if __name__ == '__main__':
 
-    hotel = get_hotel('London')
+    hotel = get_hotel('London', 2)
     restaurants_list, places_list = get_travel_line('London', 2, ["art gallery"], 2)
     response = calculate_time_distance(hotel, places_list, restaurants_list, 2)
     print("Done!")
