@@ -8,10 +8,10 @@ from locations import get_location
 
 
 
-def get_flight(start_place_code, end_place_code, start_date,traveller):
+def get_flight(start_place_code, end_place_code, start_date,traveller, cabin):
     client = Client(
-        client_id='YhUHykQeccgseWSSARlxtfIAzhdGgTM2',
-        client_secret='IWBwclckwNgBKNWr'
+        client_id='HmVt5vGJBXOCBhwJ3oHOMzDJQYuLCIpj',
+        client_secret='cRxFUJZYWEAQtobG'
     )
     # try:
     flight_data_dict = {}
@@ -19,7 +19,9 @@ def get_flight(start_place_code, end_place_code, start_date,traveller):
         originLocationCode=start_place_code,
         destinationLocationCode=end_place_code,
         departureDate=start_date,
-        adults=traveller)
+        adults=traveller,
+        currencyCode='GBP',
+        travelClass=cabin)
 
     flight_data_dict["price"] = f"{response.data[0]['price']['total']} {response.data[0]['price']['currency']}"
     flight_data_dict["departure_airport"] = response.data[0]['itineraries'][0]['segments'][0]['departure']['iataCode']
@@ -37,5 +39,5 @@ def get_flight(start_place_code, end_place_code, start_date,traveller):
 
 if __name__ == '__main__':
 
-    resp = get_flight(str(get_location("Dubai")), str(get_location("London")), "2020-05-02", 2)
+    resp = get_flight(str(get_location("Dubai")), str(get_location("London")), "2020-05-13", 2)
     print("Done")
