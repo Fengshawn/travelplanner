@@ -1,6 +1,6 @@
 """
 @author:Areej
-@file:google_places.py
+@file:Activities.py
 
 """
 import random
@@ -51,7 +51,7 @@ def get_attraction(start_place, selected_categories):
     result = geocoder.geocode(start_place, no_annotations='1')  # Gecoding Service API key
     longitude = result[0]['geometry']['lng']  # Parsing Latitude
     latitude = result[0]['geometry']['lat']   # Parsing Longitude
-    gmaps = googlemaps.Client(key='AIzaSyDUu2EVWYs1E5Wv7xuaJGZTCBqeDMXeu4U')
+    gmaps = googlemaps.Client(key='AIzaSyDVs1QGncUOixJm3-ODbkg_OZ4THdknzwI')
 
     """
     1.here need sometime to check where your api is okay 
@@ -73,7 +73,7 @@ def get_attraction(start_place, selected_categories):
         for i in range(3):
             # use temp_response to store response
             temp_response = response
-            # parse information
+            # prase information
             print(temp_response)
             attraction_number = len(temp_response['results'])
             if (attraction_number >= 15):
