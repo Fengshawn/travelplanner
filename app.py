@@ -7,6 +7,7 @@ from datetime import datetime, timedelta
 from locations import get_location
 from Activities import get_travel_line
 from transportation import calculate_time_distance
+from getPrice import get_price
 import pdfkit
 
 app = Flask(__name__)
@@ -109,7 +110,7 @@ def result():
     restaurant_list, attraction_list = get_travel_line(Airline_end, days, checked_cats, 2)
     # get average transportation
     days_activities = calculate_time_distance(hotel_data, attraction_list, restaurant_list, days)
-
+    budget = get_price(hotel_data, all_flight, [activity for activity in days_activities if activity.type in 'transportation'])
     html = render_template("result.html",
                            name=all_flight['aircraft_code'],
                            dtime=all_flight['departure_dtime'],
@@ -122,14 +123,16 @@ def result():
                            days_diff=int(days),
                            days_activities=days_activities,
                            city=Airline_end,
-                           dates=dates_list
+                           dates=dates_list,
+                           budget=budget
                            )
     # Added the function to calculate time price and distance
     try:
-        path_wkhtmltopdf = r'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe'
-        config = pdfkit.configuration(wkhtmltopdf=path_wkhtmltopdf)
+        #path_wkhtmltopdf = r'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe'
+        #config = pdfkit.configuration(wkhtmltopdf=path_wkhtmltopdf)
         css = 'static/css/resStyle.css'
-        pdfkit.from_string(html, 'static/temp/plan.pdf', configuration=config, css=css)
+        #pdfkit.from_string(html, 'static/temp/plan.pdf', configuration=config, css=css)
+        pdfkit.from_string(html, 'static/temp/plan.pdf', css=css)
     except OSError:
         pass
     return html
