@@ -27,7 +27,7 @@
                 </div>
                 <div style="display:flex">
                   <h6 style="color:grey; font-weight:bolder">Total Budget</h6>&nbsp
-                      <h6 style="font-weight:bolder">{{ budget }}</h6>
+                      <h6 style="font-weight:bolder">{{ budget }} GBP</h6>
                 </div>
             </div>
         </div>
@@ -48,6 +48,11 @@
                   <div style="display:flex">
                   <h6 style="color:grey; font-weight:bolder">Price</h6>&nbsp
                   <h6 style="font-weight:bolder">{{ price }}</h6>
+                  </div>
+
+                  <div style="display:flex">
+                  <h6 style="color:grey; font-weight:bolder">Cabin</h6>&nbsp
+                      <h6 style="font-weight:bolder">{{ cabin }}</h6>
                   </div>
 
                   <div style="display:flex">
@@ -87,10 +92,23 @@
                           <img class="img-responsive" src="https://cdn.pixabay.com/photo/2016/04/15/11/48/hotel-1330850_960_720.jpg" id="Panel_Image" width="550" height="300" >
                     </div>
 
-                    <h6>Hotel Name:{{ hotel_data.name }}</h6>
-                    <h6>Hotel Address:{{ hotel_data.position }}</h6>
-                    <h6>Hotel Stay Price(GBP):{{ hotel_data.price }}</h6>
-                    <h6>Hotel Contact:{{ hotel_data.communication }}</h6>
+                    <div style="display:flex">
+                        <h6 style="color:grey; font-weight:bolder"> Hotel Name:</h6>&nbsp
+                        <h6 style="font-weight:bolder">{{ hotel_data.name }}</h6>
+                    </div>
+                    <div style="display:flex">
+                        <h6 style="color:grey; font-weight:bolder"> Hotel Address:</h6>&nbsp
+                        <h6 style="font-weight:bolder">{{ hotel_data.position }}</h6>
+                    </div>
+                    <div style="display:flex">
+                        <h6 style="color:grey; font-weight:bolder"> Hotel Stay Price(GBP):</h6>&nbsp
+                        <h6 style="font-weight:bolder">{{ hotel_data.price }}</h6>
+                    </div>
+                    <div style="display:flex">
+                        <h6 style="color:grey; font-weight:bolder"> Hotel Contact:</h6>&nbsp
+                        <h6 style="font-weight:bolder">{{ hotel_data.communication }}</h6>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -123,6 +141,7 @@
                                     <div style="margin-top:10%;margin-left:1px">
                                         <div style="padding-left:10px">
                                             <h6>Transportation Type: <span class="badge">Transit</span></h6>
+                                            <h6>Travel :{{ item.from_to }}</h6>
                                             <h6>Allotted Time:{{ item.time_range}}</h6>
                                             <h6>Average Travel Distance:{{ item.total_distance }}</h6>
                                             <h6>Average price(GBP):{{ item.total_price }}</h6>
