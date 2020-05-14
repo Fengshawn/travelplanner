@@ -49,7 +49,7 @@ def get_attraction(start_place, selected_categories):
     result = geocoder.geocode(start_place, no_annotations='1')  # Gecoding Service API key
     longitude = result[0]['geometry']['lng']  # Parsing Latitude
     latitude = result[0]['geometry']['lat']   # Parsing Longitude
-    gmaps = googlemaps.Client(key='AIzaSyDVs1QGncUOixJm3-ODbkg_OZ4THdknzwI')
+    gmaps = googlemaps.Client(key='AIzaSyDtzE0xKr5DU_TF4k2GpknhsB--CXhlhjI')
 
     """
     1.here need sometime to check where your api is okay 
@@ -109,7 +109,7 @@ def get_attraction(start_place, selected_categories):
                                                   rating=attraction_rating, type=attraction_type,photo=attraction_photo)
                     all_attraction.append(attraction_prase)
             # check whether is contain next_page_token
-            # fetch more attarcations if the total number required for all the days is not completed
+            # fetch more attractions if the total number required for all the days is not completed
             if 'next_page_token' in temp_response:
                 page_token = temp_response['next_page_token']
                 # need time to check
@@ -125,7 +125,7 @@ def get_attraction(start_place, selected_categories):
 
 def get_restaurant(start_place):
     """
-    Get the resaturants for all the days
+    Get the restaurant for all the days
     :param start_place: City Name
     :return:
     """
@@ -135,7 +135,7 @@ def get_restaurant(start_place):
     result = geocoder.geocode(start_place, no_annotations='1')  # Gecoding Service API key
     longitude = result[0]['geometry']['lng']  # Parsing Latitude
     latitude = result[0]['geometry']['lat']  # Parsing Longitude
-    gmaps = googlemaps.Client(key='AIzaSyDVs1QGncUOixJm3-ODbkg_OZ4THdknzwI')
+    gmaps = googlemaps.Client(key='AIzaSyDtzE0xKr5DU_TF4k2GpknhsB--CXhlhjI')
 
     """
     1.here need sometime to check where your api is okay 

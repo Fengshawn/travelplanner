@@ -40,7 +40,7 @@ class attraction():
         self.address = address
         self.duration = 3600*2
         self.time_range = time_range
-        self.photo = f"https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&maxheight=500&photoreference={ photo }&key=AIzaSyDVs1QGncUOixJm3-ODbkg_OZ4THdknzwI"
+        self.photo = f"https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&maxheight=500&photoreference={ photo }&key=AIzaSyDtzE0xKr5DU_TF4k2GpknhsB--CXhlhjI"
 
 
 class restaurant():
@@ -53,7 +53,7 @@ class restaurant():
         self.type = type.title()
         self.duration = 3600
         self.time_range = time_range
-        self.photo = f"https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&maxheight=500&photoreference={ photo }&key=AIzaSyDVs1QGncUOixJm3-ODbkg_OZ4THdknzwI"
+        self.photo = f"https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&maxheight=500&photoreference={ photo }&key=AIzaSyDtzE0xKr5DU_TF4k2GpknhsB--CXhlhjI"
 
 
 class transportation():

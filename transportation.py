@@ -24,7 +24,7 @@ def calculate_time_distance(hotel, places_list, restaurants_list, days):
         places_days_list.append([activities for activities in places_list[(day+1 - 1) * 2:(day+1) * 2]])
 
     compiled_list = []
-    gmaps = googlemaps.Client(key='AIzaSyDVs1QGncUOixJm3-ODbkg_OZ4THdknzwI')
+    gmaps = googlemaps.Client(key='AIzaSyDtzE0xKr5DU_TF4k2GpknhsB--CXhlhjI')
     #
     for index, places in enumerate(places_days_list[:days]):
         if len(places) > 1:

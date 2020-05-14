@@ -68,7 +68,7 @@
                   </div>
 
                   <div style="display:flex">
-                  <h6 style="color:grey; font-weight:bolder"> Departure Time</h6>&nbsp
+                  <h6 style="color:grey; font-weight:bolder"> Departure </h6>&nbsp
                       <h6 style="font-weight:bolder">{{ dtime }}</h6>
                   </div>
 
@@ -78,7 +78,7 @@
                   </div>
 
                   <div style="display:flex">
-                  <h6 style="color:grey; font-weight:bolder"> Arrival Time</h6>&nbsp
+                  <h6 style="color:grey; font-weight:bolder"> Arrival </h6>&nbsp
                       <h6 style="font-weight:bolder">{{ atime }}</h6>
                   </div>
 
@@ -107,7 +107,7 @@
                         <h6 style="font-weight:bolder">{{ hotel_data.day_price }} GBP</h6>
                     </div>
                     <div style="display:flex">
-                        <h6 style="color:grey; font-weight:bolder"> Hotel Stay Price Total:</h6>&nbsp
+                        <h6 style="color:grey; font-weight:bolder"> The Total price for Hotel Stay: </h6>&nbsp
                         <h6 style="font-weight:bolder">{{ hotel_data.price }} GBP</h6>
                     </div>
                     <div style="display:flex">
@@ -128,7 +128,7 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <h5 style="font-weight:bolder">City {{ city }}</h5>
-                        <h5 style="font-weight:bolder">day {{ day }}</h5>
+                        <h5 style="font-weight:bolder">Day {{ day }}</h5>
                         <h6 style="font-weight:bolder;color:grey">{{ dates[day-1] }}  </h6>
                     </div>
                 </div>
@@ -147,8 +147,8 @@
                                     <div style="margin-top:10%;margin-left:1px">
                                         <div style="padding-left:10px">
                                             <h6>Transportation Type: <span class="badge">Transit</span></h6>
-                                            <h6>From :{{ item.from_place }}</h6>
-                                            <h6>To :{{ item.to_place }}</h6>
+                                            <h6>From:{{ item.from_place }}</h6>
+                                            <h6>To:{{ item.to_place }}</h6>
                                             <h6>Allotted Time:{{ item.time_range}}</h6>
                                             <h6>Average Travel Distance:{{ item.total_distance }}</h6>
                                             <h6>Average price(GBP):{{ item.total_price }}</h6>
@@ -253,6 +253,5 @@ body {
 
 </style>
 </body>
-
 
 </html>

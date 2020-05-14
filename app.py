@@ -88,7 +88,7 @@ def result():
     checked_cats.append('museum') if 'museum' in request.form else None
 
 
-    # if user doesnt choose any options
+    # if user does not choose any options
     if len(checked_cats) == 0:
         checked_cats.append('art gallery')
         checked_cats.append('amusement park')
@@ -98,7 +98,7 @@ def result():
         checked_cats.append('zoo')
         checked_cats.append('museum')
 
-    # calculate the days users will travel
+    # calculate days which the users will travel
     days_diff = datetime.strptime(str(endday).strip(), '%Y-%m-%d') - datetime.strptime(str(startday).strip(),
                                                                                        '%Y-%m-%d')
     dates_list = list()
